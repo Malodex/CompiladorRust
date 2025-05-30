@@ -32,7 +32,7 @@ public class RustLexer implements RustLexerConstants {
             Token t = parser.getNextToken();
             if (t.kind == EOF) break;
             String tokenName = tokenNames.get(t.kind);
-            String output = tokenName;
+            String output = tokenName + " " + t.image;
             System.out.println(output);
             writer.write(output + "\u005cn");
         }

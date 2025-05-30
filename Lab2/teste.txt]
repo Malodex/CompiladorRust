@@ -1,0 +1,4076 @@
+0 : KW_FN -> (shift:,r=-1,prox=2)
+0 : S -> (goto:,r=-1,prox=1)
+1 : $ -> (aceita,r=-1,prox=-1)
+2 : IDENTIFIER -> (shift:,r=-1,prox=3)
+3 : PARENOPEN -> (shift:,r=-1,prox=4)
+4 : PARENCLOSE -> (shift:,r=-1,prox=5)
+5 : CURLYOPEN -> (shift:,r=-1,prox=6)
+6 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+6 : BLOCO_CODIGO -> (goto:,r=-1,prox=7)
+6 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+6 : CODIGO -> (goto:,r=-1,prox=8)
+6 : CONDICAO -> (goto:,r=-1,prox=11)
+6 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+6 : CURLYOPEN -> (shift:,r=-1,prox=16)
+6 : DECLARACAO -> (goto:,r=-1,prox=9)
+6 : FUNCTION -> (goto:,r=-1,prox=13)
+6 : IDENTIFIER -> (shift:,r=-1,prox=19)
+6 : KW_FN -> (shift:,r=-1,prox=22)
+6 : KW_IF -> (shift:,r=-1,prox=20)
+6 : KW_LET -> (shift:,r=-1,prox=18)
+6 : KW_RETURN -> (shift:,r=-1,prox=15)
+6 : KW_WHILE -> (shift:,r=-1,prox=21)
+6 : SEMI -> (shift:,r=-1,prox=17)
+6 : WHILE -> (goto:,r=-1,prox=12)
+7 : CURLYCLOSE -> (shift:,r=-1,prox=23)
+8 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+8 : BLOCO_CODIGO -> (goto:,r=-1,prox=24)
+8 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+8 : CODIGO -> (goto:,r=-1,prox=8)
+8 : CONDICAO -> (goto:,r=-1,prox=11)
+8 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+8 : CURLYOPEN -> (shift:,r=-1,prox=16)
+8 : DECLARACAO -> (goto:,r=-1,prox=9)
+8 : FUNCTION -> (goto:,r=-1,prox=13)
+8 : IDENTIFIER -> (shift:,r=-1,prox=19)
+8 : KW_FN -> (shift:,r=-1,prox=22)
+8 : KW_IF -> (shift:,r=-1,prox=20)
+8 : KW_LET -> (shift:,r=-1,prox=18)
+8 : KW_RETURN -> (shift:,r=-1,prox=15)
+8 : KW_WHILE -> (shift:,r=-1,prox=21)
+8 : SEMI -> (shift:,r=-1,prox=17)
+8 : WHILE -> (goto:,r=-1,prox=12)
+9 : SEMI -> (shift:,r=-1,prox=25)
+10 : SEMI -> (shift:,r=-1,prox=26)
+11 : CURLYCLOSE -> (reduz:,r=4,prox=-1)
+11 : CURLYOPEN -> (reduz:,r=4,prox=-1)
+11 : IDENTIFIER -> (reduz:,r=4,prox=-1)
+11 : KW_FN -> (reduz:,r=4,prox=-1)
+11 : KW_IF -> (reduz:,r=4,prox=-1)
+11 : KW_LET -> (reduz:,r=4,prox=-1)
+11 : KW_RETURN -> (reduz:,r=4,prox=-1)
+11 : KW_WHILE -> (reduz:,r=4,prox=-1)
+11 : SEMI -> (reduz:,r=4,prox=-1)
+12 : CURLYCLOSE -> (reduz:,r=5,prox=-1)
+12 : CURLYOPEN -> (reduz:,r=5,prox=-1)
+12 : IDENTIFIER -> (reduz:,r=5,prox=-1)
+12 : KW_FN -> (reduz:,r=5,prox=-1)
+12 : KW_IF -> (reduz:,r=5,prox=-1)
+12 : KW_LET -> (reduz:,r=5,prox=-1)
+12 : KW_RETURN -> (reduz:,r=5,prox=-1)
+12 : KW_WHILE -> (reduz:,r=5,prox=-1)
+12 : SEMI -> (reduz:,r=5,prox=-1)
+13 : CURLYCLOSE -> (reduz:,r=6,prox=-1)
+13 : CURLYOPEN -> (reduz:,r=6,prox=-1)
+13 : IDENTIFIER -> (reduz:,r=6,prox=-1)
+13 : KW_FN -> (reduz:,r=6,prox=-1)
+13 : KW_IF -> (reduz:,r=6,prox=-1)
+13 : KW_LET -> (reduz:,r=6,prox=-1)
+13 : KW_RETURN -> (reduz:,r=6,prox=-1)
+13 : KW_WHILE -> (reduz:,r=6,prox=-1)
+13 : SEMI -> (reduz:,r=6,prox=-1)
+14 : SEMI -> (shift:,r=-1,prox=27)
+15 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+15 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+15 : CHAR -> (shift:,r=-1,prox=52)
+15 : EQEQ -> (shift:,r=-1,prox=35)
+15 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+15 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+15 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=28)
+15 : FACTOR -> (goto:,r=-1,prox=41)
+15 : FLOAT -> (shift:,r=-1,prox=51)
+15 : GE -> (shift:,r=-1,prox=39)
+15 : GT -> (shift:,r=-1,prox=37)
+15 : IDENTIFIER -> (shift:,r=-1,prox=48)
+15 : INTEGER -> (shift:,r=-1,prox=50)
+15 : KW_FALSE -> (shift:,r=-1,prox=45)
+15 : KW_TRUE -> (shift:,r=-1,prox=44)
+15 : KW_WHILE -> (shift:,r=-1,prox=21)
+15 : LE -> (shift:,r=-1,prox=40)
+15 : LT -> (shift:,r=-1,prox=38)
+15 : MINUS -> (shift:,r=-1,prox=47)
+15 : NE -> (shift:,r=-1,prox=36)
+15 : NOT -> (shift:,r=-1,prox=31)
+15 : OP_COMP -> (goto:,r=-1,prox=33)
+15 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+15 : PARENOPEN -> (shift:,r=-1,prox=53)
+15 : STRING -> (shift:,r=-1,prox=49)
+15 : TERM -> (goto:,r=-1,prox=34)
+15 : VALOR -> (goto:,r=-1,prox=42)
+15 : WHILE -> (goto:,r=-1,prox=46)
+16 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+16 : BLOCO_CODIGO -> (goto:,r=-1,prox=55)
+16 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+16 : CODIGO -> (goto:,r=-1,prox=8)
+16 : CONDICAO -> (goto:,r=-1,prox=11)
+16 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+16 : CURLYOPEN -> (shift:,r=-1,prox=16)
+16 : DECLARACAO -> (goto:,r=-1,prox=9)
+16 : FUNCTION -> (goto:,r=-1,prox=13)
+16 : IDENTIFIER -> (shift:,r=-1,prox=19)
+16 : KW_FN -> (shift:,r=-1,prox=22)
+16 : KW_IF -> (shift:,r=-1,prox=20)
+16 : KW_LET -> (shift:,r=-1,prox=18)
+16 : KW_RETURN -> (shift:,r=-1,prox=15)
+16 : KW_WHILE -> (shift:,r=-1,prox=21)
+16 : SEMI -> (shift:,r=-1,prox=17)
+16 : WHILE -> (goto:,r=-1,prox=12)
+17 : CURLYCLOSE -> (reduz:,r=10,prox=-1)
+17 : CURLYOPEN -> (reduz:,r=10,prox=-1)
+17 : IDENTIFIER -> (reduz:,r=10,prox=-1)
+17 : KW_FN -> (reduz:,r=10,prox=-1)
+17 : KW_IF -> (reduz:,r=10,prox=-1)
+17 : KW_LET -> (reduz:,r=10,prox=-1)
+17 : KW_RETURN -> (reduz:,r=10,prox=-1)
+17 : KW_WHILE -> (reduz:,r=10,prox=-1)
+17 : SEMI -> (reduz:,r=10,prox=-1)
+18 : IDENTIFIER -> (shift:,r=-1,prox=56)
+19 : EQ -> (shift:,r=-1,prox=57)
+19 : PARENOPEN -> (shift:,r=-1,prox=58)
+20 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+20 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+20 : CHAR -> (shift:,r=-1,prox=52)
+20 : EQEQ -> (shift:,r=-1,prox=35)
+20 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+20 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+20 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=59)
+20 : FACTOR -> (goto:,r=-1,prox=41)
+20 : FLOAT -> (shift:,r=-1,prox=51)
+20 : GE -> (shift:,r=-1,prox=39)
+20 : GT -> (shift:,r=-1,prox=37)
+20 : IDENTIFIER -> (shift:,r=-1,prox=48)
+20 : INTEGER -> (shift:,r=-1,prox=50)
+20 : KW_FALSE -> (shift:,r=-1,prox=45)
+20 : KW_TRUE -> (shift:,r=-1,prox=44)
+20 : KW_WHILE -> (shift:,r=-1,prox=21)
+20 : LE -> (shift:,r=-1,prox=40)
+20 : LT -> (shift:,r=-1,prox=38)
+20 : MINUS -> (shift:,r=-1,prox=47)
+20 : NE -> (shift:,r=-1,prox=36)
+20 : NOT -> (shift:,r=-1,prox=31)
+20 : OP_COMP -> (goto:,r=-1,prox=33)
+20 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+20 : PARENOPEN -> (shift:,r=-1,prox=53)
+20 : STRING -> (shift:,r=-1,prox=49)
+20 : TERM -> (goto:,r=-1,prox=34)
+20 : VALOR -> (goto:,r=-1,prox=42)
+20 : WHILE -> (goto:,r=-1,prox=46)
+21 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+21 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+21 : CHAR -> (shift:,r=-1,prox=52)
+21 : EQEQ -> (shift:,r=-1,prox=35)
+21 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+21 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+21 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=60)
+21 : FACTOR -> (goto:,r=-1,prox=41)
+21 : FLOAT -> (shift:,r=-1,prox=51)
+21 : GE -> (shift:,r=-1,prox=39)
+21 : GT -> (shift:,r=-1,prox=37)
+21 : IDENTIFIER -> (shift:,r=-1,prox=48)
+21 : INTEGER -> (shift:,r=-1,prox=50)
+21 : KW_FALSE -> (shift:,r=-1,prox=45)
+21 : KW_TRUE -> (shift:,r=-1,prox=44)
+21 : KW_WHILE -> (shift:,r=-1,prox=21)
+21 : LE -> (shift:,r=-1,prox=40)
+21 : LT -> (shift:,r=-1,prox=38)
+21 : MINUS -> (shift:,r=-1,prox=47)
+21 : NE -> (shift:,r=-1,prox=36)
+21 : NOT -> (shift:,r=-1,prox=31)
+21 : OP_COMP -> (goto:,r=-1,prox=33)
+21 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+21 : PARENOPEN -> (shift:,r=-1,prox=53)
+21 : STRING -> (shift:,r=-1,prox=49)
+21 : TERM -> (goto:,r=-1,prox=34)
+21 : VALOR -> (goto:,r=-1,prox=42)
+21 : WHILE -> (goto:,r=-1,prox=46)
+22 : IDENTIFIER -> (shift:,r=-1,prox=61)
+23 : $ -> (reduz:,r=1,prox=-1)
+24 : CURLYCLOSE -> (reduz:,r=11,prox=-1)
+25 : CURLYCLOSE -> (reduz:,r=2,prox=-1)
+25 : CURLYOPEN -> (reduz:,r=2,prox=-1)
+25 : IDENTIFIER -> (reduz:,r=2,prox=-1)
+25 : KW_FN -> (reduz:,r=2,prox=-1)
+25 : KW_IF -> (reduz:,r=2,prox=-1)
+25 : KW_LET -> (reduz:,r=2,prox=-1)
+25 : KW_RETURN -> (reduz:,r=2,prox=-1)
+25 : KW_WHILE -> (reduz:,r=2,prox=-1)
+25 : SEMI -> (reduz:,r=2,prox=-1)
+26 : CURLYCLOSE -> (reduz:,r=3,prox=-1)
+26 : CURLYOPEN -> (reduz:,r=3,prox=-1)
+26 : IDENTIFIER -> (reduz:,r=3,prox=-1)
+26 : KW_FN -> (reduz:,r=3,prox=-1)
+26 : KW_IF -> (reduz:,r=3,prox=-1)
+26 : KW_LET -> (reduz:,r=3,prox=-1)
+26 : KW_RETURN -> (reduz:,r=3,prox=-1)
+26 : KW_WHILE -> (reduz:,r=3,prox=-1)
+26 : SEMI -> (reduz:,r=3,prox=-1)
+27 : CURLYCLOSE -> (reduz:,r=7,prox=-1)
+27 : CURLYOPEN -> (reduz:,r=7,prox=-1)
+27 : IDENTIFIER -> (reduz:,r=7,prox=-1)
+27 : KW_FN -> (reduz:,r=7,prox=-1)
+27 : KW_IF -> (reduz:,r=7,prox=-1)
+27 : KW_LET -> (reduz:,r=7,prox=-1)
+27 : KW_RETURN -> (reduz:,r=7,prox=-1)
+27 : KW_WHILE -> (reduz:,r=7,prox=-1)
+27 : SEMI -> (reduz:,r=7,prox=-1)
+28 : ANDAND -> (shift:,r=-1,prox=63)
+28 : CURLYCLOSE -> (reduz:,r=8,prox=-1)
+28 : CURLYOPEN -> (reduz:,r=8,prox=-1)
+28 : IDENTIFIER -> (reduz:,r=8,prox=-1)
+28 : KW_FN -> (reduz:,r=8,prox=-1)
+28 : KW_IF -> (reduz:,r=8,prox=-1)
+28 : KW_LET -> (reduz:,r=8,prox=-1)
+28 : KW_RETURN -> (reduz:,r=8,prox=-1)
+28 : KW_WHILE -> (reduz:,r=8,prox=-1)
+28 : OP_LOGIC -> (goto:,r=-1,prox=62)
+28 : OROR -> (shift:,r=-1,prox=64)
+28 : SEMI -> (reduz:,r=8,prox=-1)
+29 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+29 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+29 : CHAR -> (shift:,r=-1,prox=52)
+29 : EQEQ -> (shift:,r=-1,prox=35)
+29 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+29 : EXPRESSION_COMP -> (goto:,r=-1,prox=65)
+29 : FACTOR -> (goto:,r=-1,prox=41)
+29 : FLOAT -> (shift:,r=-1,prox=51)
+29 : GE -> (shift:,r=-1,prox=39)
+29 : GT -> (shift:,r=-1,prox=37)
+29 : IDENTIFIER -> (shift:,r=-1,prox=48)
+29 : INTEGER -> (shift:,r=-1,prox=50)
+29 : KW_FALSE -> (shift:,r=-1,prox=45)
+29 : KW_TRUE -> (shift:,r=-1,prox=44)
+29 : KW_WHILE -> (shift:,r=-1,prox=21)
+29 : LE -> (shift:,r=-1,prox=40)
+29 : LT -> (shift:,r=-1,prox=38)
+29 : MINUS -> (shift:,r=-1,prox=47)
+29 : NE -> (shift:,r=-1,prox=36)
+29 : OP_COMP -> (goto:,r=-1,prox=33)
+29 : PARENOPEN -> (shift:,r=-1,prox=53)
+29 : STRING -> (shift:,r=-1,prox=49)
+29 : TERM -> (goto:,r=-1,prox=34)
+29 : VALOR -> (goto:,r=-1,prox=42)
+29 : WHILE -> (goto:,r=-1,prox=46)
+30 : ANDAND -> (reduz:,r=61,prox=-1)
+30 : CURLYCLOSE -> (reduz:,r=61,prox=-1)
+30 : CURLYOPEN -> (reduz:,r=61,prox=-1)
+30 : IDENTIFIER -> (reduz:,r=61,prox=-1)
+30 : KW_ELSE -> (reduz:,r=61,prox=-1)
+30 : KW_FN -> (reduz:,r=61,prox=-1)
+30 : KW_IF -> (reduz:,r=61,prox=-1)
+30 : KW_LET -> (reduz:,r=61,prox=-1)
+30 : KW_RETURN -> (reduz:,r=61,prox=-1)
+30 : KW_WHILE -> (reduz:,r=61,prox=-1)
+30 : OROR -> (reduz:,r=61,prox=-1)
+30 : SEMI -> (reduz:,r=61,prox=-1)
+31 : CHAR -> (reduz:,r=75,prox=-1)
+31 : EQEQ -> (reduz:,r=75,prox=-1)
+31 : FLOAT -> (reduz:,r=75,prox=-1)
+31 : GE -> (reduz:,r=75,prox=-1)
+31 : GT -> (reduz:,r=75,prox=-1)
+31 : IDENTIFIER -> (reduz:,r=75,prox=-1)
+31 : INTEGER -> (reduz:,r=75,prox=-1)
+31 : KW_FALSE -> (reduz:,r=75,prox=-1)
+31 : KW_TRUE -> (reduz:,r=75,prox=-1)
+31 : KW_WHILE -> (reduz:,r=75,prox=-1)
+31 : LE -> (reduz:,r=75,prox=-1)
+31 : LT -> (reduz:,r=75,prox=-1)
+31 : MINUS -> (reduz:,r=75,prox=-1)
+31 : NE -> (reduz:,r=75,prox=-1)
+31 : PARENOPEN -> (reduz:,r=75,prox=-1)
+31 : STRING -> (reduz:,r=75,prox=-1)
+32 : ANDAND -> (reduz:,r=58,prox=-1)
+32 : CURLYCLOSE -> (reduz:,r=58,prox=-1)
+32 : CURLYOPEN -> (reduz:,r=58,prox=-1)
+32 : EQEQ -> (shift:,r=-1,prox=35)
+32 : GE -> (shift:,r=-1,prox=39)
+32 : GT -> (shift:,r=-1,prox=37)
+32 : IDENTIFIER -> (reduz:,r=58,prox=-1)
+32 : KW_ELSE -> (reduz:,r=58,prox=-1)
+32 : KW_FN -> (reduz:,r=58,prox=-1)
+32 : KW_IF -> (reduz:,r=58,prox=-1)
+32 : KW_LET -> (reduz:,r=58,prox=-1)
+32 : KW_RETURN -> (reduz:,r=58,prox=-1)
+32 : KW_WHILE -> (reduz:,r=58,prox=-1)
+32 : LE -> (shift:,r=-1,prox=40)
+32 : LT -> (shift:,r=-1,prox=38)
+32 : NE -> (shift:,r=-1,prox=36)
+32 : OP_COMP -> (goto:,r=-1,prox=66)
+32 : OROR -> (reduz:,r=58,prox=-1)
+32 : SEMI -> (reduz:,r=58,prox=-1)
+33 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+33 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+33 : CHAR -> (shift:,r=-1,prox=52)
+33 : EXPRESSION_ART -> (goto:,r=-1,prox=67)
+33 : FACTOR -> (goto:,r=-1,prox=41)
+33 : FLOAT -> (shift:,r=-1,prox=51)
+33 : IDENTIFIER -> (shift:,r=-1,prox=48)
+33 : INTEGER -> (shift:,r=-1,prox=50)
+33 : KW_FALSE -> (shift:,r=-1,prox=45)
+33 : KW_TRUE -> (shift:,r=-1,prox=44)
+33 : KW_WHILE -> (shift:,r=-1,prox=21)
+33 : MINUS -> (shift:,r=-1,prox=47)
+33 : PARENOPEN -> (shift:,r=-1,prox=53)
+33 : STRING -> (shift:,r=-1,prox=49)
+33 : TERM -> (goto:,r=-1,prox=34)
+33 : VALOR -> (goto:,r=-1,prox=42)
+33 : WHILE -> (goto:,r=-1,prox=46)
+34 : ANDAND -> (reduz:,r=46,prox=-1)
+34 : COMMA -> (reduz:,r=46,prox=-1)
+34 : CURLYCLOSE -> (reduz:,r=46,prox=-1)
+34 : CURLYOPEN -> (reduz:,r=46,prox=-1)
+34 : EQEQ -> (reduz:,r=46,prox=-1)
+34 : EXPRESSION_PRIME -> (goto:,r=-1,prox=68)
+34 : GE -> (reduz:,r=46,prox=-1)
+34 : GT -> (reduz:,r=46,prox=-1)
+34 : IDENTIFIER -> (reduz:,r=46,prox=-1)
+34 : KW_ELSE -> (reduz:,r=46,prox=-1)
+34 : KW_FN -> (reduz:,r=46,prox=-1)
+34 : KW_IF -> (reduz:,r=46,prox=-1)
+34 : KW_LET -> (reduz:,r=46,prox=-1)
+34 : KW_RETURN -> (reduz:,r=46,prox=-1)
+34 : KW_WHILE -> (reduz:,r=46,prox=-1)
+34 : LE -> (reduz:,r=46,prox=-1)
+34 : LT -> (reduz:,r=46,prox=-1)
+34 : MINUS -> (shift:,r=-1,prox=71)
+34 : NE -> (reduz:,r=46,prox=-1)
+34 : OP_ADD -> (goto:,r=-1,prox=69)
+34 : OROR -> (reduz:,r=46,prox=-1)
+34 : PARENCLOSE -> (reduz:,r=46,prox=-1)
+34 : PLUS -> (shift:,r=-1,prox=70)
+34 : SEMI -> (reduz:,r=46,prox=-1)
+35 : CHAR -> (reduz:,r=67,prox=-1)
+35 : FLOAT -> (reduz:,r=67,prox=-1)
+35 : IDENTIFIER -> (reduz:,r=67,prox=-1)
+35 : INTEGER -> (reduz:,r=67,prox=-1)
+35 : KW_FALSE -> (reduz:,r=67,prox=-1)
+35 : KW_TRUE -> (reduz:,r=67,prox=-1)
+35 : KW_WHILE -> (reduz:,r=67,prox=-1)
+35 : MINUS -> (reduz:,r=67,prox=-1)
+35 : PARENOPEN -> (reduz:,r=67,prox=-1)
+35 : STRING -> (reduz:,r=67,prox=-1)
+36 : CHAR -> (reduz:,r=68,prox=-1)
+36 : FLOAT -> (reduz:,r=68,prox=-1)
+36 : IDENTIFIER -> (reduz:,r=68,prox=-1)
+36 : INTEGER -> (reduz:,r=68,prox=-1)
+36 : KW_FALSE -> (reduz:,r=68,prox=-1)
+36 : KW_TRUE -> (reduz:,r=68,prox=-1)
+36 : KW_WHILE -> (reduz:,r=68,prox=-1)
+36 : MINUS -> (reduz:,r=68,prox=-1)
+36 : PARENOPEN -> (reduz:,r=68,prox=-1)
+36 : STRING -> (reduz:,r=68,prox=-1)
+37 : CHAR -> (reduz:,r=69,prox=-1)
+37 : FLOAT -> (reduz:,r=69,prox=-1)
+37 : IDENTIFIER -> (reduz:,r=69,prox=-1)
+37 : INTEGER -> (reduz:,r=69,prox=-1)
+37 : KW_FALSE -> (reduz:,r=69,prox=-1)
+37 : KW_TRUE -> (reduz:,r=69,prox=-1)
+37 : KW_WHILE -> (reduz:,r=69,prox=-1)
+37 : MINUS -> (reduz:,r=69,prox=-1)
+37 : PARENOPEN -> (reduz:,r=69,prox=-1)
+37 : STRING -> (reduz:,r=69,prox=-1)
+38 : CHAR -> (reduz:,r=70,prox=-1)
+38 : FLOAT -> (reduz:,r=70,prox=-1)
+38 : IDENTIFIER -> (reduz:,r=70,prox=-1)
+38 : INTEGER -> (reduz:,r=70,prox=-1)
+38 : KW_FALSE -> (reduz:,r=70,prox=-1)
+38 : KW_TRUE -> (reduz:,r=70,prox=-1)
+38 : KW_WHILE -> (reduz:,r=70,prox=-1)
+38 : MINUS -> (reduz:,r=70,prox=-1)
+38 : PARENOPEN -> (reduz:,r=70,prox=-1)
+38 : STRING -> (reduz:,r=70,prox=-1)
+39 : CHAR -> (reduz:,r=71,prox=-1)
+39 : FLOAT -> (reduz:,r=71,prox=-1)
+39 : IDENTIFIER -> (reduz:,r=71,prox=-1)
+39 : INTEGER -> (reduz:,r=71,prox=-1)
+39 : KW_FALSE -> (reduz:,r=71,prox=-1)
+39 : KW_TRUE -> (reduz:,r=71,prox=-1)
+39 : KW_WHILE -> (reduz:,r=71,prox=-1)
+39 : MINUS -> (reduz:,r=71,prox=-1)
+39 : PARENOPEN -> (reduz:,r=71,prox=-1)
+39 : STRING -> (reduz:,r=71,prox=-1)
+40 : CHAR -> (reduz:,r=72,prox=-1)
+40 : FLOAT -> (reduz:,r=72,prox=-1)
+40 : IDENTIFIER -> (reduz:,r=72,prox=-1)
+40 : INTEGER -> (reduz:,r=72,prox=-1)
+40 : KW_FALSE -> (reduz:,r=72,prox=-1)
+40 : KW_TRUE -> (reduz:,r=72,prox=-1)
+40 : KW_WHILE -> (reduz:,r=72,prox=-1)
+40 : MINUS -> (reduz:,r=72,prox=-1)
+40 : PARENOPEN -> (reduz:,r=72,prox=-1)
+40 : STRING -> (reduz:,r=72,prox=-1)
+41 : ANDAND -> (reduz:,r=49,prox=-1)
+41 : COMMA -> (reduz:,r=49,prox=-1)
+41 : CURLYCLOSE -> (reduz:,r=49,prox=-1)
+41 : CURLYOPEN -> (reduz:,r=49,prox=-1)
+41 : EQEQ -> (reduz:,r=49,prox=-1)
+41 : GE -> (reduz:,r=49,prox=-1)
+41 : GT -> (reduz:,r=49,prox=-1)
+41 : IDENTIFIER -> (reduz:,r=49,prox=-1)
+41 : KW_ELSE -> (reduz:,r=49,prox=-1)
+41 : KW_FN -> (reduz:,r=49,prox=-1)
+41 : KW_IF -> (reduz:,r=49,prox=-1)
+41 : KW_LET -> (reduz:,r=49,prox=-1)
+41 : KW_RETURN -> (reduz:,r=49,prox=-1)
+41 : KW_WHILE -> (reduz:,r=49,prox=-1)
+41 : LE -> (reduz:,r=49,prox=-1)
+41 : LT -> (reduz:,r=49,prox=-1)
+41 : MINUS -> (reduz:,r=49,prox=-1)
+41 : NE -> (reduz:,r=49,prox=-1)
+41 : OP_MULT -> (goto:,r=-1,prox=73)
+41 : OROR -> (reduz:,r=49,prox=-1)
+41 : PARENCLOSE -> (reduz:,r=49,prox=-1)
+41 : PERCENT -> (shift:,r=-1,prox=76)
+41 : PLUS -> (reduz:,r=49,prox=-1)
+41 : SEMI -> (reduz:,r=49,prox=-1)
+41 : SLASH -> (shift:,r=-1,prox=75)
+41 : STAR -> (shift:,r=-1,prox=74)
+41 : TERM_PRIME -> (goto:,r=-1,prox=72)
+42 : ANDAND -> (reduz:,r=50,prox=-1)
+42 : COMMA -> (reduz:,r=50,prox=-1)
+42 : CURLYCLOSE -> (reduz:,r=50,prox=-1)
+42 : CURLYOPEN -> (reduz:,r=50,prox=-1)
+42 : EQEQ -> (reduz:,r=50,prox=-1)
+42 : GE -> (reduz:,r=50,prox=-1)
+42 : GT -> (reduz:,r=50,prox=-1)
+42 : IDENTIFIER -> (reduz:,r=50,prox=-1)
+42 : KW_ELSE -> (reduz:,r=50,prox=-1)
+42 : KW_FN -> (reduz:,r=50,prox=-1)
+42 : KW_IF -> (reduz:,r=50,prox=-1)
+42 : KW_LET -> (reduz:,r=50,prox=-1)
+42 : KW_RETURN -> (reduz:,r=50,prox=-1)
+42 : KW_WHILE -> (reduz:,r=50,prox=-1)
+42 : LE -> (reduz:,r=50,prox=-1)
+42 : LT -> (reduz:,r=50,prox=-1)
+42 : MINUS -> (reduz:,r=50,prox=-1)
+42 : NE -> (reduz:,r=50,prox=-1)
+42 : OROR -> (reduz:,r=50,prox=-1)
+42 : PARENCLOSE -> (reduz:,r=50,prox=-1)
+42 : PERCENT -> (reduz:,r=50,prox=-1)
+42 : PLUS -> (reduz:,r=50,prox=-1)
+42 : SEMI -> (reduz:,r=50,prox=-1)
+42 : SLASH -> (reduz:,r=50,prox=-1)
+42 : STAR -> (reduz:,r=50,prox=-1)
+43 : ANDAND -> (reduz:,r=51,prox=-1)
+43 : COMMA -> (reduz:,r=51,prox=-1)
+43 : CURLYCLOSE -> (reduz:,r=51,prox=-1)
+43 : CURLYOPEN -> (reduz:,r=51,prox=-1)
+43 : EQEQ -> (reduz:,r=51,prox=-1)
+43 : GE -> (reduz:,r=51,prox=-1)
+43 : GT -> (reduz:,r=51,prox=-1)
+43 : IDENTIFIER -> (reduz:,r=51,prox=-1)
+43 : KW_ELSE -> (reduz:,r=51,prox=-1)
+43 : KW_FN -> (reduz:,r=51,prox=-1)
+43 : KW_IF -> (reduz:,r=51,prox=-1)
+43 : KW_LET -> (reduz:,r=51,prox=-1)
+43 : KW_RETURN -> (reduz:,r=51,prox=-1)
+43 : KW_WHILE -> (reduz:,r=51,prox=-1)
+43 : LE -> (reduz:,r=51,prox=-1)
+43 : LT -> (reduz:,r=51,prox=-1)
+43 : MINUS -> (reduz:,r=51,prox=-1)
+43 : NE -> (reduz:,r=51,prox=-1)
+43 : OROR -> (reduz:,r=51,prox=-1)
+43 : PARENCLOSE -> (reduz:,r=51,prox=-1)
+43 : PERCENT -> (reduz:,r=51,prox=-1)
+43 : PLUS -> (reduz:,r=51,prox=-1)
+43 : SEMI -> (reduz:,r=51,prox=-1)
+43 : SLASH -> (reduz:,r=51,prox=-1)
+43 : STAR -> (reduz:,r=51,prox=-1)
+44 : ANDAND -> (reduz:,r=52,prox=-1)
+44 : COMMA -> (reduz:,r=52,prox=-1)
+44 : CURLYCLOSE -> (reduz:,r=52,prox=-1)
+44 : CURLYOPEN -> (reduz:,r=52,prox=-1)
+44 : EQEQ -> (reduz:,r=52,prox=-1)
+44 : GE -> (reduz:,r=52,prox=-1)
+44 : GT -> (reduz:,r=52,prox=-1)
+44 : IDENTIFIER -> (reduz:,r=52,prox=-1)
+44 : KW_ELSE -> (reduz:,r=52,prox=-1)
+44 : KW_FN -> (reduz:,r=52,prox=-1)
+44 : KW_IF -> (reduz:,r=52,prox=-1)
+44 : KW_LET -> (reduz:,r=52,prox=-1)
+44 : KW_RETURN -> (reduz:,r=52,prox=-1)
+44 : KW_WHILE -> (reduz:,r=52,prox=-1)
+44 : LE -> (reduz:,r=52,prox=-1)
+44 : LT -> (reduz:,r=52,prox=-1)
+44 : MINUS -> (reduz:,r=52,prox=-1)
+44 : NE -> (reduz:,r=52,prox=-1)
+44 : OROR -> (reduz:,r=52,prox=-1)
+44 : PARENCLOSE -> (reduz:,r=52,prox=-1)
+44 : PERCENT -> (reduz:,r=52,prox=-1)
+44 : PLUS -> (reduz:,r=52,prox=-1)
+44 : SEMI -> (reduz:,r=52,prox=-1)
+44 : SLASH -> (reduz:,r=52,prox=-1)
+44 : STAR -> (reduz:,r=52,prox=-1)
+45 : ANDAND -> (reduz:,r=53,prox=-1)
+45 : COMMA -> (reduz:,r=53,prox=-1)
+45 : CURLYCLOSE -> (reduz:,r=53,prox=-1)
+45 : CURLYOPEN -> (reduz:,r=53,prox=-1)
+45 : EQEQ -> (reduz:,r=53,prox=-1)
+45 : GE -> (reduz:,r=53,prox=-1)
+45 : GT -> (reduz:,r=53,prox=-1)
+45 : IDENTIFIER -> (reduz:,r=53,prox=-1)
+45 : KW_ELSE -> (reduz:,r=53,prox=-1)
+45 : KW_FN -> (reduz:,r=53,prox=-1)
+45 : KW_IF -> (reduz:,r=53,prox=-1)
+45 : KW_LET -> (reduz:,r=53,prox=-1)
+45 : KW_RETURN -> (reduz:,r=53,prox=-1)
+45 : KW_WHILE -> (reduz:,r=53,prox=-1)
+45 : LE -> (reduz:,r=53,prox=-1)
+45 : LT -> (reduz:,r=53,prox=-1)
+45 : MINUS -> (reduz:,r=53,prox=-1)
+45 : NE -> (reduz:,r=53,prox=-1)
+45 : OROR -> (reduz:,r=53,prox=-1)
+45 : PARENCLOSE -> (reduz:,r=53,prox=-1)
+45 : PERCENT -> (reduz:,r=53,prox=-1)
+45 : PLUS -> (reduz:,r=53,prox=-1)
+45 : SEMI -> (reduz:,r=53,prox=-1)
+45 : SLASH -> (reduz:,r=53,prox=-1)
+45 : STAR -> (reduz:,r=53,prox=-1)
+46 : ANDAND -> (reduz:,r=54,prox=-1)
+46 : COMMA -> (reduz:,r=54,prox=-1)
+46 : CURLYCLOSE -> (reduz:,r=54,prox=-1)
+46 : CURLYOPEN -> (reduz:,r=54,prox=-1)
+46 : EQEQ -> (reduz:,r=54,prox=-1)
+46 : GE -> (reduz:,r=54,prox=-1)
+46 : GT -> (reduz:,r=54,prox=-1)
+46 : IDENTIFIER -> (reduz:,r=54,prox=-1)
+46 : KW_ELSE -> (reduz:,r=54,prox=-1)
+46 : KW_FN -> (reduz:,r=54,prox=-1)
+46 : KW_IF -> (reduz:,r=54,prox=-1)
+46 : KW_LET -> (reduz:,r=54,prox=-1)
+46 : KW_RETURN -> (reduz:,r=54,prox=-1)
+46 : KW_WHILE -> (reduz:,r=54,prox=-1)
+46 : LE -> (reduz:,r=54,prox=-1)
+46 : LT -> (reduz:,r=54,prox=-1)
+46 : MINUS -> (reduz:,r=54,prox=-1)
+46 : NE -> (reduz:,r=54,prox=-1)
+46 : OROR -> (reduz:,r=54,prox=-1)
+46 : PARENCLOSE -> (reduz:,r=54,prox=-1)
+46 : PERCENT -> (reduz:,r=54,prox=-1)
+46 : PLUS -> (reduz:,r=54,prox=-1)
+46 : SEMI -> (reduz:,r=54,prox=-1)
+46 : SLASH -> (reduz:,r=54,prox=-1)
+46 : STAR -> (reduz:,r=54,prox=-1)
+47 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+47 : CHAR -> (shift:,r=-1,prox=52)
+47 : FLOAT -> (shift:,r=-1,prox=51)
+47 : IDENTIFIER -> (shift:,r=-1,prox=78)
+47 : INTEGER -> (shift:,r=-1,prox=50)
+47 : PARENOPEN -> (shift:,r=-1,prox=53)
+47 : STRING -> (shift:,r=-1,prox=49)
+47 : VALOR -> (goto:,r=-1,prox=77)
+48 : ANDAND -> (reduz:,r=76,prox=-1)
+48 : BRACKETOPEN -> (shift:,r=-1,prox=79)
+48 : COMMA -> (reduz:,r=76,prox=-1)
+48 : CURLYCLOSE -> (reduz:,r=76,prox=-1)
+48 : CURLYOPEN -> (reduz:,r=76,prox=-1)
+48 : EQEQ -> (reduz:,r=76,prox=-1)
+48 : GE -> (reduz:,r=76,prox=-1)
+48 : GT -> (reduz:,r=76,prox=-1)
+48 : IDENTIFIER -> (reduz:,r=76,prox=-1)
+48 : KW_ELSE -> (reduz:,r=76,prox=-1)
+48 : KW_FN -> (reduz:,r=76,prox=-1)
+48 : KW_IF -> (reduz:,r=76,prox=-1)
+48 : KW_LET -> (reduz:,r=76,prox=-1)
+48 : KW_RETURN -> (reduz:,r=76,prox=-1)
+48 : KW_WHILE -> (reduz:,r=76,prox=-1)
+48 : LE -> (reduz:,r=76,prox=-1)
+48 : LT -> (reduz:,r=76,prox=-1)
+48 : MINUS -> (reduz:,r=76,prox=-1)
+48 : NE -> (reduz:,r=76,prox=-1)
+48 : OROR -> (reduz:,r=76,prox=-1)
+48 : PARENCLOSE -> (reduz:,r=76,prox=-1)
+48 : PARENOPEN -> (shift:,r=-1,prox=58)
+48 : PERCENT -> (reduz:,r=76,prox=-1)
+48 : PLUS -> (reduz:,r=76,prox=-1)
+48 : SEMI -> (reduz:,r=76,prox=-1)
+48 : SLASH -> (reduz:,r=76,prox=-1)
+48 : STAR -> (reduz:,r=76,prox=-1)
+49 : ANDAND -> (reduz:,r=77,prox=-1)
+49 : BRACKETCLOSE -> (reduz:,r=77,prox=-1)
+49 : COMMA -> (reduz:,r=77,prox=-1)
+49 : CURLYCLOSE -> (reduz:,r=77,prox=-1)
+49 : CURLYOPEN -> (reduz:,r=77,prox=-1)
+49 : EQEQ -> (reduz:,r=77,prox=-1)
+49 : GE -> (reduz:,r=77,prox=-1)
+49 : GT -> (reduz:,r=77,prox=-1)
+49 : IDENTIFIER -> (reduz:,r=77,prox=-1)
+49 : KW_ELSE -> (reduz:,r=77,prox=-1)
+49 : KW_FN -> (reduz:,r=77,prox=-1)
+49 : KW_IF -> (reduz:,r=77,prox=-1)
+49 : KW_LET -> (reduz:,r=77,prox=-1)
+49 : KW_RETURN -> (reduz:,r=77,prox=-1)
+49 : KW_WHILE -> (reduz:,r=77,prox=-1)
+49 : LE -> (reduz:,r=77,prox=-1)
+49 : LT -> (reduz:,r=77,prox=-1)
+49 : MINUS -> (reduz:,r=77,prox=-1)
+49 : NE -> (reduz:,r=77,prox=-1)
+49 : OROR -> (reduz:,r=77,prox=-1)
+49 : PARENCLOSE -> (reduz:,r=77,prox=-1)
+49 : PERCENT -> (reduz:,r=77,prox=-1)
+49 : PLUS -> (reduz:,r=77,prox=-1)
+49 : SEMI -> (reduz:,r=77,prox=-1)
+49 : SLASH -> (reduz:,r=77,prox=-1)
+49 : STAR -> (reduz:,r=77,prox=-1)
+50 : ANDAND -> (reduz:,r=78,prox=-1)
+50 : BRACKETCLOSE -> (reduz:,r=78,prox=-1)
+50 : COMMA -> (reduz:,r=78,prox=-1)
+50 : CURLYCLOSE -> (reduz:,r=78,prox=-1)
+50 : CURLYOPEN -> (reduz:,r=78,prox=-1)
+50 : EQEQ -> (reduz:,r=78,prox=-1)
+50 : GE -> (reduz:,r=78,prox=-1)
+50 : GT -> (reduz:,r=78,prox=-1)
+50 : IDENTIFIER -> (reduz:,r=78,prox=-1)
+50 : KW_ELSE -> (reduz:,r=78,prox=-1)
+50 : KW_FN -> (reduz:,r=78,prox=-1)
+50 : KW_IF -> (reduz:,r=78,prox=-1)
+50 : KW_LET -> (reduz:,r=78,prox=-1)
+50 : KW_RETURN -> (reduz:,r=78,prox=-1)
+50 : KW_WHILE -> (reduz:,r=78,prox=-1)
+50 : LE -> (reduz:,r=78,prox=-1)
+50 : LT -> (reduz:,r=78,prox=-1)
+50 : MINUS -> (reduz:,r=78,prox=-1)
+50 : NE -> (reduz:,r=78,prox=-1)
+50 : OROR -> (reduz:,r=78,prox=-1)
+50 : PARENCLOSE -> (reduz:,r=78,prox=-1)
+50 : PERCENT -> (reduz:,r=78,prox=-1)
+50 : PLUS -> (reduz:,r=78,prox=-1)
+50 : SEMI -> (reduz:,r=78,prox=-1)
+50 : SLASH -> (reduz:,r=78,prox=-1)
+50 : STAR -> (reduz:,r=78,prox=-1)
+51 : ANDAND -> (reduz:,r=79,prox=-1)
+51 : BRACKETCLOSE -> (reduz:,r=79,prox=-1)
+51 : COMMA -> (reduz:,r=79,prox=-1)
+51 : CURLYCLOSE -> (reduz:,r=79,prox=-1)
+51 : CURLYOPEN -> (reduz:,r=79,prox=-1)
+51 : EQEQ -> (reduz:,r=79,prox=-1)
+51 : GE -> (reduz:,r=79,prox=-1)
+51 : GT -> (reduz:,r=79,prox=-1)
+51 : IDENTIFIER -> (reduz:,r=79,prox=-1)
+51 : KW_ELSE -> (reduz:,r=79,prox=-1)
+51 : KW_FN -> (reduz:,r=79,prox=-1)
+51 : KW_IF -> (reduz:,r=79,prox=-1)
+51 : KW_LET -> (reduz:,r=79,prox=-1)
+51 : KW_RETURN -> (reduz:,r=79,prox=-1)
+51 : KW_WHILE -> (reduz:,r=79,prox=-1)
+51 : LE -> (reduz:,r=79,prox=-1)
+51 : LT -> (reduz:,r=79,prox=-1)
+51 : MINUS -> (reduz:,r=79,prox=-1)
+51 : NE -> (reduz:,r=79,prox=-1)
+51 : OROR -> (reduz:,r=79,prox=-1)
+51 : PARENCLOSE -> (reduz:,r=79,prox=-1)
+51 : PERCENT -> (reduz:,r=79,prox=-1)
+51 : PLUS -> (reduz:,r=79,prox=-1)
+51 : SEMI -> (reduz:,r=79,prox=-1)
+51 : SLASH -> (reduz:,r=79,prox=-1)
+51 : STAR -> (reduz:,r=79,prox=-1)
+52 : ANDAND -> (reduz:,r=80,prox=-1)
+52 : BRACKETCLOSE -> (reduz:,r=80,prox=-1)
+52 : COMMA -> (reduz:,r=80,prox=-1)
+52 : CURLYCLOSE -> (reduz:,r=80,prox=-1)
+52 : CURLYOPEN -> (reduz:,r=80,prox=-1)
+52 : EQEQ -> (reduz:,r=80,prox=-1)
+52 : GE -> (reduz:,r=80,prox=-1)
+52 : GT -> (reduz:,r=80,prox=-1)
+52 : IDENTIFIER -> (reduz:,r=80,prox=-1)
+52 : KW_ELSE -> (reduz:,r=80,prox=-1)
+52 : KW_FN -> (reduz:,r=80,prox=-1)
+52 : KW_IF -> (reduz:,r=80,prox=-1)
+52 : KW_LET -> (reduz:,r=80,prox=-1)
+52 : KW_RETURN -> (reduz:,r=80,prox=-1)
+52 : KW_WHILE -> (reduz:,r=80,prox=-1)
+52 : LE -> (reduz:,r=80,prox=-1)
+52 : LT -> (reduz:,r=80,prox=-1)
+52 : MINUS -> (reduz:,r=80,prox=-1)
+52 : NE -> (reduz:,r=80,prox=-1)
+52 : OROR -> (reduz:,r=80,prox=-1)
+52 : PARENCLOSE -> (reduz:,r=80,prox=-1)
+52 : PERCENT -> (reduz:,r=80,prox=-1)
+52 : PLUS -> (reduz:,r=80,prox=-1)
+52 : SEMI -> (reduz:,r=80,prox=-1)
+52 : SLASH -> (reduz:,r=80,prox=-1)
+52 : STAR -> (reduz:,r=80,prox=-1)
+53 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+53 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+53 : CHAR -> (shift:,r=-1,prox=52)
+53 : EXPRESSION_ART -> (goto:,r=-1,prox=80)
+53 : FACTOR -> (goto:,r=-1,prox=41)
+53 : FLOAT -> (shift:,r=-1,prox=51)
+53 : IDENTIFIER -> (shift:,r=-1,prox=48)
+53 : INTEGER -> (shift:,r=-1,prox=50)
+53 : KW_FALSE -> (shift:,r=-1,prox=45)
+53 : KW_TRUE -> (shift:,r=-1,prox=44)
+53 : KW_WHILE -> (shift:,r=-1,prox=21)
+53 : MINUS -> (shift:,r=-1,prox=47)
+53 : PARENOPEN -> (shift:,r=-1,prox=53)
+53 : STRING -> (shift:,r=-1,prox=49)
+53 : TERM -> (goto:,r=-1,prox=34)
+53 : VALOR -> (goto:,r=-1,prox=42)
+53 : WHILE -> (goto:,r=-1,prox=46)
+54 : ANDAND -> (reduz:,r=82,prox=-1)
+54 : BRACKETCLOSE -> (reduz:,r=82,prox=-1)
+54 : COMMA -> (reduz:,r=82,prox=-1)
+54 : CURLYCLOSE -> (reduz:,r=82,prox=-1)
+54 : CURLYOPEN -> (reduz:,r=82,prox=-1)
+54 : EQEQ -> (reduz:,r=82,prox=-1)
+54 : GE -> (reduz:,r=82,prox=-1)
+54 : GT -> (reduz:,r=82,prox=-1)
+54 : IDENTIFIER -> (reduz:,r=82,prox=-1)
+54 : KW_ELSE -> (reduz:,r=82,prox=-1)
+54 : KW_FN -> (reduz:,r=82,prox=-1)
+54 : KW_IF -> (reduz:,r=82,prox=-1)
+54 : KW_LET -> (reduz:,r=82,prox=-1)
+54 : KW_RETURN -> (reduz:,r=82,prox=-1)
+54 : KW_WHILE -> (reduz:,r=82,prox=-1)
+54 : LE -> (reduz:,r=82,prox=-1)
+54 : LT -> (reduz:,r=82,prox=-1)
+54 : MINUS -> (reduz:,r=82,prox=-1)
+54 : NE -> (reduz:,r=82,prox=-1)
+54 : OROR -> (reduz:,r=82,prox=-1)
+54 : PARENCLOSE -> (reduz:,r=82,prox=-1)
+54 : PERCENT -> (reduz:,r=82,prox=-1)
+54 : PLUS -> (reduz:,r=82,prox=-1)
+54 : SEMI -> (reduz:,r=82,prox=-1)
+54 : SLASH -> (reduz:,r=82,prox=-1)
+54 : STAR -> (reduz:,r=82,prox=-1)
+55 : CURLYCLOSE -> (shift:,r=-1,prox=81)
+56 : COLON -> (shift:,r=-1,prox=83)
+56 : EQ -> (shift:,r=-1,prox=82)
+56 : SEMI -> (reduz:,r=21,prox=-1)
+57 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+57 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+57 : CHAR -> (shift:,r=-1,prox=52)
+57 : EQEQ -> (shift:,r=-1,prox=35)
+57 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+57 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+57 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=84)
+57 : FACTOR -> (goto:,r=-1,prox=41)
+57 : FLOAT -> (shift:,r=-1,prox=51)
+57 : GE -> (shift:,r=-1,prox=39)
+57 : GT -> (shift:,r=-1,prox=37)
+57 : IDENTIFIER -> (shift:,r=-1,prox=48)
+57 : INTEGER -> (shift:,r=-1,prox=50)
+57 : KW_FALSE -> (shift:,r=-1,prox=45)
+57 : KW_TRUE -> (shift:,r=-1,prox=44)
+57 : KW_WHILE -> (shift:,r=-1,prox=21)
+57 : LE -> (shift:,r=-1,prox=40)
+57 : LT -> (shift:,r=-1,prox=38)
+57 : MINUS -> (shift:,r=-1,prox=47)
+57 : NE -> (shift:,r=-1,prox=36)
+57 : NOT -> (shift:,r=-1,prox=31)
+57 : OP_COMP -> (goto:,r=-1,prox=33)
+57 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+57 : PARENOPEN -> (shift:,r=-1,prox=53)
+57 : STRING -> (shift:,r=-1,prox=49)
+57 : TERM -> (goto:,r=-1,prox=34)
+57 : VALOR -> (goto:,r=-1,prox=42)
+57 : WHILE -> (goto:,r=-1,prox=46)
+58 : ARG -> (goto:,r=-1,prox=86)
+58 : ARGS -> (goto:,r=-1,prox=85)
+58 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+58 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+58 : CHAR -> (shift:,r=-1,prox=52)
+58 : EXPRESSION_ART -> (goto:,r=-1,prox=87)
+58 : FACTOR -> (goto:,r=-1,prox=41)
+58 : FLOAT -> (shift:,r=-1,prox=51)
+58 : IDENTIFIER -> (shift:,r=-1,prox=88)
+58 : INTEGER -> (shift:,r=-1,prox=50)
+58 : KW_FALSE -> (shift:,r=-1,prox=45)
+58 : KW_TRUE -> (shift:,r=-1,prox=44)
+58 : KW_WHILE -> (shift:,r=-1,prox=21)
+58 : MINUS -> (shift:,r=-1,prox=47)
+58 : PARENCLOSE -> (reduz:,r=40,prox=-1)
+58 : PARENOPEN -> (shift:,r=-1,prox=53)
+58 : STRING -> (shift:,r=-1,prox=49)
+58 : TERM -> (goto:,r=-1,prox=34)
+58 : VALOR -> (goto:,r=-1,prox=42)
+58 : WHILE -> (goto:,r=-1,prox=46)
+59 : ANDAND -> (shift:,r=-1,prox=63)
+59 : CURLYOPEN -> (shift:,r=-1,prox=89)
+59 : OP_LOGIC -> (goto:,r=-1,prox=62)
+59 : OROR -> (shift:,r=-1,prox=64)
+60 : ANDAND -> (shift:,r=-1,prox=63)
+60 : CURLYOPEN -> (shift:,r=-1,prox=90)
+60 : OP_LOGIC -> (goto:,r=-1,prox=62)
+60 : OROR -> (shift:,r=-1,prox=64)
+61 : PARENOPEN -> (shift:,r=-1,prox=91)
+62 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+62 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+62 : CHAR -> (shift:,r=-1,prox=52)
+62 : EQEQ -> (shift:,r=-1,prox=35)
+62 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+62 : EXPRESSION_COMP -> (goto:,r=-1,prox=92)
+62 : FACTOR -> (goto:,r=-1,prox=41)
+62 : FLOAT -> (shift:,r=-1,prox=51)
+62 : GE -> (shift:,r=-1,prox=39)
+62 : GT -> (shift:,r=-1,prox=37)
+62 : IDENTIFIER -> (shift:,r=-1,prox=48)
+62 : INTEGER -> (shift:,r=-1,prox=50)
+62 : KW_FALSE -> (shift:,r=-1,prox=45)
+62 : KW_TRUE -> (shift:,r=-1,prox=44)
+62 : KW_WHILE -> (shift:,r=-1,prox=21)
+62 : LE -> (shift:,r=-1,prox=40)
+62 : LT -> (shift:,r=-1,prox=38)
+62 : MINUS -> (shift:,r=-1,prox=47)
+62 : NE -> (shift:,r=-1,prox=36)
+62 : OP_COMP -> (goto:,r=-1,prox=33)
+62 : PARENOPEN -> (shift:,r=-1,prox=53)
+62 : STRING -> (shift:,r=-1,prox=49)
+62 : TERM -> (goto:,r=-1,prox=34)
+62 : VALOR -> (goto:,r=-1,prox=42)
+62 : WHILE -> (goto:,r=-1,prox=46)
+63 : CHAR -> (reduz:,r=73,prox=-1)
+63 : EQEQ -> (reduz:,r=73,prox=-1)
+63 : FLOAT -> (reduz:,r=73,prox=-1)
+63 : GE -> (reduz:,r=73,prox=-1)
+63 : GT -> (reduz:,r=73,prox=-1)
+63 : IDENTIFIER -> (reduz:,r=73,prox=-1)
+63 : INTEGER -> (reduz:,r=73,prox=-1)
+63 : KW_FALSE -> (reduz:,r=73,prox=-1)
+63 : KW_TRUE -> (reduz:,r=73,prox=-1)
+63 : KW_WHILE -> (reduz:,r=73,prox=-1)
+63 : LE -> (reduz:,r=73,prox=-1)
+63 : LT -> (reduz:,r=73,prox=-1)
+63 : MINUS -> (reduz:,r=73,prox=-1)
+63 : NE -> (reduz:,r=73,prox=-1)
+63 : PARENOPEN -> (reduz:,r=73,prox=-1)
+63 : STRING -> (reduz:,r=73,prox=-1)
+64 : CHAR -> (reduz:,r=74,prox=-1)
+64 : EQEQ -> (reduz:,r=74,prox=-1)
+64 : FLOAT -> (reduz:,r=74,prox=-1)
+64 : GE -> (reduz:,r=74,prox=-1)
+64 : GT -> (reduz:,r=74,prox=-1)
+64 : IDENTIFIER -> (reduz:,r=74,prox=-1)
+64 : INTEGER -> (reduz:,r=74,prox=-1)
+64 : KW_FALSE -> (reduz:,r=74,prox=-1)
+64 : KW_TRUE -> (reduz:,r=74,prox=-1)
+64 : KW_WHILE -> (reduz:,r=74,prox=-1)
+64 : LE -> (reduz:,r=74,prox=-1)
+64 : LT -> (reduz:,r=74,prox=-1)
+64 : MINUS -> (reduz:,r=74,prox=-1)
+64 : NE -> (reduz:,r=74,prox=-1)
+64 : PARENOPEN -> (reduz:,r=74,prox=-1)
+64 : STRING -> (reduz:,r=74,prox=-1)
+65 : ANDAND -> (reduz:,r=60,prox=-1)
+65 : CURLYCLOSE -> (reduz:,r=60,prox=-1)
+65 : CURLYOPEN -> (reduz:,r=60,prox=-1)
+65 : IDENTIFIER -> (reduz:,r=60,prox=-1)
+65 : KW_ELSE -> (reduz:,r=60,prox=-1)
+65 : KW_FN -> (reduz:,r=60,prox=-1)
+65 : KW_IF -> (reduz:,r=60,prox=-1)
+65 : KW_LET -> (reduz:,r=60,prox=-1)
+65 : KW_RETURN -> (reduz:,r=60,prox=-1)
+65 : KW_WHILE -> (reduz:,r=60,prox=-1)
+65 : OROR -> (reduz:,r=60,prox=-1)
+65 : SEMI -> (reduz:,r=60,prox=-1)
+66 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+66 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+66 : CHAR -> (shift:,r=-1,prox=52)
+66 : EXPRESSION_ART -> (goto:,r=-1,prox=93)
+66 : FACTOR -> (goto:,r=-1,prox=41)
+66 : FLOAT -> (shift:,r=-1,prox=51)
+66 : IDENTIFIER -> (shift:,r=-1,prox=48)
+66 : INTEGER -> (shift:,r=-1,prox=50)
+66 : KW_FALSE -> (shift:,r=-1,prox=45)
+66 : KW_TRUE -> (shift:,r=-1,prox=44)
+66 : KW_WHILE -> (shift:,r=-1,prox=21)
+66 : MINUS -> (shift:,r=-1,prox=47)
+66 : PARENOPEN -> (shift:,r=-1,prox=53)
+66 : STRING -> (shift:,r=-1,prox=49)
+66 : TERM -> (goto:,r=-1,prox=34)
+66 : VALOR -> (goto:,r=-1,prox=42)
+66 : WHILE -> (goto:,r=-1,prox=46)
+67 : ANDAND -> (reduz:,r=57,prox=-1)
+67 : CURLYCLOSE -> (reduz:,r=57,prox=-1)
+67 : CURLYOPEN -> (reduz:,r=57,prox=-1)
+67 : IDENTIFIER -> (reduz:,r=57,prox=-1)
+67 : KW_ELSE -> (reduz:,r=57,prox=-1)
+67 : KW_FN -> (reduz:,r=57,prox=-1)
+67 : KW_IF -> (reduz:,r=57,prox=-1)
+67 : KW_LET -> (reduz:,r=57,prox=-1)
+67 : KW_RETURN -> (reduz:,r=57,prox=-1)
+67 : KW_WHILE -> (reduz:,r=57,prox=-1)
+67 : OROR -> (reduz:,r=57,prox=-1)
+67 : SEMI -> (reduz:,r=57,prox=-1)
+68 : ANDAND -> (reduz:,r=44,prox=-1)
+68 : COMMA -> (reduz:,r=44,prox=-1)
+68 : CURLYCLOSE -> (reduz:,r=44,prox=-1)
+68 : CURLYOPEN -> (reduz:,r=44,prox=-1)
+68 : EQEQ -> (reduz:,r=44,prox=-1)
+68 : GE -> (reduz:,r=44,prox=-1)
+68 : GT -> (reduz:,r=44,prox=-1)
+68 : IDENTIFIER -> (reduz:,r=44,prox=-1)
+68 : KW_ELSE -> (reduz:,r=44,prox=-1)
+68 : KW_FN -> (reduz:,r=44,prox=-1)
+68 : KW_IF -> (reduz:,r=44,prox=-1)
+68 : KW_LET -> (reduz:,r=44,prox=-1)
+68 : KW_RETURN -> (reduz:,r=44,prox=-1)
+68 : KW_WHILE -> (reduz:,r=44,prox=-1)
+68 : LE -> (reduz:,r=44,prox=-1)
+68 : LT -> (reduz:,r=44,prox=-1)
+68 : NE -> (reduz:,r=44,prox=-1)
+68 : OROR -> (reduz:,r=44,prox=-1)
+68 : PARENCLOSE -> (reduz:,r=44,prox=-1)
+68 : SEMI -> (reduz:,r=44,prox=-1)
+69 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+69 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+69 : CHAR -> (shift:,r=-1,prox=52)
+69 : FACTOR -> (goto:,r=-1,prox=41)
+69 : FLOAT -> (shift:,r=-1,prox=51)
+69 : IDENTIFIER -> (shift:,r=-1,prox=48)
+69 : INTEGER -> (shift:,r=-1,prox=50)
+69 : KW_FALSE -> (shift:,r=-1,prox=45)
+69 : KW_TRUE -> (shift:,r=-1,prox=44)
+69 : KW_WHILE -> (shift:,r=-1,prox=21)
+69 : MINUS -> (shift:,r=-1,prox=47)
+69 : PARENOPEN -> (shift:,r=-1,prox=53)
+69 : STRING -> (shift:,r=-1,prox=49)
+69 : TERM -> (goto:,r=-1,prox=94)
+69 : VALOR -> (goto:,r=-1,prox=42)
+69 : WHILE -> (goto:,r=-1,prox=46)
+70 : CHAR -> (reduz:,r=62,prox=-1)
+70 : FLOAT -> (reduz:,r=62,prox=-1)
+70 : IDENTIFIER -> (reduz:,r=62,prox=-1)
+70 : INTEGER -> (reduz:,r=62,prox=-1)
+70 : KW_FALSE -> (reduz:,r=62,prox=-1)
+70 : KW_TRUE -> (reduz:,r=62,prox=-1)
+70 : KW_WHILE -> (reduz:,r=62,prox=-1)
+70 : MINUS -> (reduz:,r=62,prox=-1)
+70 : PARENOPEN -> (reduz:,r=62,prox=-1)
+70 : STRING -> (reduz:,r=62,prox=-1)
+71 : CHAR -> (reduz:,r=63,prox=-1)
+71 : FLOAT -> (reduz:,r=63,prox=-1)
+71 : IDENTIFIER -> (reduz:,r=63,prox=-1)
+71 : INTEGER -> (reduz:,r=63,prox=-1)
+71 : KW_FALSE -> (reduz:,r=63,prox=-1)
+71 : KW_TRUE -> (reduz:,r=63,prox=-1)
+71 : KW_WHILE -> (reduz:,r=63,prox=-1)
+71 : MINUS -> (reduz:,r=63,prox=-1)
+71 : PARENOPEN -> (reduz:,r=63,prox=-1)
+71 : STRING -> (reduz:,r=63,prox=-1)
+72 : ANDAND -> (reduz:,r=47,prox=-1)
+72 : COMMA -> (reduz:,r=47,prox=-1)
+72 : CURLYCLOSE -> (reduz:,r=47,prox=-1)
+72 : CURLYOPEN -> (reduz:,r=47,prox=-1)
+72 : EQEQ -> (reduz:,r=47,prox=-1)
+72 : GE -> (reduz:,r=47,prox=-1)
+72 : GT -> (reduz:,r=47,prox=-1)
+72 : IDENTIFIER -> (reduz:,r=47,prox=-1)
+72 : KW_ELSE -> (reduz:,r=47,prox=-1)
+72 : KW_FN -> (reduz:,r=47,prox=-1)
+72 : KW_IF -> (reduz:,r=47,prox=-1)
+72 : KW_LET -> (reduz:,r=47,prox=-1)
+72 : KW_RETURN -> (reduz:,r=47,prox=-1)
+72 : KW_WHILE -> (reduz:,r=47,prox=-1)
+72 : LE -> (reduz:,r=47,prox=-1)
+72 : LT -> (reduz:,r=47,prox=-1)
+72 : MINUS -> (reduz:,r=47,prox=-1)
+72 : NE -> (reduz:,r=47,prox=-1)
+72 : OROR -> (reduz:,r=47,prox=-1)
+72 : PARENCLOSE -> (reduz:,r=47,prox=-1)
+72 : PLUS -> (reduz:,r=47,prox=-1)
+72 : SEMI -> (reduz:,r=47,prox=-1)
+73 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+73 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+73 : CHAR -> (shift:,r=-1,prox=52)
+73 : FACTOR -> (goto:,r=-1,prox=95)
+73 : FLOAT -> (shift:,r=-1,prox=51)
+73 : IDENTIFIER -> (shift:,r=-1,prox=48)
+73 : INTEGER -> (shift:,r=-1,prox=50)
+73 : KW_FALSE -> (shift:,r=-1,prox=45)
+73 : KW_TRUE -> (shift:,r=-1,prox=44)
+73 : KW_WHILE -> (shift:,r=-1,prox=21)
+73 : MINUS -> (shift:,r=-1,prox=47)
+73 : PARENOPEN -> (shift:,r=-1,prox=53)
+73 : STRING -> (shift:,r=-1,prox=49)
+73 : VALOR -> (goto:,r=-1,prox=42)
+73 : WHILE -> (goto:,r=-1,prox=46)
+74 : CHAR -> (reduz:,r=64,prox=-1)
+74 : FLOAT -> (reduz:,r=64,prox=-1)
+74 : IDENTIFIER -> (reduz:,r=64,prox=-1)
+74 : INTEGER -> (reduz:,r=64,prox=-1)
+74 : KW_FALSE -> (reduz:,r=64,prox=-1)
+74 : KW_TRUE -> (reduz:,r=64,prox=-1)
+74 : KW_WHILE -> (reduz:,r=64,prox=-1)
+74 : MINUS -> (reduz:,r=64,prox=-1)
+74 : PARENOPEN -> (reduz:,r=64,prox=-1)
+74 : STRING -> (reduz:,r=64,prox=-1)
+75 : CHAR -> (reduz:,r=65,prox=-1)
+75 : FLOAT -> (reduz:,r=65,prox=-1)
+75 : IDENTIFIER -> (reduz:,r=65,prox=-1)
+75 : INTEGER -> (reduz:,r=65,prox=-1)
+75 : KW_FALSE -> (reduz:,r=65,prox=-1)
+75 : KW_TRUE -> (reduz:,r=65,prox=-1)
+75 : KW_WHILE -> (reduz:,r=65,prox=-1)
+75 : MINUS -> (reduz:,r=65,prox=-1)
+75 : PARENOPEN -> (reduz:,r=65,prox=-1)
+75 : STRING -> (reduz:,r=65,prox=-1)
+76 : CHAR -> (reduz:,r=66,prox=-1)
+76 : FLOAT -> (reduz:,r=66,prox=-1)
+76 : IDENTIFIER -> (reduz:,r=66,prox=-1)
+76 : INTEGER -> (reduz:,r=66,prox=-1)
+76 : KW_FALSE -> (reduz:,r=66,prox=-1)
+76 : KW_TRUE -> (reduz:,r=66,prox=-1)
+76 : KW_WHILE -> (reduz:,r=66,prox=-1)
+76 : MINUS -> (reduz:,r=66,prox=-1)
+76 : PARENOPEN -> (reduz:,r=66,prox=-1)
+76 : STRING -> (reduz:,r=66,prox=-1)
+77 : ANDAND -> (reduz:,r=55,prox=-1)
+77 : COMMA -> (reduz:,r=55,prox=-1)
+77 : CURLYCLOSE -> (reduz:,r=55,prox=-1)
+77 : CURLYOPEN -> (reduz:,r=55,prox=-1)
+77 : EQEQ -> (reduz:,r=55,prox=-1)
+77 : GE -> (reduz:,r=55,prox=-1)
+77 : GT -> (reduz:,r=55,prox=-1)
+77 : IDENTIFIER -> (reduz:,r=55,prox=-1)
+77 : KW_ELSE -> (reduz:,r=55,prox=-1)
+77 : KW_FN -> (reduz:,r=55,prox=-1)
+77 : KW_IF -> (reduz:,r=55,prox=-1)
+77 : KW_LET -> (reduz:,r=55,prox=-1)
+77 : KW_RETURN -> (reduz:,r=55,prox=-1)
+77 : KW_WHILE -> (reduz:,r=55,prox=-1)
+77 : LE -> (reduz:,r=55,prox=-1)
+77 : LT -> (reduz:,r=55,prox=-1)
+77 : MINUS -> (reduz:,r=55,prox=-1)
+77 : NE -> (reduz:,r=55,prox=-1)
+77 : OROR -> (reduz:,r=55,prox=-1)
+77 : PARENCLOSE -> (reduz:,r=55,prox=-1)
+77 : PERCENT -> (reduz:,r=55,prox=-1)
+77 : PLUS -> (reduz:,r=55,prox=-1)
+77 : SEMI -> (reduz:,r=55,prox=-1)
+77 : SLASH -> (reduz:,r=55,prox=-1)
+77 : STAR -> (reduz:,r=55,prox=-1)
+78 : ANDAND -> (reduz:,r=76,prox=-1)
+78 : BRACKETCLOSE -> (reduz:,r=76,prox=-1)
+78 : BRACKETOPEN -> (shift:,r=-1,prox=79)
+78 : COMMA -> (reduz:,r=76,prox=-1)
+78 : CURLYCLOSE -> (reduz:,r=76,prox=-1)
+78 : CURLYOPEN -> (reduz:,r=76,prox=-1)
+78 : EQEQ -> (reduz:,r=76,prox=-1)
+78 : GE -> (reduz:,r=76,prox=-1)
+78 : GT -> (reduz:,r=76,prox=-1)
+78 : IDENTIFIER -> (reduz:,r=76,prox=-1)
+78 : KW_ELSE -> (reduz:,r=76,prox=-1)
+78 : KW_FN -> (reduz:,r=76,prox=-1)
+78 : KW_IF -> (reduz:,r=76,prox=-1)
+78 : KW_LET -> (reduz:,r=76,prox=-1)
+78 : KW_RETURN -> (reduz:,r=76,prox=-1)
+78 : KW_WHILE -> (reduz:,r=76,prox=-1)
+78 : LE -> (reduz:,r=76,prox=-1)
+78 : LT -> (reduz:,r=76,prox=-1)
+78 : MINUS -> (reduz:,r=76,prox=-1)
+78 : NE -> (reduz:,r=76,prox=-1)
+78 : OROR -> (reduz:,r=76,prox=-1)
+78 : PARENCLOSE -> (reduz:,r=76,prox=-1)
+78 : PERCENT -> (reduz:,r=76,prox=-1)
+78 : PLUS -> (reduz:,r=76,prox=-1)
+78 : SEMI -> (reduz:,r=76,prox=-1)
+78 : SLASH -> (reduz:,r=76,prox=-1)
+78 : STAR -> (reduz:,r=76,prox=-1)
+79 : INTEGER_LITERAL -> (shift:,r=-1,prox=96)
+80 : PARENCLOSE -> (shift:,r=-1,prox=97)
+81 : CURLYCLOSE -> (reduz:,r=9,prox=-1)
+81 : CURLYOPEN -> (reduz:,r=9,prox=-1)
+81 : IDENTIFIER -> (reduz:,r=9,prox=-1)
+81 : KW_FN -> (reduz:,r=9,prox=-1)
+81 : KW_IF -> (reduz:,r=9,prox=-1)
+81 : KW_LET -> (reduz:,r=9,prox=-1)
+81 : KW_RETURN -> (reduz:,r=9,prox=-1)
+81 : KW_WHILE -> (reduz:,r=9,prox=-1)
+81 : SEMI -> (reduz:,r=9,prox=-1)
+82 : ARRAY -> (goto:,r=-1,prox=100)
+82 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+82 : BRACKETOPEN -> (shift:,r=-1,prox=101)
+82 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+82 : CHAR -> (shift:,r=-1,prox=52)
+82 : EQEQ -> (shift:,r=-1,prox=35)
+82 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+82 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+82 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=99)
+82 : FACTOR -> (goto:,r=-1,prox=41)
+82 : FLOAT -> (shift:,r=-1,prox=51)
+82 : GE -> (shift:,r=-1,prox=39)
+82 : GT -> (shift:,r=-1,prox=37)
+82 : IDENTIFIER -> (shift:,r=-1,prox=98)
+82 : INTEGER -> (shift:,r=-1,prox=50)
+82 : KW_FALSE -> (shift:,r=-1,prox=45)
+82 : KW_TRUE -> (shift:,r=-1,prox=44)
+82 : KW_WHILE -> (shift:,r=-1,prox=21)
+82 : LE -> (shift:,r=-1,prox=40)
+82 : LT -> (shift:,r=-1,prox=38)
+82 : MINUS -> (shift:,r=-1,prox=47)
+82 : NE -> (shift:,r=-1,prox=36)
+82 : NOT -> (shift:,r=-1,prox=31)
+82 : OP_COMP -> (goto:,r=-1,prox=33)
+82 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+82 : PARENOPEN -> (shift:,r=-1,prox=53)
+82 : STRING -> (shift:,r=-1,prox=49)
+82 : TERM -> (goto:,r=-1,prox=34)
+82 : VALOR -> (goto:,r=-1,prox=42)
+82 : WHILE -> (goto:,r=-1,prox=46)
+83 : ARRAY -> (goto:,r=-1,prox=104)
+83 : BRACKETOPEN -> (shift:,r=-1,prox=101)
+83 : FUNCTION -> (goto:,r=-1,prox=105)
+83 : IDENTIFIER -> (shift:,r=-1,prox=103)
+83 : KW_FN -> (shift:,r=-1,prox=22)
+83 : TYPE -> (goto:,r=-1,prox=102)
+84 : ANDAND -> (shift:,r=-1,prox=63)
+84 : OP_LOGIC -> (goto:,r=-1,prox=62)
+84 : OROR -> (shift:,r=-1,prox=64)
+84 : SEMI -> (reduz:,r=29,prox=-1)
+85 : PARENCLOSE -> (shift:,r=-1,prox=106)
+86 : COMMA -> (shift:,r=-1,prox=107)
+86 : PARENCLOSE -> (reduz:,r=39,prox=-1)
+87 : COMMA -> (reduz:,r=41,prox=-1)
+87 : PARENCLOSE -> (reduz:,r=41,prox=-1)
+88 : BRACKETOPEN -> (shift:,r=-1,prox=79)
+88 : COLON -> (shift:,r=-1,prox=109)
+88 : COMMA -> (reduz:,r=76,prox=-1)
+88 : DOT -> (shift:,r=-1,prox=108)
+88 : MINUS -> (reduz:,r=76,prox=-1)
+88 : PARENCLOSE -> (reduz:,r=76,prox=-1)
+88 : PARENOPEN -> (shift:,r=-1,prox=58)
+88 : PERCENT -> (reduz:,r=76,prox=-1)
+88 : PLUS -> (reduz:,r=76,prox=-1)
+88 : SLASH -> (reduz:,r=76,prox=-1)
+88 : STAR -> (reduz:,r=76,prox=-1)
+89 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+89 : BLOCO_CODIGO -> (goto:,r=-1,prox=110)
+89 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+89 : CODIGO -> (goto:,r=-1,prox=8)
+89 : CONDICAO -> (goto:,r=-1,prox=11)
+89 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+89 : CURLYOPEN -> (shift:,r=-1,prox=16)
+89 : DECLARACAO -> (goto:,r=-1,prox=9)
+89 : FUNCTION -> (goto:,r=-1,prox=13)
+89 : IDENTIFIER -> (shift:,r=-1,prox=19)
+89 : KW_FN -> (shift:,r=-1,prox=22)
+89 : KW_IF -> (shift:,r=-1,prox=20)
+89 : KW_LET -> (shift:,r=-1,prox=18)
+89 : KW_RETURN -> (shift:,r=-1,prox=15)
+89 : KW_WHILE -> (shift:,r=-1,prox=21)
+89 : SEMI -> (shift:,r=-1,prox=17)
+89 : WHILE -> (goto:,r=-1,prox=12)
+90 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+90 : BLOCO_CODIGO -> (goto:,r=-1,prox=111)
+90 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+90 : CODIGO -> (goto:,r=-1,prox=8)
+90 : CONDICAO -> (goto:,r=-1,prox=11)
+90 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+90 : CURLYOPEN -> (shift:,r=-1,prox=16)
+90 : DECLARACAO -> (goto:,r=-1,prox=9)
+90 : FUNCTION -> (goto:,r=-1,prox=13)
+90 : IDENTIFIER -> (shift:,r=-1,prox=19)
+90 : KW_FN -> (shift:,r=-1,prox=22)
+90 : KW_IF -> (shift:,r=-1,prox=20)
+90 : KW_LET -> (shift:,r=-1,prox=18)
+90 : KW_RETURN -> (shift:,r=-1,prox=15)
+90 : KW_WHILE -> (shift:,r=-1,prox=21)
+90 : SEMI -> (shift:,r=-1,prox=17)
+90 : WHILE -> (goto:,r=-1,prox=12)
+91 : ARG -> (goto:,r=-1,prox=86)
+91 : ARGS -> (goto:,r=-1,prox=112)
+91 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+91 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+91 : CHAR -> (shift:,r=-1,prox=52)
+91 : EXPRESSION_ART -> (goto:,r=-1,prox=87)
+91 : FACTOR -> (goto:,r=-1,prox=41)
+91 : FLOAT -> (shift:,r=-1,prox=51)
+91 : IDENTIFIER -> (shift:,r=-1,prox=88)
+91 : INTEGER -> (shift:,r=-1,prox=50)
+91 : KW_FALSE -> (shift:,r=-1,prox=45)
+91 : KW_TRUE -> (shift:,r=-1,prox=44)
+91 : KW_WHILE -> (shift:,r=-1,prox=21)
+91 : MINUS -> (shift:,r=-1,prox=47)
+91 : PARENCLOSE -> (reduz:,r=40,prox=-1)
+91 : PARENOPEN -> (shift:,r=-1,prox=53)
+91 : STRING -> (shift:,r=-1,prox=49)
+91 : TERM -> (goto:,r=-1,prox=34)
+91 : VALOR -> (goto:,r=-1,prox=42)
+91 : WHILE -> (goto:,r=-1,prox=46)
+92 : ANDAND -> (reduz:,r=59,prox=-1)
+92 : CURLYCLOSE -> (reduz:,r=59,prox=-1)
+92 : CURLYOPEN -> (reduz:,r=59,prox=-1)
+92 : IDENTIFIER -> (reduz:,r=59,prox=-1)
+92 : KW_ELSE -> (reduz:,r=59,prox=-1)
+92 : KW_FN -> (reduz:,r=59,prox=-1)
+92 : KW_IF -> (reduz:,r=59,prox=-1)
+92 : KW_LET -> (reduz:,r=59,prox=-1)
+92 : KW_RETURN -> (reduz:,r=59,prox=-1)
+92 : KW_WHILE -> (reduz:,r=59,prox=-1)
+92 : OROR -> (reduz:,r=59,prox=-1)
+92 : SEMI -> (reduz:,r=59,prox=-1)
+93 : ANDAND -> (reduz:,r=56,prox=-1)
+93 : CURLYCLOSE -> (reduz:,r=56,prox=-1)
+93 : CURLYOPEN -> (reduz:,r=56,prox=-1)
+93 : IDENTIFIER -> (reduz:,r=56,prox=-1)
+93 : KW_ELSE -> (reduz:,r=56,prox=-1)
+93 : KW_FN -> (reduz:,r=56,prox=-1)
+93 : KW_IF -> (reduz:,r=56,prox=-1)
+93 : KW_LET -> (reduz:,r=56,prox=-1)
+93 : KW_RETURN -> (reduz:,r=56,prox=-1)
+93 : KW_WHILE -> (reduz:,r=56,prox=-1)
+93 : OROR -> (reduz:,r=56,prox=-1)
+93 : SEMI -> (reduz:,r=56,prox=-1)
+94 : ANDAND -> (reduz:,r=46,prox=-1)
+94 : COMMA -> (reduz:,r=46,prox=-1)
+94 : CURLYCLOSE -> (reduz:,r=46,prox=-1)
+94 : CURLYOPEN -> (reduz:,r=46,prox=-1)
+94 : EQEQ -> (reduz:,r=46,prox=-1)
+94 : EXPRESSION_PRIME -> (goto:,r=-1,prox=113)
+94 : GE -> (reduz:,r=46,prox=-1)
+94 : GT -> (reduz:,r=46,prox=-1)
+94 : IDENTIFIER -> (reduz:,r=46,prox=-1)
+94 : KW_ELSE -> (reduz:,r=46,prox=-1)
+94 : KW_FN -> (reduz:,r=46,prox=-1)
+94 : KW_IF -> (reduz:,r=46,prox=-1)
+94 : KW_LET -> (reduz:,r=46,prox=-1)
+94 : KW_RETURN -> (reduz:,r=46,prox=-1)
+94 : KW_WHILE -> (reduz:,r=46,prox=-1)
+94 : LE -> (reduz:,r=46,prox=-1)
+94 : LT -> (reduz:,r=46,prox=-1)
+94 : MINUS -> (shift:,r=-1,prox=71)
+94 : NE -> (reduz:,r=46,prox=-1)
+94 : OP_ADD -> (goto:,r=-1,prox=69)
+94 : OROR -> (reduz:,r=46,prox=-1)
+94 : PARENCLOSE -> (reduz:,r=46,prox=-1)
+94 : PLUS -> (shift:,r=-1,prox=70)
+94 : SEMI -> (reduz:,r=46,prox=-1)
+95 : ANDAND -> (reduz:,r=49,prox=-1)
+95 : COMMA -> (reduz:,r=49,prox=-1)
+95 : CURLYCLOSE -> (reduz:,r=49,prox=-1)
+95 : CURLYOPEN -> (reduz:,r=49,prox=-1)
+95 : EQEQ -> (reduz:,r=49,prox=-1)
+95 : GE -> (reduz:,r=49,prox=-1)
+95 : GT -> (reduz:,r=49,prox=-1)
+95 : IDENTIFIER -> (reduz:,r=49,prox=-1)
+95 : KW_ELSE -> (reduz:,r=49,prox=-1)
+95 : KW_FN -> (reduz:,r=49,prox=-1)
+95 : KW_IF -> (reduz:,r=49,prox=-1)
+95 : KW_LET -> (reduz:,r=49,prox=-1)
+95 : KW_RETURN -> (reduz:,r=49,prox=-1)
+95 : KW_WHILE -> (reduz:,r=49,prox=-1)
+95 : LE -> (reduz:,r=49,prox=-1)
+95 : LT -> (reduz:,r=49,prox=-1)
+95 : MINUS -> (reduz:,r=49,prox=-1)
+95 : NE -> (reduz:,r=49,prox=-1)
+95 : OP_MULT -> (goto:,r=-1,prox=73)
+95 : OROR -> (reduz:,r=49,prox=-1)
+95 : PARENCLOSE -> (reduz:,r=49,prox=-1)
+95 : PERCENT -> (shift:,r=-1,prox=76)
+95 : PLUS -> (reduz:,r=49,prox=-1)
+95 : SEMI -> (reduz:,r=49,prox=-1)
+95 : SLASH -> (shift:,r=-1,prox=75)
+95 : STAR -> (shift:,r=-1,prox=74)
+95 : TERM_PRIME -> (goto:,r=-1,prox=114)
+96 : BRACKETCLOSE -> (shift:,r=-1,prox=115)
+97 : ANDAND -> (reduz:,r=81,prox=-1)
+97 : BRACKETCLOSE -> (reduz:,r=81,prox=-1)
+97 : COMMA -> (reduz:,r=81,prox=-1)
+97 : CURLYCLOSE -> (reduz:,r=81,prox=-1)
+97 : CURLYOPEN -> (reduz:,r=81,prox=-1)
+97 : EQEQ -> (reduz:,r=81,prox=-1)
+97 : GE -> (reduz:,r=81,prox=-1)
+97 : GT -> (reduz:,r=81,prox=-1)
+97 : IDENTIFIER -> (reduz:,r=81,prox=-1)
+97 : KW_ELSE -> (reduz:,r=81,prox=-1)
+97 : KW_FN -> (reduz:,r=81,prox=-1)
+97 : KW_IF -> (reduz:,r=81,prox=-1)
+97 : KW_LET -> (reduz:,r=81,prox=-1)
+97 : KW_RETURN -> (reduz:,r=81,prox=-1)
+97 : KW_WHILE -> (reduz:,r=81,prox=-1)
+97 : LE -> (reduz:,r=81,prox=-1)
+97 : LT -> (reduz:,r=81,prox=-1)
+97 : MINUS -> (reduz:,r=81,prox=-1)
+97 : NE -> (reduz:,r=81,prox=-1)
+97 : OROR -> (reduz:,r=81,prox=-1)
+97 : PARENCLOSE -> (reduz:,r=81,prox=-1)
+97 : PERCENT -> (reduz:,r=81,prox=-1)
+97 : PLUS -> (reduz:,r=81,prox=-1)
+97 : SEMI -> (reduz:,r=81,prox=-1)
+97 : SLASH -> (reduz:,r=81,prox=-1)
+97 : STAR -> (reduz:,r=81,prox=-1)
+98 : ANDAND -> (reduz:,r=76,prox=-1)
+98 : BRACKETOPEN -> (shift:,r=-1,prox=79)
+98 : EQEQ -> (reduz:,r=76,prox=-1)
+98 : GE -> (reduz:,r=76,prox=-1)
+98 : GT -> (reduz:,r=76,prox=-1)
+98 : KW_ELSE -> (reduz:,r=76,prox=-1)
+98 : LE -> (reduz:,r=76,prox=-1)
+98 : LT -> (reduz:,r=76,prox=-1)
+98 : MINUS -> (reduz:,r=76,prox=-1)
+98 : NE -> (reduz:,r=76,prox=-1)
+98 : OROR -> (reduz:,r=76,prox=-1)
+98 : PARENOPEN -> (shift:,r=-1,prox=116)
+98 : PERCENT -> (reduz:,r=76,prox=-1)
+98 : PLUS -> (reduz:,r=76,prox=-1)
+98 : SEMI -> (reduz:,r=76,prox=-1)
+98 : SLASH -> (reduz:,r=76,prox=-1)
+98 : STAR -> (reduz:,r=76,prox=-1)
+99 : ANDAND -> (shift:,r=-1,prox=63)
+99 : KW_ELSE -> (shift:,r=-1,prox=117)
+99 : OP_LOGIC -> (goto:,r=-1,prox=62)
+99 : OROR -> (shift:,r=-1,prox=64)
+99 : SEMI -> (reduz:,r=24,prox=-1)
+100 : SEMI -> (reduz:,r=25,prox=-1)
+101 : ARRAY -> (goto:,r=-1,prox=120)
+101 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+101 : BRACKETCLOSE -> (reduz:,r=20,prox=-1)
+101 : BRACKETOPEN -> (shift:,r=-1,prox=101)
+101 : CHAR -> (shift:,r=-1,prox=52)
+101 : CONTENT_ARRAY -> (goto:,r=-1,prox=118)
+101 : FLOAT -> (shift:,r=-1,prox=51)
+101 : IDENTIFIER -> (shift:,r=-1,prox=78)
+101 : INTEGER -> (shift:,r=-1,prox=50)
+101 : PARENOPEN -> (shift:,r=-1,prox=53)
+101 : STRING -> (shift:,r=-1,prox=49)
+101 : VALOR -> (goto:,r=-1,prox=119)
+102 : EQ -> (shift:,r=-1,prox=121)
+103 : COMMA -> (reduz:,r=83,prox=-1)
+103 : CURLYOPEN -> (reduz:,r=83,prox=-1)
+103 : EQ -> (reduz:,r=83,prox=-1)
+103 : PARENCLOSE -> (reduz:,r=83,prox=-1)
+104 : COMMA -> (reduz:,r=85,prox=-1)
+104 : CURLYOPEN -> (reduz:,r=85,prox=-1)
+104 : EQ -> (reduz:,r=85,prox=-1)
+104 : PARENCLOSE -> (reduz:,r=85,prox=-1)
+105 : COMMA -> (reduz:,r=86,prox=-1)
+105 : CURLYOPEN -> (reduz:,r=86,prox=-1)
+105 : EQ -> (reduz:,r=86,prox=-1)
+105 : PARENCLOSE -> (reduz:,r=86,prox=-1)
+106 : ANDAND -> (reduz:,r=37,prox=-1)
+106 : COMMA -> (reduz:,r=37,prox=-1)
+106 : CURLYCLOSE -> (reduz:,r=37,prox=-1)
+106 : CURLYOPEN -> (reduz:,r=37,prox=-1)
+106 : EQEQ -> (reduz:,r=37,prox=-1)
+106 : GE -> (reduz:,r=37,prox=-1)
+106 : GT -> (reduz:,r=37,prox=-1)
+106 : IDENTIFIER -> (reduz:,r=37,prox=-1)
+106 : KW_ELSE -> (reduz:,r=37,prox=-1)
+106 : KW_FN -> (reduz:,r=37,prox=-1)
+106 : KW_IF -> (reduz:,r=37,prox=-1)
+106 : KW_LET -> (reduz:,r=37,prox=-1)
+106 : KW_RETURN -> (reduz:,r=37,prox=-1)
+106 : KW_WHILE -> (reduz:,r=37,prox=-1)
+106 : LE -> (reduz:,r=37,prox=-1)
+106 : LT -> (reduz:,r=37,prox=-1)
+106 : MINUS -> (reduz:,r=37,prox=-1)
+106 : NE -> (reduz:,r=37,prox=-1)
+106 : OROR -> (reduz:,r=37,prox=-1)
+106 : PARENCLOSE -> (reduz:,r=37,prox=-1)
+106 : PERCENT -> (reduz:,r=37,prox=-1)
+106 : PLUS -> (reduz:,r=37,prox=-1)
+106 : SEMI -> (reduz:,r=37,prox=-1)
+106 : SLASH -> (reduz:,r=37,prox=-1)
+106 : STAR -> (reduz:,r=37,prox=-1)
+107 : ARG -> (goto:,r=-1,prox=86)
+107 : ARGS -> (goto:,r=-1,prox=122)
+107 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+107 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+107 : CHAR -> (shift:,r=-1,prox=52)
+107 : EXPRESSION_ART -> (goto:,r=-1,prox=87)
+107 : FACTOR -> (goto:,r=-1,prox=41)
+107 : FLOAT -> (shift:,r=-1,prox=51)
+107 : IDENTIFIER -> (shift:,r=-1,prox=88)
+107 : INTEGER -> (shift:,r=-1,prox=50)
+107 : KW_FALSE -> (shift:,r=-1,prox=45)
+107 : KW_TRUE -> (shift:,r=-1,prox=44)
+107 : KW_WHILE -> (shift:,r=-1,prox=21)
+107 : MINUS -> (shift:,r=-1,prox=47)
+107 : PARENCLOSE -> (reduz:,r=40,prox=-1)
+107 : PARENOPEN -> (shift:,r=-1,prox=53)
+107 : STRING -> (shift:,r=-1,prox=49)
+107 : TERM -> (goto:,r=-1,prox=34)
+107 : VALOR -> (goto:,r=-1,prox=42)
+107 : WHILE -> (goto:,r=-1,prox=46)
+108 : IDENTIFIER -> (shift:,r=-1,prox=123)
+109 : ARRAY -> (goto:,r=-1,prox=104)
+109 : BRACKETOPEN -> (shift:,r=-1,prox=101)
+109 : FUNCTION -> (goto:,r=-1,prox=105)
+109 : IDENTIFIER -> (shift:,r=-1,prox=103)
+109 : KW_FN -> (shift:,r=-1,prox=22)
+109 : TYPE -> (goto:,r=-1,prox=124)
+110 : CURLYCLOSE -> (shift:,r=-1,prox=125)
+111 : CURLYCLOSE -> (shift:,r=-1,prox=126)
+112 : PARENCLOSE -> (shift:,r=-1,prox=127)
+113 : ANDAND -> (reduz:,r=45,prox=-1)
+113 : COMMA -> (reduz:,r=45,prox=-1)
+113 : CURLYCLOSE -> (reduz:,r=45,prox=-1)
+113 : CURLYOPEN -> (reduz:,r=45,prox=-1)
+113 : EQEQ -> (reduz:,r=45,prox=-1)
+113 : GE -> (reduz:,r=45,prox=-1)
+113 : GT -> (reduz:,r=45,prox=-1)
+113 : IDENTIFIER -> (reduz:,r=45,prox=-1)
+113 : KW_ELSE -> (reduz:,r=45,prox=-1)
+113 : KW_FN -> (reduz:,r=45,prox=-1)
+113 : KW_IF -> (reduz:,r=45,prox=-1)
+113 : KW_LET -> (reduz:,r=45,prox=-1)
+113 : KW_RETURN -> (reduz:,r=45,prox=-1)
+113 : KW_WHILE -> (reduz:,r=45,prox=-1)
+113 : LE -> (reduz:,r=45,prox=-1)
+113 : LT -> (reduz:,r=45,prox=-1)
+113 : NE -> (reduz:,r=45,prox=-1)
+113 : OROR -> (reduz:,r=45,prox=-1)
+113 : PARENCLOSE -> (reduz:,r=45,prox=-1)
+113 : SEMI -> (reduz:,r=45,prox=-1)
+114 : ANDAND -> (reduz:,r=48,prox=-1)
+114 : COMMA -> (reduz:,r=48,prox=-1)
+114 : CURLYCLOSE -> (reduz:,r=48,prox=-1)
+114 : CURLYOPEN -> (reduz:,r=48,prox=-1)
+114 : EQEQ -> (reduz:,r=48,prox=-1)
+114 : GE -> (reduz:,r=48,prox=-1)
+114 : GT -> (reduz:,r=48,prox=-1)
+114 : IDENTIFIER -> (reduz:,r=48,prox=-1)
+114 : KW_ELSE -> (reduz:,r=48,prox=-1)
+114 : KW_FN -> (reduz:,r=48,prox=-1)
+114 : KW_IF -> (reduz:,r=48,prox=-1)
+114 : KW_LET -> (reduz:,r=48,prox=-1)
+114 : KW_RETURN -> (reduz:,r=48,prox=-1)
+114 : KW_WHILE -> (reduz:,r=48,prox=-1)
+114 : LE -> (reduz:,r=48,prox=-1)
+114 : LT -> (reduz:,r=48,prox=-1)
+114 : MINUS -> (reduz:,r=48,prox=-1)
+114 : NE -> (reduz:,r=48,prox=-1)
+114 : OROR -> (reduz:,r=48,prox=-1)
+114 : PARENCLOSE -> (reduz:,r=48,prox=-1)
+114 : PLUS -> (reduz:,r=48,prox=-1)
+114 : SEMI -> (reduz:,r=48,prox=-1)
+115 : ANDAND -> (reduz:,r=13,prox=-1)
+115 : BRACKETCLOSE -> (reduz:,r=13,prox=-1)
+115 : COMMA -> (reduz:,r=13,prox=-1)
+115 : CURLYCLOSE -> (reduz:,r=13,prox=-1)
+115 : CURLYOPEN -> (reduz:,r=13,prox=-1)
+115 : EQEQ -> (reduz:,r=13,prox=-1)
+115 : GE -> (reduz:,r=13,prox=-1)
+115 : GT -> (reduz:,r=13,prox=-1)
+115 : IDENTIFIER -> (reduz:,r=13,prox=-1)
+115 : KW_ELSE -> (reduz:,r=13,prox=-1)
+115 : KW_FN -> (reduz:,r=13,prox=-1)
+115 : KW_IF -> (reduz:,r=13,prox=-1)
+115 : KW_LET -> (reduz:,r=13,prox=-1)
+115 : KW_RETURN -> (reduz:,r=13,prox=-1)
+115 : KW_WHILE -> (reduz:,r=13,prox=-1)
+115 : LE -> (reduz:,r=13,prox=-1)
+115 : LT -> (reduz:,r=13,prox=-1)
+115 : MINUS -> (reduz:,r=13,prox=-1)
+115 : NE -> (reduz:,r=13,prox=-1)
+115 : OROR -> (reduz:,r=13,prox=-1)
+115 : PARENCLOSE -> (reduz:,r=13,prox=-1)
+115 : PERCENT -> (reduz:,r=13,prox=-1)
+115 : PLUS -> (reduz:,r=13,prox=-1)
+115 : SEMI -> (reduz:,r=13,prox=-1)
+115 : SLASH -> (reduz:,r=13,prox=-1)
+115 : STAR -> (reduz:,r=13,prox=-1)
+116 : ARG -> (goto:,r=-1,prox=86)
+116 : ARGS -> (goto:,r=-1,prox=85)
+116 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+116 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+116 : CHAR -> (shift:,r=-1,prox=52)
+116 : EXPRESSION_ART -> (goto:,r=-1,prox=87)
+116 : FACTOR -> (goto:,r=-1,prox=41)
+116 : FLOAT -> (shift:,r=-1,prox=51)
+116 : IDENTIFIER -> (shift:,r=-1,prox=88)
+116 : INTEGER -> (shift:,r=-1,prox=50)
+116 : KW_FALSE -> (shift:,r=-1,prox=45)
+116 : KW_TRUE -> (shift:,r=-1,prox=44)
+116 : KW_WHILE -> (shift:,r=-1,prox=21)
+116 : MINUS -> (shift:,r=-1,prox=47)
+116 : PARENCLOSE -> (shift:,r=-1,prox=128)
+116 : PARENOPEN -> (shift:,r=-1,prox=53)
+116 : STRING -> (shift:,r=-1,prox=49)
+116 : TERM -> (goto:,r=-1,prox=34)
+116 : VALOR -> (goto:,r=-1,prox=42)
+116 : WHILE -> (goto:,r=-1,prox=46)
+117 : CURLYOPEN -> (shift:,r=-1,prox=129)
+118 : BRACKETCLOSE -> (shift:,r=-1,prox=130)
+119 : BRACKETCLOSE -> (reduz:,r=18,prox=-1)
+119 : COMMA -> (shift:,r=-1,prox=132)
+119 : SEMI -> (shift:,r=-1,prox=131)
+120 : BRACKETCLOSE -> (shift:,r=-1,prox=133)
+121 : ARRAY -> (goto:,r=-1,prox=135)
+121 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+121 : BRACKETOPEN -> (shift:,r=-1,prox=101)
+121 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+121 : CHAR -> (shift:,r=-1,prox=52)
+121 : EQEQ -> (shift:,r=-1,prox=35)
+121 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+121 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+121 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=134)
+121 : FACTOR -> (goto:,r=-1,prox=41)
+121 : FLOAT -> (shift:,r=-1,prox=51)
+121 : GE -> (shift:,r=-1,prox=39)
+121 : GT -> (shift:,r=-1,prox=37)
+121 : IDENTIFIER -> (shift:,r=-1,prox=48)
+121 : INTEGER -> (shift:,r=-1,prox=50)
+121 : KW_FALSE -> (shift:,r=-1,prox=45)
+121 : KW_TRUE -> (shift:,r=-1,prox=44)
+121 : KW_WHILE -> (shift:,r=-1,prox=21)
+121 : LE -> (shift:,r=-1,prox=40)
+121 : LT -> (shift:,r=-1,prox=38)
+121 : MINUS -> (shift:,r=-1,prox=47)
+121 : NE -> (shift:,r=-1,prox=36)
+121 : NOT -> (shift:,r=-1,prox=31)
+121 : OP_COMP -> (goto:,r=-1,prox=33)
+121 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+121 : PARENOPEN -> (shift:,r=-1,prox=53)
+121 : STRING -> (shift:,r=-1,prox=49)
+121 : TERM -> (goto:,r=-1,prox=34)
+121 : VALOR -> (goto:,r=-1,prox=42)
+121 : WHILE -> (goto:,r=-1,prox=46)
+122 : PARENCLOSE -> (reduz:,r=38,prox=-1)
+123 : PARENOPEN -> (shift:,r=-1,prox=136)
+124 : COMMA -> (reduz:,r=43,prox=-1)
+124 : PARENCLOSE -> (reduz:,r=43,prox=-1)
+125 : CONDICAOELSE -> (goto:,r=-1,prox=137)
+125 : CURLYCLOSE -> (reduz:,r=33,prox=-1)
+125 : CURLYOPEN -> (reduz:,r=33,prox=-1)
+125 : IDENTIFIER -> (reduz:,r=33,prox=-1)
+125 : KW_ELSE -> (shift:,r=-1,prox=138)
+125 : KW_FN -> (reduz:,r=33,prox=-1)
+125 : KW_IF -> (reduz:,r=33,prox=-1)
+125 : KW_LET -> (reduz:,r=33,prox=-1)
+125 : KW_RETURN -> (reduz:,r=33,prox=-1)
+125 : KW_WHILE -> (reduz:,r=33,prox=-1)
+125 : SEMI -> (reduz:,r=33,prox=-1)
+126 : ANDAND -> (reduz:,r=34,prox=-1)
+126 : COMMA -> (reduz:,r=34,prox=-1)
+126 : CURLYCLOSE -> (reduz:,r=34,prox=-1)
+126 : CURLYOPEN -> (reduz:,r=34,prox=-1)
+126 : EQEQ -> (reduz:,r=34,prox=-1)
+126 : GE -> (reduz:,r=34,prox=-1)
+126 : GT -> (reduz:,r=34,prox=-1)
+126 : IDENTIFIER -> (reduz:,r=34,prox=-1)
+126 : KW_ELSE -> (reduz:,r=34,prox=-1)
+126 : KW_FN -> (reduz:,r=34,prox=-1)
+126 : KW_IF -> (reduz:,r=34,prox=-1)
+126 : KW_LET -> (reduz:,r=34,prox=-1)
+126 : KW_RETURN -> (reduz:,r=34,prox=-1)
+126 : KW_WHILE -> (reduz:,r=34,prox=-1)
+126 : LE -> (reduz:,r=34,prox=-1)
+126 : LT -> (reduz:,r=34,prox=-1)
+126 : MINUS -> (reduz:,r=34,prox=-1)
+126 : NE -> (reduz:,r=34,prox=-1)
+126 : OROR -> (reduz:,r=34,prox=-1)
+126 : PARENCLOSE -> (reduz:,r=34,prox=-1)
+126 : PERCENT -> (reduz:,r=34,prox=-1)
+126 : PLUS -> (reduz:,r=34,prox=-1)
+126 : SEMI -> (reduz:,r=34,prox=-1)
+126 : SLASH -> (reduz:,r=34,prox=-1)
+126 : STAR -> (reduz:,r=34,prox=-1)
+127 : CURLYOPEN -> (shift:,r=-1,prox=139)
+127 : RARROW -> (shift:,r=-1,prox=140)
+128 : SEMI -> (reduz:,r=22,prox=-1)
+129 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+129 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+129 : CHAR -> (shift:,r=-1,prox=52)
+129 : EQEQ -> (shift:,r=-1,prox=35)
+129 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+129 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+129 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=141)
+129 : FACTOR -> (goto:,r=-1,prox=41)
+129 : FLOAT -> (shift:,r=-1,prox=51)
+129 : GE -> (shift:,r=-1,prox=39)
+129 : GT -> (shift:,r=-1,prox=37)
+129 : IDENTIFIER -> (shift:,r=-1,prox=48)
+129 : INTEGER -> (shift:,r=-1,prox=50)
+129 : KW_FALSE -> (shift:,r=-1,prox=45)
+129 : KW_TRUE -> (shift:,r=-1,prox=44)
+129 : KW_WHILE -> (shift:,r=-1,prox=21)
+129 : LE -> (shift:,r=-1,prox=40)
+129 : LT -> (shift:,r=-1,prox=38)
+129 : MINUS -> (shift:,r=-1,prox=47)
+129 : NE -> (shift:,r=-1,prox=36)
+129 : NOT -> (shift:,r=-1,prox=31)
+129 : OP_COMP -> (goto:,r=-1,prox=33)
+129 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+129 : PARENOPEN -> (shift:,r=-1,prox=53)
+129 : STRING -> (shift:,r=-1,prox=49)
+129 : TERM -> (goto:,r=-1,prox=34)
+129 : VALOR -> (goto:,r=-1,prox=42)
+129 : WHILE -> (goto:,r=-1,prox=46)
+130 : BRACKETCLOSE -> (reduz:,r=14,prox=-1)
+130 : COMMA -> (reduz:,r=14,prox=-1)
+130 : CURLYOPEN -> (reduz:,r=14,prox=-1)
+130 : EQ -> (reduz:,r=14,prox=-1)
+130 : PARENCLOSE -> (reduz:,r=14,prox=-1)
+130 : SEMI -> (reduz:,r=14,prox=-1)
+131 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+131 : BRACKETCLOSE -> (reduz:,r=19,prox=-1)
+131 : CHAR -> (shift:,r=-1,prox=52)
+131 : FLOAT -> (shift:,r=-1,prox=51)
+131 : IDENTIFIER -> (shift:,r=-1,prox=78)
+131 : INTEGER -> (shift:,r=-1,prox=50)
+131 : PARENOPEN -> (shift:,r=-1,prox=53)
+131 : STRING -> (shift:,r=-1,prox=49)
+131 : VALOR -> (goto:,r=-1,prox=142)
+132 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+132 : BRACKETCLOSE -> (reduz:,r=20,prox=-1)
+132 : CHAR -> (shift:,r=-1,prox=52)
+132 : CONTENT_ARRAY -> (goto:,r=-1,prox=143)
+132 : FLOAT -> (shift:,r=-1,prox=51)
+132 : IDENTIFIER -> (shift:,r=-1,prox=78)
+132 : INTEGER -> (shift:,r=-1,prox=50)
+132 : PARENOPEN -> (shift:,r=-1,prox=53)
+132 : STRING -> (shift:,r=-1,prox=49)
+132 : VALOR -> (goto:,r=-1,prox=144)
+133 : BRACKETCLOSE -> (reduz:,r=16,prox=-1)
+133 : COMMA -> (reduz:,r=16,prox=-1)
+133 : CURLYOPEN -> (reduz:,r=16,prox=-1)
+133 : EQ -> (reduz:,r=16,prox=-1)
+133 : PARENCLOSE -> (reduz:,r=16,prox=-1)
+133 : SEMI -> (reduz:,r=16,prox=-1)
+134 : ANDAND -> (shift:,r=-1,prox=63)
+134 : KW_ELSE -> (shift:,r=-1,prox=145)
+134 : OP_LOGIC -> (goto:,r=-1,prox=62)
+134 : OROR -> (shift:,r=-1,prox=64)
+134 : SEMI -> (reduz:,r=26,prox=-1)
+135 : SEMI -> (reduz:,r=27,prox=-1)
+136 : ARG -> (goto:,r=-1,prox=86)
+136 : ARGS -> (goto:,r=-1,prox=146)
+136 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+136 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+136 : CHAR -> (shift:,r=-1,prox=52)
+136 : EXPRESSION_ART -> (goto:,r=-1,prox=87)
+136 : FACTOR -> (goto:,r=-1,prox=41)
+136 : FLOAT -> (shift:,r=-1,prox=51)
+136 : IDENTIFIER -> (shift:,r=-1,prox=88)
+136 : INTEGER -> (shift:,r=-1,prox=50)
+136 : KW_FALSE -> (shift:,r=-1,prox=45)
+136 : KW_TRUE -> (shift:,r=-1,prox=44)
+136 : KW_WHILE -> (shift:,r=-1,prox=21)
+136 : MINUS -> (shift:,r=-1,prox=47)
+136 : PARENCLOSE -> (reduz:,r=40,prox=-1)
+136 : PARENOPEN -> (shift:,r=-1,prox=53)
+136 : STRING -> (shift:,r=-1,prox=49)
+136 : TERM -> (goto:,r=-1,prox=34)
+136 : VALOR -> (goto:,r=-1,prox=42)
+136 : WHILE -> (goto:,r=-1,prox=46)
+137 : CURLYCLOSE -> (reduz:,r=30,prox=-1)
+137 : CURLYOPEN -> (reduz:,r=30,prox=-1)
+137 : IDENTIFIER -> (reduz:,r=30,prox=-1)
+137 : KW_FN -> (reduz:,r=30,prox=-1)
+137 : KW_IF -> (reduz:,r=30,prox=-1)
+137 : KW_LET -> (reduz:,r=30,prox=-1)
+137 : KW_RETURN -> (reduz:,r=30,prox=-1)
+137 : KW_WHILE -> (reduz:,r=30,prox=-1)
+137 : SEMI -> (reduz:,r=30,prox=-1)
+138 : CONDICAO -> (goto:,r=-1,prox=147)
+138 : CURLYOPEN -> (shift:,r=-1,prox=148)
+138 : KW_IF -> (shift:,r=-1,prox=20)
+139 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+139 : BLOCO_CODIGO -> (goto:,r=-1,prox=149)
+139 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+139 : CODIGO -> (goto:,r=-1,prox=8)
+139 : CONDICAO -> (goto:,r=-1,prox=11)
+139 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+139 : CURLYOPEN -> (shift:,r=-1,prox=16)
+139 : DECLARACAO -> (goto:,r=-1,prox=9)
+139 : FUNCTION -> (goto:,r=-1,prox=13)
+139 : IDENTIFIER -> (shift:,r=-1,prox=19)
+139 : KW_FN -> (shift:,r=-1,prox=22)
+139 : KW_IF -> (shift:,r=-1,prox=20)
+139 : KW_LET -> (shift:,r=-1,prox=18)
+139 : KW_RETURN -> (shift:,r=-1,prox=15)
+139 : KW_WHILE -> (shift:,r=-1,prox=21)
+139 : SEMI -> (shift:,r=-1,prox=17)
+139 : WHILE -> (goto:,r=-1,prox=12)
+140 : ARRAY -> (goto:,r=-1,prox=104)
+140 : BRACKETOPEN -> (shift:,r=-1,prox=101)
+140 : FUNCTION -> (goto:,r=-1,prox=105)
+140 : IDENTIFIER -> (shift:,r=-1,prox=103)
+140 : KW_FN -> (shift:,r=-1,prox=22)
+140 : TYPE -> (goto:,r=-1,prox=150)
+141 : ANDAND -> (shift:,r=-1,prox=63)
+141 : CURLYCLOSE -> (shift:,r=-1,prox=151)
+141 : OP_LOGIC -> (goto:,r=-1,prox=62)
+141 : OROR -> (shift:,r=-1,prox=64)
+142 : BRACKETCLOSE -> (shift:,r=-1,prox=152)
+143 : BRACKETCLOSE -> (reduz:,r=17,prox=-1)
+144 : BRACKETCLOSE -> (reduz:,r=18,prox=-1)
+144 : COMMA -> (shift:,r=-1,prox=132)
+144 : SEMI -> (shift:,r=-1,prox=153)
+145 : CURLYOPEN -> (shift:,r=-1,prox=154)
+146 : PARENCLOSE -> (shift:,r=-1,prox=155)
+147 : CURLYCLOSE -> (reduz:,r=31,prox=-1)
+147 : CURLYOPEN -> (reduz:,r=31,prox=-1)
+147 : IDENTIFIER -> (reduz:,r=31,prox=-1)
+147 : KW_FN -> (reduz:,r=31,prox=-1)
+147 : KW_IF -> (reduz:,r=31,prox=-1)
+147 : KW_LET -> (reduz:,r=31,prox=-1)
+147 : KW_RETURN -> (reduz:,r=31,prox=-1)
+147 : KW_WHILE -> (reduz:,r=31,prox=-1)
+147 : SEMI -> (reduz:,r=31,prox=-1)
+148 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+148 : BLOCO_CODIGO -> (goto:,r=-1,prox=156)
+148 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+148 : CODIGO -> (goto:,r=-1,prox=8)
+148 : CONDICAO -> (goto:,r=-1,prox=11)
+148 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+148 : CURLYOPEN -> (shift:,r=-1,prox=16)
+148 : DECLARACAO -> (goto:,r=-1,prox=9)
+148 : FUNCTION -> (goto:,r=-1,prox=13)
+148 : IDENTIFIER -> (shift:,r=-1,prox=19)
+148 : KW_FN -> (shift:,r=-1,prox=22)
+148 : KW_IF -> (shift:,r=-1,prox=20)
+148 : KW_LET -> (shift:,r=-1,prox=18)
+148 : KW_RETURN -> (shift:,r=-1,prox=15)
+148 : KW_WHILE -> (shift:,r=-1,prox=21)
+148 : SEMI -> (shift:,r=-1,prox=17)
+148 : WHILE -> (goto:,r=-1,prox=12)
+149 : CURLYCLOSE -> (shift:,r=-1,prox=157)
+150 : CURLYOPEN -> (shift:,r=-1,prox=158)
+151 : SEMI -> (reduz:,r=23,prox=-1)
+152 : BRACKETCLOSE -> (reduz:,r=15,prox=-1)
+152 : COMMA -> (reduz:,r=15,prox=-1)
+152 : CURLYOPEN -> (reduz:,r=15,prox=-1)
+152 : EQ -> (reduz:,r=15,prox=-1)
+152 : PARENCLOSE -> (reduz:,r=15,prox=-1)
+152 : SEMI -> (reduz:,r=15,prox=-1)
+153 : BRACKETCLOSE -> (reduz:,r=19,prox=-1)
+154 : ARRAY_INDEX -> (goto:,r=-1,prox=54)
+154 : CALL_FUNCTION -> (goto:,r=-1,prox=43)
+154 : CHAR -> (shift:,r=-1,prox=52)
+154 : EQEQ -> (shift:,r=-1,prox=35)
+154 : EXPRESSION_ART -> (goto:,r=-1,prox=32)
+154 : EXPRESSION_COMP -> (goto:,r=-1,prox=30)
+154 : EXPRESSION_LOGICA -> (goto:,r=-1,prox=159)
+154 : FACTOR -> (goto:,r=-1,prox=41)
+154 : FLOAT -> (shift:,r=-1,prox=51)
+154 : GE -> (shift:,r=-1,prox=39)
+154 : GT -> (shift:,r=-1,prox=37)
+154 : IDENTIFIER -> (shift:,r=-1,prox=48)
+154 : INTEGER -> (shift:,r=-1,prox=50)
+154 : KW_FALSE -> (shift:,r=-1,prox=45)
+154 : KW_TRUE -> (shift:,r=-1,prox=44)
+154 : KW_WHILE -> (shift:,r=-1,prox=21)
+154 : LE -> (shift:,r=-1,prox=40)
+154 : LT -> (shift:,r=-1,prox=38)
+154 : MINUS -> (shift:,r=-1,prox=47)
+154 : NE -> (shift:,r=-1,prox=36)
+154 : NOT -> (shift:,r=-1,prox=31)
+154 : OP_COMP -> (goto:,r=-1,prox=33)
+154 : OP_LOGIC_NOT -> (goto:,r=-1,prox=29)
+154 : PARENOPEN -> (shift:,r=-1,prox=53)
+154 : STRING -> (shift:,r=-1,prox=49)
+154 : TERM -> (goto:,r=-1,prox=34)
+154 : VALOR -> (goto:,r=-1,prox=42)
+154 : WHILE -> (goto:,r=-1,prox=46)
+155 : COMMA -> (reduz:,r=42,prox=-1)
+155 : PARENCLOSE -> (reduz:,r=42,prox=-1)
+156 : CURLYCLOSE -> (shift:,r=-1,prox=160)
+157 : COMMA -> (reduz:,r=35,prox=-1)
+157 : CURLYCLOSE -> (reduz:,r=35,prox=-1)
+157 : CURLYOPEN -> (reduz:,r=35,prox=-1)
+157 : EQ -> (reduz:,r=35,prox=-1)
+157 : IDENTIFIER -> (reduz:,r=35,prox=-1)
+157 : KW_FN -> (reduz:,r=35,prox=-1)
+157 : KW_IF -> (reduz:,r=35,prox=-1)
+157 : KW_LET -> (reduz:,r=35,prox=-1)
+157 : KW_RETURN -> (reduz:,r=35,prox=-1)
+157 : KW_WHILE -> (reduz:,r=35,prox=-1)
+157 : PARENCLOSE -> (reduz:,r=35,prox=-1)
+157 : SEMI -> (reduz:,r=35,prox=-1)
+158 : ATRIBUICAO -> (goto:,r=-1,prox=10)
+158 : BLOCO_CODIGO -> (goto:,r=-1,prox=161)
+158 : CALL_FUNCTION -> (goto:,r=-1,prox=14)
+158 : CODIGO -> (goto:,r=-1,prox=8)
+158 : CONDICAO -> (goto:,r=-1,prox=11)
+158 : CURLYCLOSE -> (reduz:,r=12,prox=-1)
+158 : CURLYOPEN -> (shift:,r=-1,prox=16)
+158 : DECLARACAO -> (goto:,r=-1,prox=9)
+158 : FUNCTION -> (goto:,r=-1,prox=13)
+158 : IDENTIFIER -> (shift:,r=-1,prox=19)
+158 : KW_FN -> (shift:,r=-1,prox=22)
+158 : KW_IF -> (shift:,r=-1,prox=20)
+158 : KW_LET -> (shift:,r=-1,prox=18)
+158 : KW_RETURN -> (shift:,r=-1,prox=15)
+158 : KW_WHILE -> (shift:,r=-1,prox=21)
+158 : SEMI -> (shift:,r=-1,prox=17)
+158 : WHILE -> (goto:,r=-1,prox=12)
+159 : ANDAND -> (shift:,r=-1,prox=63)
+159 : CURLYCLOSE -> (shift:,r=-1,prox=162)
+159 : OP_LOGIC -> (goto:,r=-1,prox=62)
+159 : OROR -> (shift:,r=-1,prox=64)
+160 : CURLYCLOSE -> (reduz:,r=32,prox=-1)
+160 : CURLYOPEN -> (reduz:,r=32,prox=-1)
+160 : IDENTIFIER -> (reduz:,r=32,prox=-1)
+160 : KW_FN -> (reduz:,r=32,prox=-1)
+160 : KW_IF -> (reduz:,r=32,prox=-1)
+160 : KW_LET -> (reduz:,r=32,prox=-1)
+160 : KW_RETURN -> (reduz:,r=32,prox=-1)
+160 : KW_WHILE -> (reduz:,r=32,prox=-1)
+160 : SEMI -> (reduz:,r=32,prox=-1)
+161 : CURLYCLOSE -> (shift:,r=-1,prox=163)
+162 : SEMI -> (reduz:,r=28,prox=-1)
+163 : COMMA -> (reduz:,r=36,prox=-1)
+163 : CURLYCLOSE -> (reduz:,r=36,prox=-1)
+163 : CURLYOPEN -> (reduz:,r=36,prox=-1)
+163 : EQ -> (reduz:,r=36,prox=-1)
+163 : IDENTIFIER -> (reduz:,r=36,prox=-1)
+163 : KW_FN -> (reduz:,r=36,prox=-1)
+163 : KW_IF -> (reduz:,r=36,prox=-1)
+163 : KW_LET -> (reduz:,r=36,prox=-1)
+163 : KW_RETURN -> (reduz:,r=36,prox=-1)
+163 : KW_WHILE -> (reduz:,r=36,prox=-1)
+163 : PARENCLOSE -> (reduz:,r=36,prox=-1)
+163 : SEMI -> (reduz:,r=36,prox=-1)
+Tabela(164)
+0 KW_FN : shift 2;
+0 S : goto 1;
+1 $ : accept;
+2 IDENTIFIER : shift 3;
+3 PARENOPEN : shift 4;
+4 PARENCLOSE : shift 5;
+5 CURLYOPEN : shift 6;
+6 ATRIBUICAO : goto 10;
+6 BLOCO_CODIGO : goto 7;
+6 CALL_FUNCTION : goto 14;
+6 CODIGO : goto 8;
+6 CONDICAO : goto 11;
+6 CURLYCLOSE : reduce 12;
+6 CURLYOPEN : shift 16;
+6 DECLARACAO : goto 9;
+6 FUNCTION : goto 13;
+6 IDENTIFIER : shift 19;
+6 KW_FN : shift 22;
+6 KW_IF : shift 20;
+6 KW_LET : shift 18;
+6 KW_RETURN : shift 15;
+6 KW_WHILE : shift 21;
+6 SEMI : shift 17;
+6 WHILE : goto 12;
+7 CURLYCLOSE : shift 23;
+8 ATRIBUICAO : goto 10;
+8 BLOCO_CODIGO : goto 24;
+8 CALL_FUNCTION : goto 14;
+8 CODIGO : goto 8;
+8 CONDICAO : goto 11;
+8 CURLYCLOSE : reduce 12;
+8 CURLYOPEN : shift 16;
+8 DECLARACAO : goto 9;
+8 FUNCTION : goto 13;
+8 IDENTIFIER : shift 19;
+8 KW_FN : shift 22;
+8 KW_IF : shift 20;
+8 KW_LET : shift 18;
+8 KW_RETURN : shift 15;
+8 KW_WHILE : shift 21;
+8 SEMI : shift 17;
+8 WHILE : goto 12;
+9 SEMI : shift 25;
+10 SEMI : shift 26;
+11 CURLYCLOSE : reduce 4;
+11 CURLYOPEN : reduce 4;
+11 IDENTIFIER : reduce 4;
+11 KW_FN : reduce 4;
+11 KW_IF : reduce 4;
+11 KW_LET : reduce 4;
+11 KW_RETURN : reduce 4;
+11 KW_WHILE : reduce 4;
+11 SEMI : reduce 4;
+12 CURLYCLOSE : reduce 5;
+12 CURLYOPEN : reduce 5;
+12 IDENTIFIER : reduce 5;
+12 KW_FN : reduce 5;
+12 KW_IF : reduce 5;
+12 KW_LET : reduce 5;
+12 KW_RETURN : reduce 5;
+12 KW_WHILE : reduce 5;
+12 SEMI : reduce 5;
+13 CURLYCLOSE : reduce 6;
+13 CURLYOPEN : reduce 6;
+13 IDENTIFIER : reduce 6;
+13 KW_FN : reduce 6;
+13 KW_IF : reduce 6;
+13 KW_LET : reduce 6;
+13 KW_RETURN : reduce 6;
+13 KW_WHILE : reduce 6;
+13 SEMI : reduce 6;
+14 SEMI : shift 27;
+15 ARRAY_INDEX : goto 54;
+15 CALL_FUNCTION : goto 43;
+15 CHAR : shift 52;
+15 EQEQ : shift 35;
+15 EXPRESSION_ART : goto 32;
+15 EXPRESSION_COMP : goto 30;
+15 EXPRESSION_LOGICA : goto 28;
+15 FACTOR : goto 41;
+15 FLOAT : shift 51;
+15 GE : shift 39;
+15 GT : shift 37;
+15 IDENTIFIER : shift 48;
+15 INTEGER : shift 50;
+15 KW_FALSE : shift 45;
+15 KW_TRUE : shift 44;
+15 KW_WHILE : shift 21;
+15 LE : shift 40;
+15 LT : shift 38;
+15 MINUS : shift 47;
+15 NE : shift 36;
+15 NOT : shift 31;
+15 OP_COMP : goto 33;
+15 OP_LOGIC_NOT : goto 29;
+15 PARENOPEN : shift 53;
+15 STRING : shift 49;
+15 TERM : goto 34;
+15 VALOR : goto 42;
+15 WHILE : goto 46;
+16 ATRIBUICAO : goto 10;
+16 BLOCO_CODIGO : goto 55;
+16 CALL_FUNCTION : goto 14;
+16 CODIGO : goto 8;
+16 CONDICAO : goto 11;
+16 CURLYCLOSE : reduce 12;
+16 CURLYOPEN : shift 16;
+16 DECLARACAO : goto 9;
+16 FUNCTION : goto 13;
+16 IDENTIFIER : shift 19;
+16 KW_FN : shift 22;
+16 KW_IF : shift 20;
+16 KW_LET : shift 18;
+16 KW_RETURN : shift 15;
+16 KW_WHILE : shift 21;
+16 SEMI : shift 17;
+16 WHILE : goto 12;
+17 CURLYCLOSE : reduce 10;
+17 CURLYOPEN : reduce 10;
+17 IDENTIFIER : reduce 10;
+17 KW_FN : reduce 10;
+17 KW_IF : reduce 10;
+17 KW_LET : reduce 10;
+17 KW_RETURN : reduce 10;
+17 KW_WHILE : reduce 10;
+17 SEMI : reduce 10;
+18 IDENTIFIER : shift 56;
+19 EQ : shift 57;
+19 PARENOPEN : shift 58;
+20 ARRAY_INDEX : goto 54;
+20 CALL_FUNCTION : goto 43;
+20 CHAR : shift 52;
+20 EQEQ : shift 35;
+20 EXPRESSION_ART : goto 32;
+20 EXPRESSION_COMP : goto 30;
+20 EXPRESSION_LOGICA : goto 59;
+20 FACTOR : goto 41;
+20 FLOAT : shift 51;
+20 GE : shift 39;
+20 GT : shift 37;
+20 IDENTIFIER : shift 48;
+20 INTEGER : shift 50;
+20 KW_FALSE : shift 45;
+20 KW_TRUE : shift 44;
+20 KW_WHILE : shift 21;
+20 LE : shift 40;
+20 LT : shift 38;
+20 MINUS : shift 47;
+20 NE : shift 36;
+20 NOT : shift 31;
+20 OP_COMP : goto 33;
+20 OP_LOGIC_NOT : goto 29;
+20 PARENOPEN : shift 53;
+20 STRING : shift 49;
+20 TERM : goto 34;
+20 VALOR : goto 42;
+20 WHILE : goto 46;
+21 ARRAY_INDEX : goto 54;
+21 CALL_FUNCTION : goto 43;
+21 CHAR : shift 52;
+21 EQEQ : shift 35;
+21 EXPRESSION_ART : goto 32;
+21 EXPRESSION_COMP : goto 30;
+21 EXPRESSION_LOGICA : goto 60;
+21 FACTOR : goto 41;
+21 FLOAT : shift 51;
+21 GE : shift 39;
+21 GT : shift 37;
+21 IDENTIFIER : shift 48;
+21 INTEGER : shift 50;
+21 KW_FALSE : shift 45;
+21 KW_TRUE : shift 44;
+21 KW_WHILE : shift 21;
+21 LE : shift 40;
+21 LT : shift 38;
+21 MINUS : shift 47;
+21 NE : shift 36;
+21 NOT : shift 31;
+21 OP_COMP : goto 33;
+21 OP_LOGIC_NOT : goto 29;
+21 PARENOPEN : shift 53;
+21 STRING : shift 49;
+21 TERM : goto 34;
+21 VALOR : goto 42;
+21 WHILE : goto 46;
+22 IDENTIFIER : shift 61;
+23 $ : reduce 1;
+24 CURLYCLOSE : reduce 11;
+25 CURLYCLOSE : reduce 2;
+25 CURLYOPEN : reduce 2;
+25 IDENTIFIER : reduce 2;
+25 KW_FN : reduce 2;
+25 KW_IF : reduce 2;
+25 KW_LET : reduce 2;
+25 KW_RETURN : reduce 2;
+25 KW_WHILE : reduce 2;
+25 SEMI : reduce 2;
+26 CURLYCLOSE : reduce 3;
+26 CURLYOPEN : reduce 3;
+26 IDENTIFIER : reduce 3;
+26 KW_FN : reduce 3;
+26 KW_IF : reduce 3;
+26 KW_LET : reduce 3;
+26 KW_RETURN : reduce 3;
+26 KW_WHILE : reduce 3;
+26 SEMI : reduce 3;
+27 CURLYCLOSE : reduce 7;
+27 CURLYOPEN : reduce 7;
+27 IDENTIFIER : reduce 7;
+27 KW_FN : reduce 7;
+27 KW_IF : reduce 7;
+27 KW_LET : reduce 7;
+27 KW_RETURN : reduce 7;
+27 KW_WHILE : reduce 7;
+27 SEMI : reduce 7;
+28 ANDAND : shift 63;
+28 CURLYCLOSE : reduce 8;
+28 CURLYOPEN : reduce 8;
+28 IDENTIFIER : reduce 8;
+28 KW_FN : reduce 8;
+28 KW_IF : reduce 8;
+28 KW_LET : reduce 8;
+28 KW_RETURN : reduce 8;
+28 KW_WHILE : reduce 8;
+28 OP_LOGIC : goto 62;
+28 OROR : shift 64;
+28 SEMI : reduce 8;
+29 ARRAY_INDEX : goto 54;
+29 CALL_FUNCTION : goto 43;
+29 CHAR : shift 52;
+29 EQEQ : shift 35;
+29 EXPRESSION_ART : goto 32;
+29 EXPRESSION_COMP : goto 65;
+29 FACTOR : goto 41;
+29 FLOAT : shift 51;
+29 GE : shift 39;
+29 GT : shift 37;
+29 IDENTIFIER : shift 48;
+29 INTEGER : shift 50;
+29 KW_FALSE : shift 45;
+29 KW_TRUE : shift 44;
+29 KW_WHILE : shift 21;
+29 LE : shift 40;
+29 LT : shift 38;
+29 MINUS : shift 47;
+29 NE : shift 36;
+29 OP_COMP : goto 33;
+29 PARENOPEN : shift 53;
+29 STRING : shift 49;
+29 TERM : goto 34;
+29 VALOR : goto 42;
+29 WHILE : goto 46;
+30 ANDAND : reduce 61;
+30 CURLYCLOSE : reduce 61;
+30 CURLYOPEN : reduce 61;
+30 IDENTIFIER : reduce 61;
+30 KW_ELSE : reduce 61;
+30 KW_FN : reduce 61;
+30 KW_IF : reduce 61;
+30 KW_LET : reduce 61;
+30 KW_RETURN : reduce 61;
+30 KW_WHILE : reduce 61;
+30 OROR : reduce 61;
+30 SEMI : reduce 61;
+31 CHAR : reduce 75;
+31 EQEQ : reduce 75;
+31 FLOAT : reduce 75;
+31 GE : reduce 75;
+31 GT : reduce 75;
+31 IDENTIFIER : reduce 75;
+31 INTEGER : reduce 75;
+31 KW_FALSE : reduce 75;
+31 KW_TRUE : reduce 75;
+31 KW_WHILE : reduce 75;
+31 LE : reduce 75;
+31 LT : reduce 75;
+31 MINUS : reduce 75;
+31 NE : reduce 75;
+31 PARENOPEN : reduce 75;
+31 STRING : reduce 75;
+32 ANDAND : reduce 58;
+32 CURLYCLOSE : reduce 58;
+32 CURLYOPEN : reduce 58;
+32 EQEQ : shift 35;
+32 GE : shift 39;
+32 GT : shift 37;
+32 IDENTIFIER : reduce 58;
+32 KW_ELSE : reduce 58;
+32 KW_FN : reduce 58;
+32 KW_IF : reduce 58;
+32 KW_LET : reduce 58;
+32 KW_RETURN : reduce 58;
+32 KW_WHILE : reduce 58;
+32 LE : shift 40;
+32 LT : shift 38;
+32 NE : shift 36;
+32 OP_COMP : goto 66;
+32 OROR : reduce 58;
+32 SEMI : reduce 58;
+33 ARRAY_INDEX : goto 54;
+33 CALL_FUNCTION : goto 43;
+33 CHAR : shift 52;
+33 EXPRESSION_ART : goto 67;
+33 FACTOR : goto 41;
+33 FLOAT : shift 51;
+33 IDENTIFIER : shift 48;
+33 INTEGER : shift 50;
+33 KW_FALSE : shift 45;
+33 KW_TRUE : shift 44;
+33 KW_WHILE : shift 21;
+33 MINUS : shift 47;
+33 PARENOPEN : shift 53;
+33 STRING : shift 49;
+33 TERM : goto 34;
+33 VALOR : goto 42;
+33 WHILE : goto 46;
+34 ANDAND : reduce 46;
+34 COMMA : reduce 46;
+34 CURLYCLOSE : reduce 46;
+34 CURLYOPEN : reduce 46;
+34 EQEQ : reduce 46;
+34 EXPRESSION_PRIME : goto 68;
+34 GE : reduce 46;
+34 GT : reduce 46;
+34 IDENTIFIER : reduce 46;
+34 KW_ELSE : reduce 46;
+34 KW_FN : reduce 46;
+34 KW_IF : reduce 46;
+34 KW_LET : reduce 46;
+34 KW_RETURN : reduce 46;
+34 KW_WHILE : reduce 46;
+34 LE : reduce 46;
+34 LT : reduce 46;
+34 MINUS : shift 71;
+34 NE : reduce 46;
+34 OP_ADD : goto 69;
+34 OROR : reduce 46;
+34 PARENCLOSE : reduce 46;
+34 PLUS : shift 70;
+34 SEMI : reduce 46;
+35 CHAR : reduce 67;
+35 FLOAT : reduce 67;
+35 IDENTIFIER : reduce 67;
+35 INTEGER : reduce 67;
+35 KW_FALSE : reduce 67;
+35 KW_TRUE : reduce 67;
+35 KW_WHILE : reduce 67;
+35 MINUS : reduce 67;
+35 PARENOPEN : reduce 67;
+35 STRING : reduce 67;
+36 CHAR : reduce 68;
+36 FLOAT : reduce 68;
+36 IDENTIFIER : reduce 68;
+36 INTEGER : reduce 68;
+36 KW_FALSE : reduce 68;
+36 KW_TRUE : reduce 68;
+36 KW_WHILE : reduce 68;
+36 MINUS : reduce 68;
+36 PARENOPEN : reduce 68;
+36 STRING : reduce 68;
+37 CHAR : reduce 69;
+37 FLOAT : reduce 69;
+37 IDENTIFIER : reduce 69;
+37 INTEGER : reduce 69;
+37 KW_FALSE : reduce 69;
+37 KW_TRUE : reduce 69;
+37 KW_WHILE : reduce 69;
+37 MINUS : reduce 69;
+37 PARENOPEN : reduce 69;
+37 STRING : reduce 69;
+38 CHAR : reduce 70;
+38 FLOAT : reduce 70;
+38 IDENTIFIER : reduce 70;
+38 INTEGER : reduce 70;
+38 KW_FALSE : reduce 70;
+38 KW_TRUE : reduce 70;
+38 KW_WHILE : reduce 70;
+38 MINUS : reduce 70;
+38 PARENOPEN : reduce 70;
+38 STRING : reduce 70;
+39 CHAR : reduce 71;
+39 FLOAT : reduce 71;
+39 IDENTIFIER : reduce 71;
+39 INTEGER : reduce 71;
+39 KW_FALSE : reduce 71;
+39 KW_TRUE : reduce 71;
+39 KW_WHILE : reduce 71;
+39 MINUS : reduce 71;
+39 PARENOPEN : reduce 71;
+39 STRING : reduce 71;
+40 CHAR : reduce 72;
+40 FLOAT : reduce 72;
+40 IDENTIFIER : reduce 72;
+40 INTEGER : reduce 72;
+40 KW_FALSE : reduce 72;
+40 KW_TRUE : reduce 72;
+40 KW_WHILE : reduce 72;
+40 MINUS : reduce 72;
+40 PARENOPEN : reduce 72;
+40 STRING : reduce 72;
+41 ANDAND : reduce 49;
+41 COMMA : reduce 49;
+41 CURLYCLOSE : reduce 49;
+41 CURLYOPEN : reduce 49;
+41 EQEQ : reduce 49;
+41 GE : reduce 49;
+41 GT : reduce 49;
+41 IDENTIFIER : reduce 49;
+41 KW_ELSE : reduce 49;
+41 KW_FN : reduce 49;
+41 KW_IF : reduce 49;
+41 KW_LET : reduce 49;
+41 KW_RETURN : reduce 49;
+41 KW_WHILE : reduce 49;
+41 LE : reduce 49;
+41 LT : reduce 49;
+41 MINUS : reduce 49;
+41 NE : reduce 49;
+41 OP_MULT : goto 73;
+41 OROR : reduce 49;
+41 PARENCLOSE : reduce 49;
+41 PERCENT : shift 76;
+41 PLUS : reduce 49;
+41 SEMI : reduce 49;
+41 SLASH : shift 75;
+41 STAR : shift 74;
+41 TERM_PRIME : goto 72;
+42 ANDAND : reduce 50;
+42 COMMA : reduce 50;
+42 CURLYCLOSE : reduce 50;
+42 CURLYOPEN : reduce 50;
+42 EQEQ : reduce 50;
+42 GE : reduce 50;
+42 GT : reduce 50;
+42 IDENTIFIER : reduce 50;
+42 KW_ELSE : reduce 50;
+42 KW_FN : reduce 50;
+42 KW_IF : reduce 50;
+42 KW_LET : reduce 50;
+42 KW_RETURN : reduce 50;
+42 KW_WHILE : reduce 50;
+42 LE : reduce 50;
+42 LT : reduce 50;
+42 MINUS : reduce 50;
+42 NE : reduce 50;
+42 OROR : reduce 50;
+42 PARENCLOSE : reduce 50;
+42 PERCENT : reduce 50;
+42 PLUS : reduce 50;
+42 SEMI : reduce 50;
+42 SLASH : reduce 50;
+42 STAR : reduce 50;
+43 ANDAND : reduce 51;
+43 COMMA : reduce 51;
+43 CURLYCLOSE : reduce 51;
+43 CURLYOPEN : reduce 51;
+43 EQEQ : reduce 51;
+43 GE : reduce 51;
+43 GT : reduce 51;
+43 IDENTIFIER : reduce 51;
+43 KW_ELSE : reduce 51;
+43 KW_FN : reduce 51;
+43 KW_IF : reduce 51;
+43 KW_LET : reduce 51;
+43 KW_RETURN : reduce 51;
+43 KW_WHILE : reduce 51;
+43 LE : reduce 51;
+43 LT : reduce 51;
+43 MINUS : reduce 51;
+43 NE : reduce 51;
+43 OROR : reduce 51;
+43 PARENCLOSE : reduce 51;
+43 PERCENT : reduce 51;
+43 PLUS : reduce 51;
+43 SEMI : reduce 51;
+43 SLASH : reduce 51;
+43 STAR : reduce 51;
+44 ANDAND : reduce 52;
+44 COMMA : reduce 52;
+44 CURLYCLOSE : reduce 52;
+44 CURLYOPEN : reduce 52;
+44 EQEQ : reduce 52;
+44 GE : reduce 52;
+44 GT : reduce 52;
+44 IDENTIFIER : reduce 52;
+44 KW_ELSE : reduce 52;
+44 KW_FN : reduce 52;
+44 KW_IF : reduce 52;
+44 KW_LET : reduce 52;
+44 KW_RETURN : reduce 52;
+44 KW_WHILE : reduce 52;
+44 LE : reduce 52;
+44 LT : reduce 52;
+44 MINUS : reduce 52;
+44 NE : reduce 52;
+44 OROR : reduce 52;
+44 PARENCLOSE : reduce 52;
+44 PERCENT : reduce 52;
+44 PLUS : reduce 52;
+44 SEMI : reduce 52;
+44 SLASH : reduce 52;
+44 STAR : reduce 52;
+45 ANDAND : reduce 53;
+45 COMMA : reduce 53;
+45 CURLYCLOSE : reduce 53;
+45 CURLYOPEN : reduce 53;
+45 EQEQ : reduce 53;
+45 GE : reduce 53;
+45 GT : reduce 53;
+45 IDENTIFIER : reduce 53;
+45 KW_ELSE : reduce 53;
+45 KW_FN : reduce 53;
+45 KW_IF : reduce 53;
+45 KW_LET : reduce 53;
+45 KW_RETURN : reduce 53;
+45 KW_WHILE : reduce 53;
+45 LE : reduce 53;
+45 LT : reduce 53;
+45 MINUS : reduce 53;
+45 NE : reduce 53;
+45 OROR : reduce 53;
+45 PARENCLOSE : reduce 53;
+45 PERCENT : reduce 53;
+45 PLUS : reduce 53;
+45 SEMI : reduce 53;
+45 SLASH : reduce 53;
+45 STAR : reduce 53;
+46 ANDAND : reduce 54;
+46 COMMA : reduce 54;
+46 CURLYCLOSE : reduce 54;
+46 CURLYOPEN : reduce 54;
+46 EQEQ : reduce 54;
+46 GE : reduce 54;
+46 GT : reduce 54;
+46 IDENTIFIER : reduce 54;
+46 KW_ELSE : reduce 54;
+46 KW_FN : reduce 54;
+46 KW_IF : reduce 54;
+46 KW_LET : reduce 54;
+46 KW_RETURN : reduce 54;
+46 KW_WHILE : reduce 54;
+46 LE : reduce 54;
+46 LT : reduce 54;
+46 MINUS : reduce 54;
+46 NE : reduce 54;
+46 OROR : reduce 54;
+46 PARENCLOSE : reduce 54;
+46 PERCENT : reduce 54;
+46 PLUS : reduce 54;
+46 SEMI : reduce 54;
+46 SLASH : reduce 54;
+46 STAR : reduce 54;
+47 ARRAY_INDEX : goto 54;
+47 CHAR : shift 52;
+47 FLOAT : shift 51;
+47 IDENTIFIER : shift 78;
+47 INTEGER : shift 50;
+47 PARENOPEN : shift 53;
+47 STRING : shift 49;
+47 VALOR : goto 77;
+48 ANDAND : reduce 76;
+48 BRACKETOPEN : shift 79;
+48 COMMA : reduce 76;
+48 CURLYCLOSE : reduce 76;
+48 CURLYOPEN : reduce 76;
+48 EQEQ : reduce 76;
+48 GE : reduce 76;
+48 GT : reduce 76;
+48 IDENTIFIER : reduce 76;
+48 KW_ELSE : reduce 76;
+48 KW_FN : reduce 76;
+48 KW_IF : reduce 76;
+48 KW_LET : reduce 76;
+48 KW_RETURN : reduce 76;
+48 KW_WHILE : reduce 76;
+48 LE : reduce 76;
+48 LT : reduce 76;
+48 MINUS : reduce 76;
+48 NE : reduce 76;
+48 OROR : reduce 76;
+48 PARENCLOSE : reduce 76;
+48 PARENOPEN : shift 58;
+48 PERCENT : reduce 76;
+48 PLUS : reduce 76;
+48 SEMI : reduce 76;
+48 SLASH : reduce 76;
+48 STAR : reduce 76;
+49 ANDAND : reduce 77;
+49 BRACKETCLOSE : reduce 77;
+49 COMMA : reduce 77;
+49 CURLYCLOSE : reduce 77;
+49 CURLYOPEN : reduce 77;
+49 EQEQ : reduce 77;
+49 GE : reduce 77;
+49 GT : reduce 77;
+49 IDENTIFIER : reduce 77;
+49 KW_ELSE : reduce 77;
+49 KW_FN : reduce 77;
+49 KW_IF : reduce 77;
+49 KW_LET : reduce 77;
+49 KW_RETURN : reduce 77;
+49 KW_WHILE : reduce 77;
+49 LE : reduce 77;
+49 LT : reduce 77;
+49 MINUS : reduce 77;
+49 NE : reduce 77;
+49 OROR : reduce 77;
+49 PARENCLOSE : reduce 77;
+49 PERCENT : reduce 77;
+49 PLUS : reduce 77;
+49 SEMI : reduce 77;
+49 SLASH : reduce 77;
+49 STAR : reduce 77;
+50 ANDAND : reduce 78;
+50 BRACKETCLOSE : reduce 78;
+50 COMMA : reduce 78;
+50 CURLYCLOSE : reduce 78;
+50 CURLYOPEN : reduce 78;
+50 EQEQ : reduce 78;
+50 GE : reduce 78;
+50 GT : reduce 78;
+50 IDENTIFIER : reduce 78;
+50 KW_ELSE : reduce 78;
+50 KW_FN : reduce 78;
+50 KW_IF : reduce 78;
+50 KW_LET : reduce 78;
+50 KW_RETURN : reduce 78;
+50 KW_WHILE : reduce 78;
+50 LE : reduce 78;
+50 LT : reduce 78;
+50 MINUS : reduce 78;
+50 NE : reduce 78;
+50 OROR : reduce 78;
+50 PARENCLOSE : reduce 78;
+50 PERCENT : reduce 78;
+50 PLUS : reduce 78;
+50 SEMI : reduce 78;
+50 SLASH : reduce 78;
+50 STAR : reduce 78;
+51 ANDAND : reduce 79;
+51 BRACKETCLOSE : reduce 79;
+51 COMMA : reduce 79;
+51 CURLYCLOSE : reduce 79;
+51 CURLYOPEN : reduce 79;
+51 EQEQ : reduce 79;
+51 GE : reduce 79;
+51 GT : reduce 79;
+51 IDENTIFIER : reduce 79;
+51 KW_ELSE : reduce 79;
+51 KW_FN : reduce 79;
+51 KW_IF : reduce 79;
+51 KW_LET : reduce 79;
+51 KW_RETURN : reduce 79;
+51 KW_WHILE : reduce 79;
+51 LE : reduce 79;
+51 LT : reduce 79;
+51 MINUS : reduce 79;
+51 NE : reduce 79;
+51 OROR : reduce 79;
+51 PARENCLOSE : reduce 79;
+51 PERCENT : reduce 79;
+51 PLUS : reduce 79;
+51 SEMI : reduce 79;
+51 SLASH : reduce 79;
+51 STAR : reduce 79;
+52 ANDAND : reduce 80;
+52 BRACKETCLOSE : reduce 80;
+52 COMMA : reduce 80;
+52 CURLYCLOSE : reduce 80;
+52 CURLYOPEN : reduce 80;
+52 EQEQ : reduce 80;
+52 GE : reduce 80;
+52 GT : reduce 80;
+52 IDENTIFIER : reduce 80;
+52 KW_ELSE : reduce 80;
+52 KW_FN : reduce 80;
+52 KW_IF : reduce 80;
+52 KW_LET : reduce 80;
+52 KW_RETURN : reduce 80;
+52 KW_WHILE : reduce 80;
+52 LE : reduce 80;
+52 LT : reduce 80;
+52 MINUS : reduce 80;
+52 NE : reduce 80;
+52 OROR : reduce 80;
+52 PARENCLOSE : reduce 80;
+52 PERCENT : reduce 80;
+52 PLUS : reduce 80;
+52 SEMI : reduce 80;
+52 SLASH : reduce 80;
+52 STAR : reduce 80;
+53 ARRAY_INDEX : goto 54;
+53 CALL_FUNCTION : goto 43;
+53 CHAR : shift 52;
+53 EXPRESSION_ART : goto 80;
+53 FACTOR : goto 41;
+53 FLOAT : shift 51;
+53 IDENTIFIER : shift 48;
+53 INTEGER : shift 50;
+53 KW_FALSE : shift 45;
+53 KW_TRUE : shift 44;
+53 KW_WHILE : shift 21;
+53 MINUS : shift 47;
+53 PARENOPEN : shift 53;
+53 STRING : shift 49;
+53 TERM : goto 34;
+53 VALOR : goto 42;
+53 WHILE : goto 46;
+54 ANDAND : reduce 82;
+54 BRACKETCLOSE : reduce 82;
+54 COMMA : reduce 82;
+54 CURLYCLOSE : reduce 82;
+54 CURLYOPEN : reduce 82;
+54 EQEQ : reduce 82;
+54 GE : reduce 82;
+54 GT : reduce 82;
+54 IDENTIFIER : reduce 82;
+54 KW_ELSE : reduce 82;
+54 KW_FN : reduce 82;
+54 KW_IF : reduce 82;
+54 KW_LET : reduce 82;
+54 KW_RETURN : reduce 82;
+54 KW_WHILE : reduce 82;
+54 LE : reduce 82;
+54 LT : reduce 82;
+54 MINUS : reduce 82;
+54 NE : reduce 82;
+54 OROR : reduce 82;
+54 PARENCLOSE : reduce 82;
+54 PERCENT : reduce 82;
+54 PLUS : reduce 82;
+54 SEMI : reduce 82;
+54 SLASH : reduce 82;
+54 STAR : reduce 82;
+55 CURLYCLOSE : shift 81;
+56 COLON : shift 83;
+56 EQ : shift 82;
+56 SEMI : reduce 21;
+57 ARRAY_INDEX : goto 54;
+57 CALL_FUNCTION : goto 43;
+57 CHAR : shift 52;
+57 EQEQ : shift 35;
+57 EXPRESSION_ART : goto 32;
+57 EXPRESSION_COMP : goto 30;
+57 EXPRESSION_LOGICA : goto 84;
+57 FACTOR : goto 41;
+57 FLOAT : shift 51;
+57 GE : shift 39;
+57 GT : shift 37;
+57 IDENTIFIER : shift 48;
+57 INTEGER : shift 50;
+57 KW_FALSE : shift 45;
+57 KW_TRUE : shift 44;
+57 KW_WHILE : shift 21;
+57 LE : shift 40;
+57 LT : shift 38;
+57 MINUS : shift 47;
+57 NE : shift 36;
+57 NOT : shift 31;
+57 OP_COMP : goto 33;
+57 OP_LOGIC_NOT : goto 29;
+57 PARENOPEN : shift 53;
+57 STRING : shift 49;
+57 TERM : goto 34;
+57 VALOR : goto 42;
+57 WHILE : goto 46;
+58 ARG : goto 86;
+58 ARGS : goto 85;
+58 ARRAY_INDEX : goto 54;
+58 CALL_FUNCTION : goto 43;
+58 CHAR : shift 52;
+58 EXPRESSION_ART : goto 87;
+58 FACTOR : goto 41;
+58 FLOAT : shift 51;
+58 IDENTIFIER : shift 88;
+58 INTEGER : shift 50;
+58 KW_FALSE : shift 45;
+58 KW_TRUE : shift 44;
+58 KW_WHILE : shift 21;
+58 MINUS : shift 47;
+58 PARENCLOSE : reduce 40;
+58 PARENOPEN : shift 53;
+58 STRING : shift 49;
+58 TERM : goto 34;
+58 VALOR : goto 42;
+58 WHILE : goto 46;
+59 ANDAND : shift 63;
+59 CURLYOPEN : shift 89;
+59 OP_LOGIC : goto 62;
+59 OROR : shift 64;
+60 ANDAND : shift 63;
+60 CURLYOPEN : shift 90;
+60 OP_LOGIC : goto 62;
+60 OROR : shift 64;
+61 PARENOPEN : shift 91;
+62 ARRAY_INDEX : goto 54;
+62 CALL_FUNCTION : goto 43;
+62 CHAR : shift 52;
+62 EQEQ : shift 35;
+62 EXPRESSION_ART : goto 32;
+62 EXPRESSION_COMP : goto 92;
+62 FACTOR : goto 41;
+62 FLOAT : shift 51;
+62 GE : shift 39;
+62 GT : shift 37;
+62 IDENTIFIER : shift 48;
+62 INTEGER : shift 50;
+62 KW_FALSE : shift 45;
+62 KW_TRUE : shift 44;
+62 KW_WHILE : shift 21;
+62 LE : shift 40;
+62 LT : shift 38;
+62 MINUS : shift 47;
+62 NE : shift 36;
+62 OP_COMP : goto 33;
+62 PARENOPEN : shift 53;
+62 STRING : shift 49;
+62 TERM : goto 34;
+62 VALOR : goto 42;
+62 WHILE : goto 46;
+63 CHAR : reduce 73;
+63 EQEQ : reduce 73;
+63 FLOAT : reduce 73;
+63 GE : reduce 73;
+63 GT : reduce 73;
+63 IDENTIFIER : reduce 73;
+63 INTEGER : reduce 73;
+63 KW_FALSE : reduce 73;
+63 KW_TRUE : reduce 73;
+63 KW_WHILE : reduce 73;
+63 LE : reduce 73;
+63 LT : reduce 73;
+63 MINUS : reduce 73;
+63 NE : reduce 73;
+63 PARENOPEN : reduce 73;
+63 STRING : reduce 73;
+64 CHAR : reduce 74;
+64 EQEQ : reduce 74;
+64 FLOAT : reduce 74;
+64 GE : reduce 74;
+64 GT : reduce 74;
+64 IDENTIFIER : reduce 74;
+64 INTEGER : reduce 74;
+64 KW_FALSE : reduce 74;
+64 KW_TRUE : reduce 74;
+64 KW_WHILE : reduce 74;
+64 LE : reduce 74;
+64 LT : reduce 74;
+64 MINUS : reduce 74;
+64 NE : reduce 74;
+64 PARENOPEN : reduce 74;
+64 STRING : reduce 74;
+65 ANDAND : reduce 60;
+65 CURLYCLOSE : reduce 60;
+65 CURLYOPEN : reduce 60;
+65 IDENTIFIER : reduce 60;
+65 KW_ELSE : reduce 60;
+65 KW_FN : reduce 60;
+65 KW_IF : reduce 60;
+65 KW_LET : reduce 60;
+65 KW_RETURN : reduce 60;
+65 KW_WHILE : reduce 60;
+65 OROR : reduce 60;
+65 SEMI : reduce 60;
+66 ARRAY_INDEX : goto 54;
+66 CALL_FUNCTION : goto 43;
+66 CHAR : shift 52;
+66 EXPRESSION_ART : goto 93;
+66 FACTOR : goto 41;
+66 FLOAT : shift 51;
+66 IDENTIFIER : shift 48;
+66 INTEGER : shift 50;
+66 KW_FALSE : shift 45;
+66 KW_TRUE : shift 44;
+66 KW_WHILE : shift 21;
+66 MINUS : shift 47;
+66 PARENOPEN : shift 53;
+66 STRING : shift 49;
+66 TERM : goto 34;
+66 VALOR : goto 42;
+66 WHILE : goto 46;
+67 ANDAND : reduce 57;
+67 CURLYCLOSE : reduce 57;
+67 CURLYOPEN : reduce 57;
+67 IDENTIFIER : reduce 57;
+67 KW_ELSE : reduce 57;
+67 KW_FN : reduce 57;
+67 KW_IF : reduce 57;
+67 KW_LET : reduce 57;
+67 KW_RETURN : reduce 57;
+67 KW_WHILE : reduce 57;
+67 OROR : reduce 57;
+67 SEMI : reduce 57;
+68 ANDAND : reduce 44;
+68 COMMA : reduce 44;
+68 CURLYCLOSE : reduce 44;
+68 CURLYOPEN : reduce 44;
+68 EQEQ : reduce 44;
+68 GE : reduce 44;
+68 GT : reduce 44;
+68 IDENTIFIER : reduce 44;
+68 KW_ELSE : reduce 44;
+68 KW_FN : reduce 44;
+68 KW_IF : reduce 44;
+68 KW_LET : reduce 44;
+68 KW_RETURN : reduce 44;
+68 KW_WHILE : reduce 44;
+68 LE : reduce 44;
+68 LT : reduce 44;
+68 NE : reduce 44;
+68 OROR : reduce 44;
+68 PARENCLOSE : reduce 44;
+68 SEMI : reduce 44;
+69 ARRAY_INDEX : goto 54;
+69 CALL_FUNCTION : goto 43;
+69 CHAR : shift 52;
+69 FACTOR : goto 41;
+69 FLOAT : shift 51;
+69 IDENTIFIER : shift 48;
+69 INTEGER : shift 50;
+69 KW_FALSE : shift 45;
+69 KW_TRUE : shift 44;
+69 KW_WHILE : shift 21;
+69 MINUS : shift 47;
+69 PARENOPEN : shift 53;
+69 STRING : shift 49;
+69 TERM : goto 94;
+69 VALOR : goto 42;
+69 WHILE : goto 46;
+70 CHAR : reduce 62;
+70 FLOAT : reduce 62;
+70 IDENTIFIER : reduce 62;
+70 INTEGER : reduce 62;
+70 KW_FALSE : reduce 62;
+70 KW_TRUE : reduce 62;
+70 KW_WHILE : reduce 62;
+70 MINUS : reduce 62;
+70 PARENOPEN : reduce 62;
+70 STRING : reduce 62;
+71 CHAR : reduce 63;
+71 FLOAT : reduce 63;
+71 IDENTIFIER : reduce 63;
+71 INTEGER : reduce 63;
+71 KW_FALSE : reduce 63;
+71 KW_TRUE : reduce 63;
+71 KW_WHILE : reduce 63;
+71 MINUS : reduce 63;
+71 PARENOPEN : reduce 63;
+71 STRING : reduce 63;
+72 ANDAND : reduce 47;
+72 COMMA : reduce 47;
+72 CURLYCLOSE : reduce 47;
+72 CURLYOPEN : reduce 47;
+72 EQEQ : reduce 47;
+72 GE : reduce 47;
+72 GT : reduce 47;
+72 IDENTIFIER : reduce 47;
+72 KW_ELSE : reduce 47;
+72 KW_FN : reduce 47;
+72 KW_IF : reduce 47;
+72 KW_LET : reduce 47;
+72 KW_RETURN : reduce 47;
+72 KW_WHILE : reduce 47;
+72 LE : reduce 47;
+72 LT : reduce 47;
+72 MINUS : reduce 47;
+72 NE : reduce 47;
+72 OROR : reduce 47;
+72 PARENCLOSE : reduce 47;
+72 PLUS : reduce 47;
+72 SEMI : reduce 47;
+73 ARRAY_INDEX : goto 54;
+73 CALL_FUNCTION : goto 43;
+73 CHAR : shift 52;
+73 FACTOR : goto 95;
+73 FLOAT : shift 51;
+73 IDENTIFIER : shift 48;
+73 INTEGER : shift 50;
+73 KW_FALSE : shift 45;
+73 KW_TRUE : shift 44;
+73 KW_WHILE : shift 21;
+73 MINUS : shift 47;
+73 PARENOPEN : shift 53;
+73 STRING : shift 49;
+73 VALOR : goto 42;
+73 WHILE : goto 46;
+74 CHAR : reduce 64;
+74 FLOAT : reduce 64;
+74 IDENTIFIER : reduce 64;
+74 INTEGER : reduce 64;
+74 KW_FALSE : reduce 64;
+74 KW_TRUE : reduce 64;
+74 KW_WHILE : reduce 64;
+74 MINUS : reduce 64;
+74 PARENOPEN : reduce 64;
+74 STRING : reduce 64;
+75 CHAR : reduce 65;
+75 FLOAT : reduce 65;
+75 IDENTIFIER : reduce 65;
+75 INTEGER : reduce 65;
+75 KW_FALSE : reduce 65;
+75 KW_TRUE : reduce 65;
+75 KW_WHILE : reduce 65;
+75 MINUS : reduce 65;
+75 PARENOPEN : reduce 65;
+75 STRING : reduce 65;
+76 CHAR : reduce 66;
+76 FLOAT : reduce 66;
+76 IDENTIFIER : reduce 66;
+76 INTEGER : reduce 66;
+76 KW_FALSE : reduce 66;
+76 KW_TRUE : reduce 66;
+76 KW_WHILE : reduce 66;
+76 MINUS : reduce 66;
+76 PARENOPEN : reduce 66;
+76 STRING : reduce 66;
+77 ANDAND : reduce 55;
+77 COMMA : reduce 55;
+77 CURLYCLOSE : reduce 55;
+77 CURLYOPEN : reduce 55;
+77 EQEQ : reduce 55;
+77 GE : reduce 55;
+77 GT : reduce 55;
+77 IDENTIFIER : reduce 55;
+77 KW_ELSE : reduce 55;
+77 KW_FN : reduce 55;
+77 KW_IF : reduce 55;
+77 KW_LET : reduce 55;
+77 KW_RETURN : reduce 55;
+77 KW_WHILE : reduce 55;
+77 LE : reduce 55;
+77 LT : reduce 55;
+77 MINUS : reduce 55;
+77 NE : reduce 55;
+77 OROR : reduce 55;
+77 PARENCLOSE : reduce 55;
+77 PERCENT : reduce 55;
+77 PLUS : reduce 55;
+77 SEMI : reduce 55;
+77 SLASH : reduce 55;
+77 STAR : reduce 55;
+78 ANDAND : reduce 76;
+78 BRACKETCLOSE : reduce 76;
+78 BRACKETOPEN : shift 79;
+78 COMMA : reduce 76;
+78 CURLYCLOSE : reduce 76;
+78 CURLYOPEN : reduce 76;
+78 EQEQ : reduce 76;
+78 GE : reduce 76;
+78 GT : reduce 76;
+78 IDENTIFIER : reduce 76;
+78 KW_ELSE : reduce 76;
+78 KW_FN : reduce 76;
+78 KW_IF : reduce 76;
+78 KW_LET : reduce 76;
+78 KW_RETURN : reduce 76;
+78 KW_WHILE : reduce 76;
+78 LE : reduce 76;
+78 LT : reduce 76;
+78 MINUS : reduce 76;
+78 NE : reduce 76;
+78 OROR : reduce 76;
+78 PARENCLOSE : reduce 76;
+78 PERCENT : reduce 76;
+78 PLUS : reduce 76;
+78 SEMI : reduce 76;
+78 SLASH : reduce 76;
+78 STAR : reduce 76;
+79 INTEGER_LITERAL : shift 96;
+80 PARENCLOSE : shift 97;
+81 CURLYCLOSE : reduce 9;
+81 CURLYOPEN : reduce 9;
+81 IDENTIFIER : reduce 9;
+81 KW_FN : reduce 9;
+81 KW_IF : reduce 9;
+81 KW_LET : reduce 9;
+81 KW_RETURN : reduce 9;
+81 KW_WHILE : reduce 9;
+81 SEMI : reduce 9;
+82 ARRAY : goto 100;
+82 ARRAY_INDEX : goto 54;
+82 BRACKETOPEN : shift 101;
+82 CALL_FUNCTION : goto 43;
+82 CHAR : shift 52;
+82 EQEQ : shift 35;
+82 EXPRESSION_ART : goto 32;
+82 EXPRESSION_COMP : goto 30;
+82 EXPRESSION_LOGICA : goto 99;
+82 FACTOR : goto 41;
+82 FLOAT : shift 51;
+82 GE : shift 39;
+82 GT : shift 37;
+82 IDENTIFIER : shift 98;
+82 INTEGER : shift 50;
+82 KW_FALSE : shift 45;
+82 KW_TRUE : shift 44;
+82 KW_WHILE : shift 21;
+82 LE : shift 40;
+82 LT : shift 38;
+82 MINUS : shift 47;
+82 NE : shift 36;
+82 NOT : shift 31;
+82 OP_COMP : goto 33;
+82 OP_LOGIC_NOT : goto 29;
+82 PARENOPEN : shift 53;
+82 STRING : shift 49;
+82 TERM : goto 34;
+82 VALOR : goto 42;
+82 WHILE : goto 46;
+83 ARRAY : goto 104;
+83 BRACKETOPEN : shift 101;
+83 FUNCTION : goto 105;
+83 IDENTIFIER : shift 103;
+83 KW_FN : shift 22;
+83 TYPE : goto 102;
+84 ANDAND : shift 63;
+84 OP_LOGIC : goto 62;
+84 OROR : shift 64;
+84 SEMI : reduce 29;
+85 PARENCLOSE : shift 106;
+86 COMMA : shift 107;
+86 PARENCLOSE : reduce 39;
+87 COMMA : reduce 41;
+87 PARENCLOSE : reduce 41;
+88 BRACKETOPEN : shift 79;
+88 COLON : shift 109;
+88 COMMA : reduce 76;
+88 DOT : shift 108;
+88 MINUS : reduce 76;
+88 PARENCLOSE : reduce 76;
+88 PARENOPEN : shift 58;
+88 PERCENT : reduce 76;
+88 PLUS : reduce 76;
+88 SLASH : reduce 76;
+88 STAR : reduce 76;
+89 ATRIBUICAO : goto 10;
+89 BLOCO_CODIGO : goto 110;
+89 CALL_FUNCTION : goto 14;
+89 CODIGO : goto 8;
+89 CONDICAO : goto 11;
+89 CURLYCLOSE : reduce 12;
+89 CURLYOPEN : shift 16;
+89 DECLARACAO : goto 9;
+89 FUNCTION : goto 13;
+89 IDENTIFIER : shift 19;
+89 KW_FN : shift 22;
+89 KW_IF : shift 20;
+89 KW_LET : shift 18;
+89 KW_RETURN : shift 15;
+89 KW_WHILE : shift 21;
+89 SEMI : shift 17;
+89 WHILE : goto 12;
+90 ATRIBUICAO : goto 10;
+90 BLOCO_CODIGO : goto 111;
+90 CALL_FUNCTION : goto 14;
+90 CODIGO : goto 8;
+90 CONDICAO : goto 11;
+90 CURLYCLOSE : reduce 12;
+90 CURLYOPEN : shift 16;
+90 DECLARACAO : goto 9;
+90 FUNCTION : goto 13;
+90 IDENTIFIER : shift 19;
+90 KW_FN : shift 22;
+90 KW_IF : shift 20;
+90 KW_LET : shift 18;
+90 KW_RETURN : shift 15;
+90 KW_WHILE : shift 21;
+90 SEMI : shift 17;
+90 WHILE : goto 12;
+91 ARG : goto 86;
+91 ARGS : goto 112;
+91 ARRAY_INDEX : goto 54;
+91 CALL_FUNCTION : goto 43;
+91 CHAR : shift 52;
+91 EXPRESSION_ART : goto 87;
+91 FACTOR : goto 41;
+91 FLOAT : shift 51;
+91 IDENTIFIER : shift 88;
+91 INTEGER : shift 50;
+91 KW_FALSE : shift 45;
+91 KW_TRUE : shift 44;
+91 KW_WHILE : shift 21;
+91 MINUS : shift 47;
+91 PARENCLOSE : reduce 40;
+91 PARENOPEN : shift 53;
+91 STRING : shift 49;
+91 TERM : goto 34;
+91 VALOR : goto 42;
+91 WHILE : goto 46;
+92 ANDAND : reduce 59;
+92 CURLYCLOSE : reduce 59;
+92 CURLYOPEN : reduce 59;
+92 IDENTIFIER : reduce 59;
+92 KW_ELSE : reduce 59;
+92 KW_FN : reduce 59;
+92 KW_IF : reduce 59;
+92 KW_LET : reduce 59;
+92 KW_RETURN : reduce 59;
+92 KW_WHILE : reduce 59;
+92 OROR : reduce 59;
+92 SEMI : reduce 59;
+93 ANDAND : reduce 56;
+93 CURLYCLOSE : reduce 56;
+93 CURLYOPEN : reduce 56;
+93 IDENTIFIER : reduce 56;
+93 KW_ELSE : reduce 56;
+93 KW_FN : reduce 56;
+93 KW_IF : reduce 56;
+93 KW_LET : reduce 56;
+93 KW_RETURN : reduce 56;
+93 KW_WHILE : reduce 56;
+93 OROR : reduce 56;
+93 SEMI : reduce 56;
+94 ANDAND : reduce 46;
+94 COMMA : reduce 46;
+94 CURLYCLOSE : reduce 46;
+94 CURLYOPEN : reduce 46;
+94 EQEQ : reduce 46;
+94 EXPRESSION_PRIME : goto 113;
+94 GE : reduce 46;
+94 GT : reduce 46;
+94 IDENTIFIER : reduce 46;
+94 KW_ELSE : reduce 46;
+94 KW_FN : reduce 46;
+94 KW_IF : reduce 46;
+94 KW_LET : reduce 46;
+94 KW_RETURN : reduce 46;
+94 KW_WHILE : reduce 46;
+94 LE : reduce 46;
+94 LT : reduce 46;
+94 MINUS : shift 71;
+94 NE : reduce 46;
+94 OP_ADD : goto 69;
+94 OROR : reduce 46;
+94 PARENCLOSE : reduce 46;
+94 PLUS : shift 70;
+94 SEMI : reduce 46;
+95 ANDAND : reduce 49;
+95 COMMA : reduce 49;
+95 CURLYCLOSE : reduce 49;
+95 CURLYOPEN : reduce 49;
+95 EQEQ : reduce 49;
+95 GE : reduce 49;
+95 GT : reduce 49;
+95 IDENTIFIER : reduce 49;
+95 KW_ELSE : reduce 49;
+95 KW_FN : reduce 49;
+95 KW_IF : reduce 49;
+95 KW_LET : reduce 49;
+95 KW_RETURN : reduce 49;
+95 KW_WHILE : reduce 49;
+95 LE : reduce 49;
+95 LT : reduce 49;
+95 MINUS : reduce 49;
+95 NE : reduce 49;
+95 OP_MULT : goto 73;
+95 OROR : reduce 49;
+95 PARENCLOSE : reduce 49;
+95 PERCENT : shift 76;
+95 PLUS : reduce 49;
+95 SEMI : reduce 49;
+95 SLASH : shift 75;
+95 STAR : shift 74;
+95 TERM_PRIME : goto 114;
+96 BRACKETCLOSE : shift 115;
+97 ANDAND : reduce 81;
+97 BRACKETCLOSE : reduce 81;
+97 COMMA : reduce 81;
+97 CURLYCLOSE : reduce 81;
+97 CURLYOPEN : reduce 81;
+97 EQEQ : reduce 81;
+97 GE : reduce 81;
+97 GT : reduce 81;
+97 IDENTIFIER : reduce 81;
+97 KW_ELSE : reduce 81;
+97 KW_FN : reduce 81;
+97 KW_IF : reduce 81;
+97 KW_LET : reduce 81;
+97 KW_RETURN : reduce 81;
+97 KW_WHILE : reduce 81;
+97 LE : reduce 81;
+97 LT : reduce 81;
+97 MINUS : reduce 81;
+97 NE : reduce 81;
+97 OROR : reduce 81;
+97 PARENCLOSE : reduce 81;
+97 PERCENT : reduce 81;
+97 PLUS : reduce 81;
+97 SEMI : reduce 81;
+97 SLASH : reduce 81;
+97 STAR : reduce 81;
+98 ANDAND : reduce 76;
+98 BRACKETOPEN : shift 79;
+98 EQEQ : reduce 76;
+98 GE : reduce 76;
+98 GT : reduce 76;
+98 KW_ELSE : reduce 76;
+98 LE : reduce 76;
+98 LT : reduce 76;
+98 MINUS : reduce 76;
+98 NE : reduce 76;
+98 OROR : reduce 76;
+98 PARENOPEN : shift 116;
+98 PERCENT : reduce 76;
+98 PLUS : reduce 76;
+98 SEMI : reduce 76;
+98 SLASH : reduce 76;
+98 STAR : reduce 76;
+99 ANDAND : shift 63;
+99 KW_ELSE : shift 117;
+99 OP_LOGIC : goto 62;
+99 OROR : shift 64;
+99 SEMI : reduce 24;
+100 SEMI : reduce 25;
+101 ARRAY : goto 120;
+101 ARRAY_INDEX : goto 54;
+101 BRACKETCLOSE : reduce 20;
+101 BRACKETOPEN : shift 101;
+101 CHAR : shift 52;
+101 CONTENT_ARRAY : goto 118;
+101 FLOAT : shift 51;
+101 IDENTIFIER : shift 78;
+101 INTEGER : shift 50;
+101 PARENOPEN : shift 53;
+101 STRING : shift 49;
+101 VALOR : goto 119;
+102 EQ : shift 121;
+103 COMMA : reduce 83;
+103 CURLYOPEN : reduce 83;
+103 EQ : reduce 83;
+103 PARENCLOSE : reduce 83;
+104 COMMA : reduce 85;
+104 CURLYOPEN : reduce 85;
+104 EQ : reduce 85;
+104 PARENCLOSE : reduce 85;
+105 COMMA : reduce 86;
+105 CURLYOPEN : reduce 86;
+105 EQ : reduce 86;
+105 PARENCLOSE : reduce 86;
+106 ANDAND : reduce 37;
+106 COMMA : reduce 37;
+106 CURLYCLOSE : reduce 37;
+106 CURLYOPEN : reduce 37;
+106 EQEQ : reduce 37;
+106 GE : reduce 37;
+106 GT : reduce 37;
+106 IDENTIFIER : reduce 37;
+106 KW_ELSE : reduce 37;
+106 KW_FN : reduce 37;
+106 KW_IF : reduce 37;
+106 KW_LET : reduce 37;
+106 KW_RETURN : reduce 37;
+106 KW_WHILE : reduce 37;
+106 LE : reduce 37;
+106 LT : reduce 37;
+106 MINUS : reduce 37;
+106 NE : reduce 37;
+106 OROR : reduce 37;
+106 PARENCLOSE : reduce 37;
+106 PERCENT : reduce 37;
+106 PLUS : reduce 37;
+106 SEMI : reduce 37;
+106 SLASH : reduce 37;
+106 STAR : reduce 37;
+107 ARG : goto 86;
+107 ARGS : goto 122;
+107 ARRAY_INDEX : goto 54;
+107 CALL_FUNCTION : goto 43;
+107 CHAR : shift 52;
+107 EXPRESSION_ART : goto 87;
+107 FACTOR : goto 41;
+107 FLOAT : shift 51;
+107 IDENTIFIER : shift 88;
+107 INTEGER : shift 50;
+107 KW_FALSE : shift 45;
+107 KW_TRUE : shift 44;
+107 KW_WHILE : shift 21;
+107 MINUS : shift 47;
+107 PARENCLOSE : reduce 40;
+107 PARENOPEN : shift 53;
+107 STRING : shift 49;
+107 TERM : goto 34;
+107 VALOR : goto 42;
+107 WHILE : goto 46;
+108 IDENTIFIER : shift 123;
+109 ARRAY : goto 104;
+109 BRACKETOPEN : shift 101;
+109 FUNCTION : goto 105;
+109 IDENTIFIER : shift 103;
+109 KW_FN : shift 22;
+109 TYPE : goto 124;
+110 CURLYCLOSE : shift 125;
+111 CURLYCLOSE : shift 126;
+112 PARENCLOSE : shift 127;
+113 ANDAND : reduce 45;
+113 COMMA : reduce 45;
+113 CURLYCLOSE : reduce 45;
+113 CURLYOPEN : reduce 45;
+113 EQEQ : reduce 45;
+113 GE : reduce 45;
+113 GT : reduce 45;
+113 IDENTIFIER : reduce 45;
+113 KW_ELSE : reduce 45;
+113 KW_FN : reduce 45;
+113 KW_IF : reduce 45;
+113 KW_LET : reduce 45;
+113 KW_RETURN : reduce 45;
+113 KW_WHILE : reduce 45;
+113 LE : reduce 45;
+113 LT : reduce 45;
+113 NE : reduce 45;
+113 OROR : reduce 45;
+113 PARENCLOSE : reduce 45;
+113 SEMI : reduce 45;
+114 ANDAND : reduce 48;
+114 COMMA : reduce 48;
+114 CURLYCLOSE : reduce 48;
+114 CURLYOPEN : reduce 48;
+114 EQEQ : reduce 48;
+114 GE : reduce 48;
+114 GT : reduce 48;
+114 IDENTIFIER : reduce 48;
+114 KW_ELSE : reduce 48;
+114 KW_FN : reduce 48;
+114 KW_IF : reduce 48;
+114 KW_LET : reduce 48;
+114 KW_RETURN : reduce 48;
+114 KW_WHILE : reduce 48;
+114 LE : reduce 48;
+114 LT : reduce 48;
+114 MINUS : reduce 48;
+114 NE : reduce 48;
+114 OROR : reduce 48;
+114 PARENCLOSE : reduce 48;
+114 PLUS : reduce 48;
+114 SEMI : reduce 48;
+115 ANDAND : reduce 13;
+115 BRACKETCLOSE : reduce 13;
+115 COMMA : reduce 13;
+115 CURLYCLOSE : reduce 13;
+115 CURLYOPEN : reduce 13;
+115 EQEQ : reduce 13;
+115 GE : reduce 13;
+115 GT : reduce 13;
+115 IDENTIFIER : reduce 13;
+115 KW_ELSE : reduce 13;
+115 KW_FN : reduce 13;
+115 KW_IF : reduce 13;
+115 KW_LET : reduce 13;
+115 KW_RETURN : reduce 13;
+115 KW_WHILE : reduce 13;
+115 LE : reduce 13;
+115 LT : reduce 13;
+115 MINUS : reduce 13;
+115 NE : reduce 13;
+115 OROR : reduce 13;
+115 PARENCLOSE : reduce 13;
+115 PERCENT : reduce 13;
+115 PLUS : reduce 13;
+115 SEMI : reduce 13;
+115 SLASH : reduce 13;
+115 STAR : reduce 13;
+116 ARG : goto 86;
+116 ARGS : goto 85;
+116 ARRAY_INDEX : goto 54;
+116 CALL_FUNCTION : goto 43;
+116 CHAR : shift 52;
+116 EXPRESSION_ART : goto 87;
+116 FACTOR : goto 41;
+116 FLOAT : shift 51;
+116 IDENTIFIER : shift 88;
+116 INTEGER : shift 50;
+116 KW_FALSE : shift 45;
+116 KW_TRUE : shift 44;
+116 KW_WHILE : shift 21;
+116 MINUS : shift 47;
+116 PARENCLOSE : shift 128;
+116 PARENOPEN : shift 53;
+116 STRING : shift 49;
+116 TERM : goto 34;
+116 VALOR : goto 42;
+116 WHILE : goto 46;
+117 CURLYOPEN : shift 129;
+118 BRACKETCLOSE : shift 130;
+119 BRACKETCLOSE : reduce 18;
+119 COMMA : shift 132;
+119 SEMI : shift 131;
+120 BRACKETCLOSE : shift 133;
+121 ARRAY : goto 135;
+121 ARRAY_INDEX : goto 54;
+121 BRACKETOPEN : shift 101;
+121 CALL_FUNCTION : goto 43;
+121 CHAR : shift 52;
+121 EQEQ : shift 35;
+121 EXPRESSION_ART : goto 32;
+121 EXPRESSION_COMP : goto 30;
+121 EXPRESSION_LOGICA : goto 134;
+121 FACTOR : goto 41;
+121 FLOAT : shift 51;
+121 GE : shift 39;
+121 GT : shift 37;
+121 IDENTIFIER : shift 48;
+121 INTEGER : shift 50;
+121 KW_FALSE : shift 45;
+121 KW_TRUE : shift 44;
+121 KW_WHILE : shift 21;
+121 LE : shift 40;
+121 LT : shift 38;
+121 MINUS : shift 47;
+121 NE : shift 36;
+121 NOT : shift 31;
+121 OP_COMP : goto 33;
+121 OP_LOGIC_NOT : goto 29;
+121 PARENOPEN : shift 53;
+121 STRING : shift 49;
+121 TERM : goto 34;
+121 VALOR : goto 42;
+121 WHILE : goto 46;
+122 PARENCLOSE : reduce 38;
+123 PARENOPEN : shift 136;
+124 COMMA : reduce 43;
+124 PARENCLOSE : reduce 43;
+125 CONDICAOELSE : goto 137;
+125 CURLYCLOSE : reduce 33;
+125 CURLYOPEN : reduce 33;
+125 IDENTIFIER : reduce 33;
+125 KW_ELSE : shift 138;
+125 KW_FN : reduce 33;
+125 KW_IF : reduce 33;
+125 KW_LET : reduce 33;
+125 KW_RETURN : reduce 33;
+125 KW_WHILE : reduce 33;
+125 SEMI : reduce 33;
+126 ANDAND : reduce 34;
+126 COMMA : reduce 34;
+126 CURLYCLOSE : reduce 34;
+126 CURLYOPEN : reduce 34;
+126 EQEQ : reduce 34;
+126 GE : reduce 34;
+126 GT : reduce 34;
+126 IDENTIFIER : reduce 34;
+126 KW_ELSE : reduce 34;
+126 KW_FN : reduce 34;
+126 KW_IF : reduce 34;
+126 KW_LET : reduce 34;
+126 KW_RETURN : reduce 34;
+126 KW_WHILE : reduce 34;
+126 LE : reduce 34;
+126 LT : reduce 34;
+126 MINUS : reduce 34;
+126 NE : reduce 34;
+126 OROR : reduce 34;
+126 PARENCLOSE : reduce 34;
+126 PERCENT : reduce 34;
+126 PLUS : reduce 34;
+126 SEMI : reduce 34;
+126 SLASH : reduce 34;
+126 STAR : reduce 34;
+127 CURLYOPEN : shift 139;
+127 RARROW : shift 140;
+128 SEMI : reduce 22;
+129 ARRAY_INDEX : goto 54;
+129 CALL_FUNCTION : goto 43;
+129 CHAR : shift 52;
+129 EQEQ : shift 35;
+129 EXPRESSION_ART : goto 32;
+129 EXPRESSION_COMP : goto 30;
+129 EXPRESSION_LOGICA : goto 141;
+129 FACTOR : goto 41;
+129 FLOAT : shift 51;
+129 GE : shift 39;
+129 GT : shift 37;
+129 IDENTIFIER : shift 48;
+129 INTEGER : shift 50;
+129 KW_FALSE : shift 45;
+129 KW_TRUE : shift 44;
+129 KW_WHILE : shift 21;
+129 LE : shift 40;
+129 LT : shift 38;
+129 MINUS : shift 47;
+129 NE : shift 36;
+129 NOT : shift 31;
+129 OP_COMP : goto 33;
+129 OP_LOGIC_NOT : goto 29;
+129 PARENOPEN : shift 53;
+129 STRING : shift 49;
+129 TERM : goto 34;
+129 VALOR : goto 42;
+129 WHILE : goto 46;
+130 BRACKETCLOSE : reduce 14;
+130 COMMA : reduce 14;
+130 CURLYOPEN : reduce 14;
+130 EQ : reduce 14;
+130 PARENCLOSE : reduce 14;
+130 SEMI : reduce 14;
+131 ARRAY_INDEX : goto 54;
+131 BRACKETCLOSE : reduce 19;
+131 CHAR : shift 52;
+131 FLOAT : shift 51;
+131 IDENTIFIER : shift 78;
+131 INTEGER : shift 50;
+131 PARENOPEN : shift 53;
+131 STRING : shift 49;
+131 VALOR : goto 142;
+132 ARRAY_INDEX : goto 54;
+132 BRACKETCLOSE : reduce 20;
+132 CHAR : shift 52;
+132 CONTENT_ARRAY : goto 143;
+132 FLOAT : shift 51;
+132 IDENTIFIER : shift 78;
+132 INTEGER : shift 50;
+132 PARENOPEN : shift 53;
+132 STRING : shift 49;
+132 VALOR : goto 144;
+133 BRACKETCLOSE : reduce 16;
+133 COMMA : reduce 16;
+133 CURLYOPEN : reduce 16;
+133 EQ : reduce 16;
+133 PARENCLOSE : reduce 16;
+133 SEMI : reduce 16;
+134 ANDAND : shift 63;
+134 KW_ELSE : shift 145;
+134 OP_LOGIC : goto 62;
+134 OROR : shift 64;
+134 SEMI : reduce 26;
+135 SEMI : reduce 27;
+136 ARG : goto 86;
+136 ARGS : goto 146;
+136 ARRAY_INDEX : goto 54;
+136 CALL_FUNCTION : goto 43;
+136 CHAR : shift 52;
+136 EXPRESSION_ART : goto 87;
+136 FACTOR : goto 41;
+136 FLOAT : shift 51;
+136 IDENTIFIER : shift 88;
+136 INTEGER : shift 50;
+136 KW_FALSE : shift 45;
+136 KW_TRUE : shift 44;
+136 KW_WHILE : shift 21;
+136 MINUS : shift 47;
+136 PARENCLOSE : reduce 40;
+136 PARENOPEN : shift 53;
+136 STRING : shift 49;
+136 TERM : goto 34;
+136 VALOR : goto 42;
+136 WHILE : goto 46;
+137 CURLYCLOSE : reduce 30;
+137 CURLYOPEN : reduce 30;
+137 IDENTIFIER : reduce 30;
+137 KW_FN : reduce 30;
+137 KW_IF : reduce 30;
+137 KW_LET : reduce 30;
+137 KW_RETURN : reduce 30;
+137 KW_WHILE : reduce 30;
+137 SEMI : reduce 30;
+138 CONDICAO : goto 147;
+138 CURLYOPEN : shift 148;
+138 KW_IF : shift 20;
+139 ATRIBUICAO : goto 10;
+139 BLOCO_CODIGO : goto 149;
+139 CALL_FUNCTION : goto 14;
+139 CODIGO : goto 8;
+139 CONDICAO : goto 11;
+139 CURLYCLOSE : reduce 12;
+139 CURLYOPEN : shift 16;
+139 DECLARACAO : goto 9;
+139 FUNCTION : goto 13;
+139 IDENTIFIER : shift 19;
+139 KW_FN : shift 22;
+139 KW_IF : shift 20;
+139 KW_LET : shift 18;
+139 KW_RETURN : shift 15;
+139 KW_WHILE : shift 21;
+139 SEMI : shift 17;
+139 WHILE : goto 12;
+140 ARRAY : goto 104;
+140 BRACKETOPEN : shift 101;
+140 FUNCTION : goto 105;
+140 IDENTIFIER : shift 103;
+140 KW_FN : shift 22;
+140 TYPE : goto 150;
+141 ANDAND : shift 63;
+141 CURLYCLOSE : shift 151;
+141 OP_LOGIC : goto 62;
+141 OROR : shift 64;
+142 BRACKETCLOSE : shift 152;
+143 BRACKETCLOSE : reduce 17;
+144 BRACKETCLOSE : reduce 18;
+144 COMMA : shift 132;
+144 SEMI : shift 153;
+145 CURLYOPEN : shift 154;
+146 PARENCLOSE : shift 155;
+147 CURLYCLOSE : reduce 31;
+147 CURLYOPEN : reduce 31;
+147 IDENTIFIER : reduce 31;
+147 KW_FN : reduce 31;
+147 KW_IF : reduce 31;
+147 KW_LET : reduce 31;
+147 KW_RETURN : reduce 31;
+147 KW_WHILE : reduce 31;
+147 SEMI : reduce 31;
+148 ATRIBUICAO : goto 10;
+148 BLOCO_CODIGO : goto 156;
+148 CALL_FUNCTION : goto 14;
+148 CODIGO : goto 8;
+148 CONDICAO : goto 11;
+148 CURLYCLOSE : reduce 12;
+148 CURLYOPEN : shift 16;
+148 DECLARACAO : goto 9;
+148 FUNCTION : goto 13;
+148 IDENTIFIER : shift 19;
+148 KW_FN : shift 22;
+148 KW_IF : shift 20;
+148 KW_LET : shift 18;
+148 KW_RETURN : shift 15;
+148 KW_WHILE : shift 21;
+148 SEMI : shift 17;
+148 WHILE : goto 12;
+149 CURLYCLOSE : shift 157;
+150 CURLYOPEN : shift 158;
+151 SEMI : reduce 23;
+152 BRACKETCLOSE : reduce 15;
+152 COMMA : reduce 15;
+152 CURLYOPEN : reduce 15;
+152 EQ : reduce 15;
+152 PARENCLOSE : reduce 15;
+152 SEMI : reduce 15;
+153 BRACKETCLOSE : reduce 19;
+154 ARRAY_INDEX : goto 54;
+154 CALL_FUNCTION : goto 43;
+154 CHAR : shift 52;
+154 EQEQ : shift 35;
+154 EXPRESSION_ART : goto 32;
+154 EXPRESSION_COMP : goto 30;
+154 EXPRESSION_LOGICA : goto 159;
+154 FACTOR : goto 41;
+154 FLOAT : shift 51;
+154 GE : shift 39;
+154 GT : shift 37;
+154 IDENTIFIER : shift 48;
+154 INTEGER : shift 50;
+154 KW_FALSE : shift 45;
+154 KW_TRUE : shift 44;
+154 KW_WHILE : shift 21;
+154 LE : shift 40;
+154 LT : shift 38;
+154 MINUS : shift 47;
+154 NE : shift 36;
+154 NOT : shift 31;
+154 OP_COMP : goto 33;
+154 OP_LOGIC_NOT : goto 29;
+154 PARENOPEN : shift 53;
+154 STRING : shift 49;
+154 TERM : goto 34;
+154 VALOR : goto 42;
+154 WHILE : goto 46;
+155 COMMA : reduce 42;
+155 PARENCLOSE : reduce 42;
+156 CURLYCLOSE : shift 160;
+157 COMMA : reduce 35;
+157 CURLYCLOSE : reduce 35;
+157 CURLYOPEN : reduce 35;
+157 EQ : reduce 35;
+157 IDENTIFIER : reduce 35;
+157 KW_FN : reduce 35;
+157 KW_IF : reduce 35;
+157 KW_LET : reduce 35;
+157 KW_RETURN : reduce 35;
+157 KW_WHILE : reduce 35;
+157 PARENCLOSE : reduce 35;
+157 SEMI : reduce 35;
+158 ATRIBUICAO : goto 10;
+158 BLOCO_CODIGO : goto 161;
+158 CALL_FUNCTION : goto 14;
+158 CODIGO : goto 8;
+158 CONDICAO : goto 11;
+158 CURLYCLOSE : reduce 12;
+158 CURLYOPEN : shift 16;
+158 DECLARACAO : goto 9;
+158 FUNCTION : goto 13;
+158 IDENTIFIER : shift 19;
+158 KW_FN : shift 22;
+158 KW_IF : shift 20;
+158 KW_LET : shift 18;
+158 KW_RETURN : shift 15;
+158 KW_WHILE : shift 21;
+158 SEMI : shift 17;
+158 WHILE : goto 12;
+159 ANDAND : shift 63;
+159 CURLYCLOSE : shift 162;
+159 OP_LOGIC : goto 62;
+159 OROR : shift 64;
+160 CURLYCLOSE : reduce 32;
+160 CURLYOPEN : reduce 32;
+160 IDENTIFIER : reduce 32;
+160 KW_FN : reduce 32;
+160 KW_IF : reduce 32;
+160 KW_LET : reduce 32;
+160 KW_RETURN : reduce 32;
+160 KW_WHILE : reduce 32;
+160 SEMI : reduce 32;
+161 CURLYCLOSE : shift 163;
+162 SEMI : reduce 28;
+163 COMMA : reduce 36;
+163 CURLYCLOSE : reduce 36;
+163 CURLYOPEN : reduce 36;
+163 EQ : reduce 36;
+163 IDENTIFIER : reduce 36;
+163 KW_FN : reduce 36;
+163 KW_IF : reduce 36;
+163 KW_LET : reduce 36;
+163 KW_RETURN : reduce 36;
+163 KW_WHILE : reduce 36;
+163 PARENCLOSE : reduce 36;
+163 SEMI : reduce 36;
+X->:S
+S->:KW_FN:IDENTIFIER:PARENOPEN:PARENCLOSE:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE
+CODIGO->:DECLARACAO:SEMI
+CODIGO->:ATRIBUICAO:SEMI
+CODIGO->:CONDICAO
+CODIGO->:WHILE
+CODIGO->:FUNCTION
+CODIGO->:CALL_FUNCTION:SEMI
+CODIGO->:KW_RETURN:EXPRESSION_LOGICA
+CODIGO->:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE
+CODIGO->:SEMI
+BLOCO_CODIGO->:CODIGO:BLOCO_CODIGO
+BLOCO_CODIGO->
+ARRAY_INDEX->:IDENTIFIER:BRACKETOPEN:INTEGER:BRACKETCLOSE
+ARRAY->:BRACKETOPEN:CONTENT_ARRAY:BRACKETCLOSE
+ARRAY->:BRACKETOPEN:VALOR:SEMI:VALOR:BRACKETCLOSE
+ARRAY->:BRACKETOPEN:ARRAY:BRACKETCLOSE
+CONTENT_ARRAY->:VALOR:COMMA:CONTENT_ARRAY
+CONTENT_ARRAY->:VALOR
+CONTENT_ARRAY->:VALOR:SEMI
+CONTENT_ARRAY->
+DECLARACAO->:KW_LET:IDENTIFIER
+DECLARACAO->:KW_LET:IDENTIFIER:EQ:IDENTIFIER:PARENOPEN:PARENCLOSE
+DECLARACAO->:KW_LET:IDENTIFIER:EQ:EXPRESSION_LOGICA:KW_ELSE:CURLYOPEN:EXPRESSION_LOGICA:CURLYCLOSE
+DECLARACAO->:KW_LET:IDENTIFIER:EQ:EXPRESSION_LOGICA
+DECLARACAO->:KW_LET:IDENTIFIER:EQ:ARRAY
+DECLARACAO->:KW_LET:IDENTIFIER:COLON:TYPE:EQ:EXPRESSION_LOGICA
+DECLARACAO->:KW_LET:IDENTIFIER:COLON:TYPE:EQ:ARRAY
+DECLARACAO->:KW_LET:IDENTIFIER:COLON:TYPE:EQ:EXPRESSION_LOGICA:KW_ELSE:CURLYOPEN:EXPRESSION_LOGICA:CURLYCLOSE
+ATRIBUICAO->:IDENTIFIER:EQ:EXPRESSION_LOGICA
+CONDICAO->:KW_IF:EXPRESSION_LOGICA:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE:CONDICAOELSE
+CONDICAOELSE->:KW_ELSE:CONDICAO
+CONDICAOELSE->:KW_ELSE:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE
+CONDICAOELSE->
+WHILE->:KW_WHILE:EXPRESSION_LOGICA:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE
+FUNCTION->:KW_FN:IDENTIFIER:PARENOPEN:ARGS:PARENCLOSE:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE
+FUNCTION->:KW_FN:IDENTIFIER:PARENOPEN:ARGS:PARENCLOSE:RARROW:TYPE:CURLYOPEN:BLOCO_CODIGO:CURLYCLOSE
+CALL_FUNCTION->:IDENTIFIER:PARENOPEN:ARGS:PARENCLOSE
+ARGS->:ARG:COMMA:ARGS
+ARGS->:ARG
+ARGS->
+ARG->:EXPRESSION_ART
+ARG->:IDENTIFIER:DOT:IDENTIFIER:PARENOPEN:ARGS:PARENCLOSE
+ARG->:IDENTIFIER:COLON:TYPE
+EXPRESSION_ART->:TERM:EXPRESSION_PRIME
+EXPRESSION_PRIME->:OP_ADD:TERM:EXPRESSION_PRIME
+EXPRESSION_PRIME->
+TERM->:FACTOR:TERM_PRIME
+TERM_PRIME->:OP_MULT:FACTOR:TERM_PRIME
+TERM_PRIME->
+FACTOR->:VALOR
+FACTOR->:CALL_FUNCTION
+FACTOR->:KW_TRUE
+FACTOR->:KW_FALSE
+FACTOR->:WHILE
+FACTOR->:MINUS:VALOR
+EXPRESSION_COMP->:EXPRESSION_ART:OP_COMP:EXPRESSION_ART
+EXPRESSION_COMP->:OP_COMP:EXPRESSION_ART
+EXPRESSION_COMP->:EXPRESSION_ART
+EXPRESSION_LOGICA->:EXPRESSION_LOGICA:OP_LOGIC:EXPRESSION_COMP
+EXPRESSION_LOGICA->:OP_LOGIC_NOT:EXPRESSION_COMP
+EXPRESSION_LOGICA->:EXPRESSION_COMP
+OP_ADD->:PLUS
+OP_ADD->:MINUS
+OP_MULT->:STAR
+OP_MULT->:SLASH
+OP_MULT->:PERCENT
+OP_COMP->:EQEQ
+OP_COMP->:NE
+OP_COMP->:GT
+OP_COMP->:LT
+OP_COMP->:GE
+OP_COMP->:LE
+OP_LOGIC->:ANDAND
+OP_LOGIC->:OROR
+OP_LOGIC_NOT->:NOT
+VALOR->:IDENTIFIER
+VALOR->:STRING
+VALOR->:INTEGER
+VALOR->:FLOAT
+VALOR->:CHAR
+VALOR->:PARENOPEN:EXPRESSION_ART:PARENCLOSE
+VALOR->:ARRAY_INDEX
+TYPE->:IDENTIFIER
+TYPE->:IDENTIFIER
+TYPE->:ARRAY
+TYPE->:FUNCTION
+Estado:0 Lookahead:KW_FN
+Transicao:(shift:,r=-1,prox=2)
+Estado:2 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=3)
+Estado:3 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=4)
+Estado:4 Lookahead:PARENCLOSE
+Transicao:(shift:,r=-1,prox=5)
+Estado:5 Lookahead:CURLYOPEN
+Transicao:(shift:,r=-1,prox=6)
+Estado:6 Lookahead:KW_LET
+Transicao:(shift:,r=-1,prox=18)
+Estado:18 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=56)
+Estado:56 Lookahead:EQ
+Transicao:(shift:,r=-1,prox=82)
+Estado:82 Lookahead:BRACKETOPEN
+Transicao:(shift:,r=-1,prox=101)
+Estado:101 Lookahead:INTEGER
+Transicao:(shift:,r=-1,prox=50)
+Estado:50 Lookahead:COMMA
+Transicao:(reduz:,r=78,prox=-1)
+Estado:119 Lookahead:COMMA
+Transicao:(shift:,r=-1,prox=132)
+Estado:132 Lookahead:INTEGER
+Transicao:(shift:,r=-1,prox=50)
+Estado:50 Lookahead:BRACKETCLOSE
+Transicao:(reduz:,r=78,prox=-1)
+Estado:144 Lookahead:BRACKETCLOSE
+Transicao:(reduz:,r=18,prox=-1)
+Estado:143 Lookahead:BRACKETCLOSE
+Transicao:(reduz:,r=17,prox=-1)
+Estado:118 Lookahead:BRACKETCLOSE
+Transicao:(shift:,r=-1,prox=130)
+Estado:130 Lookahead:SEMI
+Transicao:(reduz:,r=14,prox=-1)
+Estado:100 Lookahead:SEMI
+Transicao:(reduz:,r=25,prox=-1)
+Estado:9 Lookahead:SEMI
+Transicao:(shift:,r=-1,prox=25)
+Estado:25 Lookahead:KW_LET
+Transicao:(reduz:,r=2,prox=-1)
+Estado:8 Lookahead:KW_LET
+Transicao:(shift:,r=-1,prox=18)
+Estado:18 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=56)
+Estado:56 Lookahead:EQ
+Transicao:(shift:,r=-1,prox=82)
+Estado:82 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=98)
+Estado:98 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=116)
+Estado:116 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=88)
+Estado:88 Lookahead:COMMA
+Transicao:(reduz:,r=76,prox=-1)
+Estado:42 Lookahead:COMMA
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:COMMA
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:COMMA
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:COMMA
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:COMMA
+Transicao:(reduz:,r=44,prox=-1)
+Estado:87 Lookahead:COMMA
+Transicao:(reduz:,r=41,prox=-1)
+Estado:86 Lookahead:COMMA
+Transicao:(shift:,r=-1,prox=107)
+Estado:107 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=88)
+Estado:88 Lookahead:DOT
+Transicao:(shift:,r=-1,prox=108)
+Estado:108 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=123)
+Estado:123 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=136)
+Estado:136 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=40,prox=-1)
+Estado:146 Lookahead:PARENCLOSE
+Transicao:(shift:,r=-1,prox=155)
+Estado:155 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=42,prox=-1)
+Estado:86 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=39,prox=-1)
+Estado:122 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=38,prox=-1)
+Estado:85 Lookahead:PARENCLOSE
+Transicao:(shift:,r=-1,prox=106)
+Estado:106 Lookahead:SEMI
+Transicao:(reduz:,r=37,prox=-1)
+Estado:43 Lookahead:SEMI
+Transicao:(reduz:,r=51,prox=-1)
+Estado:41 Lookahead:SEMI
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:SEMI
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:SEMI
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:SEMI
+Transicao:(reduz:,r=44,prox=-1)
+Estado:32 Lookahead:SEMI
+Transicao:(reduz:,r=58,prox=-1)
+Estado:30 Lookahead:SEMI
+Transicao:(reduz:,r=61,prox=-1)
+Estado:99 Lookahead:SEMI
+Transicao:(reduz:,r=24,prox=-1)
+Estado:9 Lookahead:SEMI
+Transicao:(shift:,r=-1,prox=25)
+Estado:25 Lookahead:KW_LET
+Transicao:(reduz:,r=2,prox=-1)
+Estado:8 Lookahead:KW_LET
+Transicao:(shift:,r=-1,prox=18)
+Estado:18 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=56)
+Estado:56 Lookahead:EQ
+Transicao:(shift:,r=-1,prox=82)
+Estado:82 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=98)
+Estado:98 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=116)
+Estado:116 Lookahead:PARENCLOSE
+Transicao:(shift:,r=-1,prox=128)
+Estado:128 Lookahead:SEMI
+Transicao:(reduz:,r=22,prox=-1)
+Estado:9 Lookahead:SEMI
+Transicao:(shift:,r=-1,prox=25)
+Estado:25 Lookahead:KW_LET
+Transicao:(reduz:,r=2,prox=-1)
+Estado:8 Lookahead:KW_LET
+Transicao:(shift:,r=-1,prox=18)
+Estado:18 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=56)
+Estado:56 Lookahead:EQ
+Transicao:(shift:,r=-1,prox=82)
+Estado:82 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=53)
+Estado:53 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=53)
+Estado:53 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=48)
+Estado:48 Lookahead:STAR
+Transicao:(reduz:,r=76,prox=-1)
+Estado:42 Lookahead:STAR
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:STAR
+Transicao:(shift:,r=-1,prox=74)
+Estado:74 Lookahead:IDENTIFIER
+Transicao:(reduz:,r=64,prox=-1)
+Estado:73 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=48)
+Estado:48 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=76,prox=-1)
+Estado:42 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=50,prox=-1)
+Estado:95 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=49,prox=-1)
+Estado:114 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=48,prox=-1)
+Estado:72 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=44,prox=-1)
+Estado:80 Lookahead:PARENCLOSE
+Transicao:(shift:,r=-1,prox=97)
+Estado:97 Lookahead:PERCENT
+Transicao:(reduz:,r=81,prox=-1)
+Estado:42 Lookahead:PERCENT
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:PERCENT
+Transicao:(shift:,r=-1,prox=76)
+Estado:76 Lookahead:INTEGER
+Transicao:(reduz:,r=66,prox=-1)
+Estado:73 Lookahead:INTEGER
+Transicao:(shift:,r=-1,prox=50)
+Estado:50 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=78,prox=-1)
+Estado:42 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=50,prox=-1)
+Estado:95 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=49,prox=-1)
+Estado:114 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=48,prox=-1)
+Estado:72 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:PARENCLOSE
+Transicao:(reduz:,r=44,prox=-1)
+Estado:80 Lookahead:PARENCLOSE
+Transicao:(shift:,r=-1,prox=97)
+Estado:97 Lookahead:SEMI
+Transicao:(reduz:,r=81,prox=-1)
+Estado:42 Lookahead:SEMI
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:SEMI
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:SEMI
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:SEMI
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:SEMI
+Transicao:(reduz:,r=44,prox=-1)
+Estado:32 Lookahead:SEMI
+Transicao:(reduz:,r=58,prox=-1)
+Estado:30 Lookahead:SEMI
+Transicao:(reduz:,r=61,prox=-1)
+Estado:99 Lookahead:SEMI
+Transicao:(reduz:,r=24,prox=-1)
+Estado:9 Lookahead:SEMI
+Transicao:(shift:,r=-1,prox=25)
+Estado:25 Lookahead:KW_IF
+Transicao:(reduz:,r=2,prox=-1)
+Estado:8 Lookahead:KW_IF
+Transicao:(shift:,r=-1,prox=20)
+Estado:20 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=48)
+Estado:48 Lookahead:EQEQ
+Transicao:(reduz:,r=76,prox=-1)
+Estado:42 Lookahead:EQEQ
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:EQEQ
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:EQEQ
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:EQEQ
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:EQEQ
+Transicao:(reduz:,r=44,prox=-1)
+Estado:32 Lookahead:EQEQ
+Transicao:(shift:,r=-1,prox=35)
+Estado:35 Lookahead:INTEGER
+Transicao:(reduz:,r=67,prox=-1)
+Estado:66 Lookahead:INTEGER
+Transicao:(shift:,r=-1,prox=50)
+Estado:50 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=78,prox=-1)
+Estado:42 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=44,prox=-1)
+Estado:93 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=56,prox=-1)
+Estado:30 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=61,prox=-1)
+Estado:59 Lookahead:CURLYOPEN
+Transicao:(shift:,r=-1,prox=89)
+Estado:89 Lookahead:KW_RETURN
+Transicao:(shift:,r=-1,prox=15)
+Estado:15 Lookahead:FLOAT
+Transicao:(shift:,r=-1,prox=51)
+Estado:51 Lookahead:SEMI
+Transicao:(reduz:,r=79,prox=-1)
+Estado:42 Lookahead:SEMI
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:SEMI
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:SEMI
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:SEMI
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:SEMI
+Transicao:(reduz:,r=44,prox=-1)
+Estado:32 Lookahead:SEMI
+Transicao:(reduz:,r=58,prox=-1)
+Estado:30 Lookahead:SEMI
+Transicao:(reduz:,r=61,prox=-1)
+Estado:28 Lookahead:SEMI
+Transicao:(reduz:,r=8,prox=-1)
+Estado:8 Lookahead:SEMI
+Transicao:(shift:,r=-1,prox=17)
+Estado:17 Lookahead:CURLYCLOSE
+Transicao:(reduz:,r=10,prox=-1)
+Estado:8 Lookahead:CURLYCLOSE
+Transicao:(reduz:,r=12,prox=-1)
+Estado:24 Lookahead:CURLYCLOSE
+Transicao:(reduz:,r=11,prox=-1)
+Estado:24 Lookahead:CURLYCLOSE
+Transicao:(reduz:,r=11,prox=-1)
+Estado:110 Lookahead:CURLYCLOSE
+Transicao:(shift:,r=-1,prox=125)
+Estado:125 Lookahead:KW_ELSE
+Transicao:(shift:,r=-1,prox=138)
+Estado:138 Lookahead:KW_IF
+Transicao:(shift:,r=-1,prox=20)
+Estado:20 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=48)
+Estado:48 Lookahead:EQEQ
+Transicao:(reduz:,r=76,prox=-1)
+Estado:42 Lookahead:EQEQ
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:EQEQ
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:EQEQ
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:EQEQ
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:EQEQ
+Transicao:(reduz:,r=44,prox=-1)
+Estado:32 Lookahead:EQEQ
+Transicao:(shift:,r=-1,prox=35)
+Estado:35 Lookahead:INTEGER
+Transicao:(reduz:,r=67,prox=-1)
+Estado:66 Lookahead:INTEGER
+Transicao:(shift:,r=-1,prox=50)
+Estado:50 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=78,prox=-1)
+Estado:42 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=46,prox=-1)
+Estado:68 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=44,prox=-1)
+Estado:93 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=56,prox=-1)
+Estado:30 Lookahead:CURLYOPEN
+Transicao:(reduz:,r=61,prox=-1)
+Estado:59 Lookahead:CURLYOPEN
+Transicao:(shift:,r=-1,prox=89)
+Estado:89 Lookahead:KW_RETURN
+Transicao:(shift:,r=-1,prox=15)
+Estado:15 Lookahead:FLOAT
+Transicao:(shift:,r=-1,prox=51)
+Estado:51 Lookahead:PLUS
+Transicao:(reduz:,r=79,prox=-1)
+Estado:42 Lookahead:PLUS
+Transicao:(reduz:,r=50,prox=-1)
+Estado:41 Lookahead:PLUS
+Transicao:(reduz:,r=49,prox=-1)
+Estado:72 Lookahead:PLUS
+Transicao:(reduz:,r=47,prox=-1)
+Estado:34 Lookahead:PLUS
+Transicao:(shift:,r=-1,prox=70)
+Estado:70 Lookahead:PARENOPEN
+Transicao:(reduz:,r=62,prox=-1)
+Estado:69 Lookahead:PARENOPEN
+Transicao:(shift:,r=-1,prox=53)
+Estado:53 Lookahead:IDENTIFIER
+Transicao:(shift:,r=-1,prox=48)
+Estado:48 Lookahead:BRACKETOPEN
+Transicao:(shift:,r=-1,prox=79)
+Estado:79 Lookahead:INTEGER
+Transicao:(ZERO,r=-1,prox=-1)
+Parse executado
+[NO_NULO]
